@@ -23,4 +23,4 @@
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-[7, 2429832, 2, [1, 0], [2, [4370, 3816]], [2, [4101, 324]], [52, 1485], 1227, h'408A']
+[7, 190755, 0, [1, 0], [2, [2913, 2699]], [1, "tic"], [4343, 1637], 4615, 2057, 115, h'F7ED']

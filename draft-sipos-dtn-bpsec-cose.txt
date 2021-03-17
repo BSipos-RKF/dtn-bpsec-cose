@@ -114,7 +114,7 @@ Sipos                   Expires 18 September 2021               [Page 2]
 Internet-Draft               DTN BPSec COSE                   March 2021
 
 
-     A.2.  EC Keypair COSE_Sign1 . . . . . . . . . . . . . . . . . .  30
+     A.2.  EC Keypair COSE_Sign1 . . . . . . . . . . . . . . . . . .  31
      A.3.  RSA Keypair COSE_Sign1  . . . . . . . . . . . . . . . . .  32
      A.4.  Symmetric KEK COSE_Encrypt  . . . . . . . . . . . . . . .  34
      A.5.  EC Keypair COSE_Encrypt . . . . . . . . . . . . . . . . .  36
@@ -710,7 +710,7 @@ Internet-Draft               DTN BPSec COSE                   March 2021
    security data.
 
    Security results generated for BIB or BCB results SHALL conform to
-   the COSE profile of Section 3.  Security acceptors SHOULD
+   the COSE profile of Section 3.
 
 
 
@@ -1126,9 +1126,8 @@ Internet-Draft               DTN BPSec COSE                   March 2021
    contain a PKIX Extended Key Usage extension in accordance with
    Section 4.2.1.12 of [RFC5280].  When the PKIX Extended Key Usage
    extension is present, it SHALL contain a key purpose "id-kp-
-   bundleSecurity" as defined in [I-D.ietf-dtn-tcpclv4].  The "id-kp-
-   bundleSecurity" purpose MAY be combined with other purposes in the
-   same certificate.
+   bundleSecurity" of [IANA-SMI].  The "id-kp-bundleSecurity" purpose
+   MAY be combined with other purposes in the same certificate.
 
    When allowed by CA policy, a BPSec end-entity certificate SHALL
    contain a PKIX Key Usage extension in accordance with Section 4.2.1.3
@@ -1170,6 +1169,7 @@ Internet-Draft               DTN BPSec COSE                   March 2021
    [NOTE to the RFC Editor: please remove this section before
    publication, as well as the reference to [RFC7942] and
    [github-dtn-bpsec-cose].]
+
 
 
 
@@ -1377,6 +1377,9 @@ Internet-Draft               DTN BPSec COSE                   March 2021
               IANA, "CBOR Object Signing and Encryption (COSE)",
               <https://www.iana.org/assignments/cose/>.
 
+   [IANA-SMI] IANA, "Structure of Management Information (SMI) Numbers",
+              <https://www.iana.org/assignments/smi-numbers/>.
+
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
               DOI 10.17487/RFC2119, March 1997,
@@ -1391,9 +1394,6 @@ Internet-Draft               DTN BPSec COSE                   March 2021
    [RFC6125]  Saint-Andre, P. and J. Hodges, "Representation and
               Verification of Domain-Based Application Service Identity
               within Internet Public Key Infrastructure Using X.509
-              (PKIX) Certificates in the Context of Transport Layer
-              Security (TLS)", RFC 6125, DOI 10.17487/RFC6125, March
-              2011, <https://www.rfc-editor.org/info/rfc6125>.
 
 
 
@@ -1401,6 +1401,10 @@ Sipos                   Expires 18 September 2021              [Page 25]
 
 Internet-Draft               DTN BPSec COSE                   March 2021
 
+
+              (PKIX) Certificates in the Context of Transport Layer
+              Security (TLS)", RFC 6125, DOI 10.17487/RFC6125, March
+              2011, <https://www.rfc-editor.org/info/rfc6125>.
 
    [RFC6960]  Santesson, S., Myers, M., Ankney, R., Malpani, A.,
               Galperin, S., and C. Adams, "X.509 Internet Public Key
@@ -1446,10 +1450,6 @@ Internet-Draft               DTN BPSec COSE                   March 2021
    [I-D.ietf-dtn-tcpclv4]
               Sipos, B., Demmer, M., Ott, J., and S. Perreault, "Delay-
               Tolerant Networking TCP Convergence Layer Protocol Version
-              4", Work in Progress, Internet-Draft, draft-ietf-dtn-
-              tcpclv4-24, 7 December 2020,
-              <https://tools.ietf.org/html/draft-ietf-dtn-tcpclv4-24>.
-
 
 
 
@@ -1457,6 +1457,10 @@ Sipos                   Expires 18 September 2021              [Page 26]
 
 Internet-Draft               DTN BPSec COSE                   March 2021
 
+
+              4", Work in Progress, Internet-Draft, draft-ietf-dtn-
+              tcpclv4-24, 7 December 2020,
+              <https://tools.ietf.org/html/draft-ietf-dtn-tcpclv4-24>.
 
    [I-D.ietf-cose-x509]
               Schaad, J., "CBOR Object Signing and Encryption (COSE):
@@ -1501,10 +1505,6 @@ Internet-Draft               DTN BPSec COSE                   March 2021
               Sipos, B., "DTN Bundle Protocol Security COSE Security
               Context", <https://github.com/BSipos-RKF/dtn-bpsec-cose/>.
 
-   [github-dtn-demo-agent]
-              Sipos, B., "Demo Convergence Layer Agent",
-              <https://github.com/BSipos-RKF/dtn-demo-agent/>.
-
 
 
 
@@ -1513,6 +1513,10 @@ Sipos                   Expires 18 September 2021              [Page 27]
 
 Internet-Draft               DTN BPSec COSE                   March 2021
 
+
+   [github-dtn-demo-agent]
+              Sipos, B., "Demo Convergence Layer Agent",
+              <https://github.com/BSipos-RKF/dtn-demo-agent/>.
 
 Appendix A.  Examples
 
@@ -1555,13 +1559,9 @@ Appendix A.  Examples
    in Figure 9, which is encoded as the byte string for COSE
    external_aad in all of the examples.
 
-   [
-     [ 7, 0, 0, [ 1, "//dst/svc" ], [ 1, "//src/" ], [ 1, "//src/" ],
-       [ 0, 40 ], 1000000 ], / primary-ctx /
-     [ 7, 2, 0 ], / target-ctx /
-     null, / security-ctx /
-     '' / additional-protected /
-   ]
+
+
+
 
 
 
@@ -1569,6 +1569,14 @@ Sipos                   Expires 18 September 2021              [Page 28]
 
 Internet-Draft               DTN BPSec COSE                   March 2021
 
+
+   [
+     [ 7, 0, 0, [ 1, "//dst/svc" ], [ 1, "//src/" ], [ 1, "//src/" ],
+       [ 0, 40 ], 1000000 ], / primary-ctx /
+     [ 7, 2, 0 ], / target-ctx /
+     null, / security-ctx /
+     '' / additional-protected /
+   ]
 
            Figure 9: Example scope AAD-structure CBOR diagnostic
 
@@ -1610,14 +1618,6 @@ A.1.  Symmetric Key COSE_Mac0
 
                           Figure 11: Symmetric Key
 
-   The external_aad is the encoded data from Figure 9.  The payload is
-   the encoded target block-type-specific data from Figure 8.
-
-
-
-
-
-
 
 
 
@@ -1625,6 +1625,9 @@ Sipos                   Expires 18 September 2021              [Page 29]
 
 Internet-Draft               DTN BPSec COSE                   March 2021
 
+
+   The external_aad is the encoded data from Figure 9.  The payload is
+   the encoded target block-type-specific data from Figure 8.
 
    [
      "MAC0", / context /
@@ -1668,11 +1671,8 @@ Internet-Draft               DTN BPSec COSE                   March 2021
 
              Figure 13: Abstract Security Block CBOR diagnostic
 
-A.2.  EC Keypair COSE_Sign1
 
-   This is an example of a signature with a recipient having a P-256
-   curve EC keypair identified by a "kid".  The associated public key is
-   included as a security parameter.
+
 
 
 
@@ -1681,6 +1681,12 @@ Sipos                   Expires 18 September 2021              [Page 30]
 
 Internet-Draft               DTN BPSec COSE                   March 2021
 
+
+A.2.  EC Keypair COSE_Sign1
+
+   This is an example of a signature with a recipient having a P-256
+   curve EC keypair identified by a "kid".  The associated public key is
+   included as a security parameter.
 
    [
      { / signing private key /
@@ -1710,12 +1716,6 @@ Internet-Draft               DTN BPSec COSE                   March 2021
    ]
 
                   Figure 15: Sig_structure CBOR diagnostic
-
-
-
-
-
-
 
 
 

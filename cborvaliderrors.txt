@@ -99,7 +99,7 @@ INFO:root:Processing element text:
 	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
-  [ 7, 0, 0, [ 1, "//dst/svc" ], [ 1, "//src/" ], [ 1, "//src/" ], 
+  [ 7, 0, 0, [ 1, "//dst/svc" ], [ 1, "//src/" ], [ 1, "//src/" ],
     [ 0, 40 ], 1000000 ], / primary-ctx /
   [ 7, 2, 0 ], / target-ctx /
   null, / security-ctx /
