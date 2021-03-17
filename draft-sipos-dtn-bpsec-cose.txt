@@ -522,20 +522,20 @@ Internet-Draft               DTN BPSec COSE                   March 2021
 
    When used within a Block Integrity Block, the COSE context SHALL
    allow only the Result IDs from Table 3.  Each integrity result value
-   SHALL consist of the COSE message indicated by Table 3 in its decoded
-   form.
+   SHALL consist of the COSE message indicated by Table 3 in its
+   untagged encoded form.
 
-               +===========+==================+===========+
-               | Result ID | Result Structure | Reference |
-               +===========+==================+===========+
-               | 97        | COSE_Mac         | [RFC8152] |
-               +-----------+------------------+-----------+
-               | 17        | COSE_Mac0        | [RFC8152] |
-               +-----------+------------------+-----------+
-               | 98        | COSE_Sign        | [RFC8152] |
-               +-----------+------------------+-----------+
-               | 18        | COSE_Sign1       | [RFC8152] |
-               +-----------+------------------+-----------+
+              +===========+====================+===========+
+              | Result ID | Result Structure   | Reference |
+              +===========+====================+===========+
+              | 97        | encoded COSE_Mac   | [RFC8152] |
+              +-----------+--------------------+-----------+
+              | 17        | encoded COSE_Mac0  | [RFC8152] |
+              +-----------+--------------------+-----------+
+              | 98        | encoded COSE_Sign  | [RFC8152] |
+              +-----------+--------------------+-----------+
+              | 18        | encoded COSE_Sign1 | [RFC8152] |
+              +-----------+--------------------+-----------+
 
                      Table 3: COSE Integrity Results
 
@@ -567,17 +567,17 @@ Internet-Draft               DTN BPSec COSE                   March 2021
    When used within a Block Confidentiality Block, COSE context SHALL
    allow only the Result IDs from Table 4.  Each confidentiality result
    value SHALL consist of the COSE message indicated by Table 4 in its
-   decoded form.
+   untagged encoded form.
 
-               +===========+==================+===========+
-               | Result ID | Result Structure | Reference |
-               +===========+==================+===========+
-               | 96        | COSE_Encrypt     | [RFC8152] |
-               +-----------+------------------+-----------+
-               | 16        | COSE_Encrypt0    | [RFC8152] |
-               +-----------+------------------+-----------+
+             +===========+=======================+===========+
+             | Result ID | Result Structure      | Reference |
+             +===========+=======================+===========+
+             | 96        | encoded COSE_Encrypt  | [RFC8152] |
+             +-----------+-----------------------+-----------+
+             | 16        | encoded COSE_Encrypt0 | [RFC8152] |
+             +-----------+-----------------------+-----------+
 
-                  Table 4: COSE Confidentiality Results
+                   Table 4: COSE Confidentiality Results
 
    Only algorithms which support Authenticated Encryption with
    Authenticated Data (AEAD) SHALL be usable in the first (content)
