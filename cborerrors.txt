@@ -1,14 +1,4 @@
 INFO:root:Processing element text:
-''
-40  # bytes(0)
-    # ""
-INFO:root:Processing element text:
-{}
-a0 # map(0)
-INFO:root:Processing element text:
-0x7
-07 # unsigned(7)
-INFO:root:Processing element text:
 [
   7, / BP version /
   0, / flags /
@@ -449,19 +439,15 @@ INFO:root:Processing element text:
   "Encrypt", / context /
   h'a10103', / protected /
   h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
+72632f820018281a000f424083070200f640' / external_aad /
 ]
-*** can't parse [
-  "Encrypt", / context /
-  h'a10103', / protected /
-  h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
-]
-*** Expected one of [ \t\n\r], "/", '"', '{', '[', [0-9], [-+], '0', 'Infinity', '-Infinity', 'NaN', 'false', 'true', 'null', 'undefined', 'simple(', "h'", "'", "b64'", "<<", '(' at line 6, column 1 (byte 180) after [
-  "Encrypt", / context /
-  h'a10103', / protected /
-  h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
+83                                      # array(3)
+   67                                   # text(7)
+      456e6372797074                    # "Encrypt"
+   43                                   # bytes(3)
+      a10103                            # "\xA1\x01\x03"
+   58 32                                # bytes(50)
+      84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f7372632f820018281a000f424083070200f640 # "\x84\x88\a\x00\x00\x82\x01i//dst/svc\x82\x01f//src/\x82\x01f//src/\x82\x00\x18(\x1A\x00\x0FB@\x83\a\x02\x00\xF6@"
 INFO:root:Processing element text:
 [
   [2], / targets /
@@ -592,19 +578,15 @@ INFO:root:Processing element text:
   "Encrypt", / context /
   h'a10103', / protected /
   h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
+72632f820018281a000f424083070200f640' / external_aad /
 ]
-*** can't parse [
-  "Encrypt", / context /
-  h'a10103', / protected /
-  h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
-]
-*** Expected one of [ \t\n\r], "/", '"', '{', '[', [0-9], [-+], '0', 'Infinity', '-Infinity', 'NaN', 'false', 'true', 'null', 'undefined', 'simple(', "h'", "'", "b64'", "<<", '(' at line 6, column 1 (byte 180) after [
-  "Encrypt", / context /
-  h'a10103', / protected /
-  h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
+83                                      # array(3)
+   67                                   # text(7)
+      456e6372797074                    # "Encrypt"
+   43                                   # bytes(3)
+      a10103                            # "\xA1\x01\x03"
+   58 32                                # bytes(50)
+      84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f7372632f820018281a000f424083070200f640 # "\x84\x88\a\x00\x00\x82\x01i//dst/svc\x82\x01f//src/\x82\x01f//src/\x82\x00\x18(\x1A\x00\x0FB@\x83\a\x02\x00\xF6@"
 INFO:root:Processing element text:
 [
   [2], / targets /
@@ -751,19 +733,15 @@ INFO:root:Processing element text:
   "Encrypt", / context /
   h'a10103', / protected /
   h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
+72632f820018281a000f424083070200f640' / external_aad /
 ]
-*** can't parse [
-  "Encrypt", / context /
-  h'a10103', / protected /
-  h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
-]
-*** Expected one of [ \t\n\r], "/", '"', '{', '[', [0-9], [-+], '0', 'Infinity', '-Infinity', 'NaN', 'false', 'true', 'null', 'undefined', 'simple(', "h'", "'", "b64'", "<<", '(' at line 6, column 1 (byte 180) after [
-  "Encrypt", / context /
-  h'a10103', / protected /
-  h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
+83                                      # array(3)
+   67                                   # text(7)
+      456e6372797074                    # "Encrypt"
+   43                                   # bytes(3)
+      a10103                            # "\xA1\x01\x03"
+   58 32                                # bytes(50)
+      84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f7372632f820018281a000f424083070200f640 # "\x84\x88\a\x00\x00\x82\x01i//dst/svc\x82\x01f//src/\x82\x01f//src/\x82\x00\x18(\x1A\x00\x0FB@\x83\a\x02\x00\xF6@"
 INFO:root:Processing element text:
 [
   [2], / targets /

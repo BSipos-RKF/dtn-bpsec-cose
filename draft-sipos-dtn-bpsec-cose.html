@@ -13,12 +13,12 @@ A profile of COSE and for PKIX certificates are also defined for BPSec interoper
        
     " name="description">
 <meta content="xml2rfc 3.5.0" name="generator">
-<meta content="draft-bsipos-dtn-bpsec-cose-04" name="ietf.draft">
+<meta content="draft-bsipos-dtn-bpsec-cose-05" name="ietf.draft">
 <!-- Generator version information:
   xml2rfc 3.5.0
     Python 3.8.5
     appdirs 1.4.4
-    ConfigArgParse 1.3
+    ConfigArgParse 1.4
     google-i18n-address 2.4.0
     html5lib 1.1
     intervaltree 3.1.0
@@ -26,7 +26,7 @@ A profile of COSE and for PKIX certificates are also defined for BPSec interoper
     kitchen 1.2.6
     lxml 4.6.2
     pycountry 20.7.3
-    pyflakes 2.2.0
+    pyflakes 2.3.0
     PyYAML 5.3.1
     requests 2.22.0
     setuptools 45.2.0
@@ -1174,7 +1174,7 @@ dt+dd:empty::before{
 </tr></thead>
 <tfoot><tr>
 <td class="left">Sipos</td>
-<td class="center">Expires 14 September 2021</td>
+<td class="center">Expires 18 September 2021</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1184,15 +1184,15 @@ dt+dd:empty::before{
 <dt class="label-workgroup">Workgroup:</dt>
 <dd class="workgroup">Delay-Tolerant Networking</dd>
 <dt class="label-internet-draft">Internet-Draft:</dt>
-<dd class="internet-draft">draft-bsipos-dtn-bpsec-cose-04</dd>
+<dd class="internet-draft">draft-bsipos-dtn-bpsec-cose-05</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2021-03-13" class="published">13 March 2021</time>
+<time datetime="2021-03-17" class="published">17 March 2021</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2021-09-14">14 September 2021</time></dd>
+<dd class="expires"><time datetime="2021-09-18">18 September 2021</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -1228,7 +1228,7 @@ A profile of COSE and for PKIX certificates are also defined for BPSec interoper
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 14 September 2021.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 18 September 2021.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1269,175 +1269,175 @@ A profile of COSE and for PKIX certificates are also defined for BPSec interoper
               <li class="ulEmpty toc compact" id="section-toc.1-1.1.2.3">
                 <p id="section-toc.1-1.1.2.3.1" class="keepWithNext"><a href="#section-1.3" class="xref">1.3</a>.  <a href="#name-use-of-cddl" class="xref">Use of CDDL</a><a href="#section-toc.1-1.1.2.3.1" class="pilcrow">¶</a></p>
 </li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.1.2.4">
+                <p id="section-toc.1-1.1.2.4.1"><a href="#section-1.4" class="xref">1.4</a>.  <a href="#name-requirements-language" class="xref">Requirements Language</a><a href="#section-toc.1-1.1.2.4.1" class="pilcrow">¶</a></p>
+</li>
             </ul>
 </li>
           <li class="ulEmpty toc compact" id="section-toc.1-1.2">
-            <p id="section-toc.1-1.2.1"><a href="#section-2" class="xref">2</a>.  <a href="#name-requirements-language" class="xref">Requirements Language</a><a href="#section-toc.1-1.2.1" class="pilcrow">¶</a></p>
+            <p id="section-toc.1-1.2.1"><a href="#section-2" class="xref">2</a>.  <a href="#name-bpsec-security-context" class="xref">BPSec Security Context</a><a href="#section-toc.1-1.2.1" class="pilcrow">¶</a></p>
+<ul class="ulEmpty toc compact">
+<li class="ulEmpty toc compact" id="section-toc.1-1.2.2.1">
+                <p id="section-toc.1-1.2.2.1.1"><a href="#section-2.1" class="xref">2.1</a>.  <a href="#name-security-scope" class="xref">Security Scope</a><a href="#section-toc.1-1.2.2.1.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.2.2.2">
+                <p id="section-toc.1-1.2.2.2.1"><a href="#section-2.2" class="xref">2.2</a>.  <a href="#name-parameters" class="xref">Parameters</a><a href="#section-toc.1-1.2.2.2.1" class="pilcrow">¶</a></p>
+<ul class="ulEmpty toc compact">
+<li class="ulEmpty toc compact" id="section-toc.1-1.2.2.2.2.1">
+                    <p id="section-toc.1-1.2.2.2.2.1.1"><a href="#section-2.2.1" class="xref">2.2.1</a>.  <a href="#name-key-containers" class="xref">Key Containers</a><a href="#section-toc.1-1.2.2.2.2.1.1" class="pilcrow">¶</a></p>
+</li>
+                  <li class="ulEmpty toc compact" id="section-toc.1-1.2.2.2.2.2">
+                    <p id="section-toc.1-1.2.2.2.2.2.1"><a href="#section-2.2.2" class="xref">2.2.2</a>.  <a href="#name-additional-header-maps" class="xref">Additional Header Maps</a><a href="#section-toc.1-1.2.2.2.2.2.1" class="pilcrow">¶</a></p>
+</li>
+                  <li class="ulEmpty toc compact" id="section-toc.1-1.2.2.2.2.3">
+                    <p id="section-toc.1-1.2.2.2.2.3.1"><a href="#section-2.2.3" class="xref">2.2.3</a>.  <a href="#name-aad-scope" class="xref">AAD Scope</a><a href="#section-toc.1-1.2.2.2.2.3.1" class="pilcrow">¶</a></p>
+</li>
+                </ul>
+</li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.2.2.3">
+                <p id="section-toc.1-1.2.2.3.1"><a href="#section-2.3" class="xref">2.3</a>.  <a href="#name-results" class="xref">Results</a><a href="#section-toc.1-1.2.2.3.1" class="pilcrow">¶</a></p>
+<ul class="ulEmpty toc compact">
+<li class="ulEmpty toc compact" id="section-toc.1-1.2.2.3.2.1">
+                    <p id="section-toc.1-1.2.2.3.2.1.1"><a href="#section-2.3.1" class="xref">2.3.1</a>.  <a href="#name-integrity-messages" class="xref">Integrity Messages</a><a href="#section-toc.1-1.2.2.3.2.1.1" class="pilcrow">¶</a></p>
+</li>
+                  <li class="ulEmpty toc compact" id="section-toc.1-1.2.2.3.2.2">
+                    <p id="section-toc.1-1.2.2.3.2.2.1"><a href="#section-2.3.2" class="xref">2.3.2</a>.  <a href="#name-confidentiality-messages" class="xref">Confidentiality Messages</a><a href="#section-toc.1-1.2.2.3.2.2.1" class="pilcrow">¶</a></p>
+</li>
+                </ul>
+</li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.2.2.4">
+                <p id="section-toc.1-1.2.2.4.1"><a href="#section-2.4" class="xref">2.4</a>.  <a href="#name-key-considerations" class="xref">Key Considerations</a><a href="#section-toc.1-1.2.2.4.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.2.2.5">
+                <p id="section-toc.1-1.2.2.5.1"><a href="#section-2.5" class="xref">2.5</a>.  <a href="#name-canonicalization-algorithms" class="xref">Canonicalization Algorithms</a><a href="#section-toc.1-1.2.2.5.1" class="pilcrow">¶</a></p>
+<ul class="ulEmpty toc compact">
+<li class="ulEmpty toc compact" id="section-toc.1-1.2.2.5.2.1">
+                    <p id="section-toc.1-1.2.2.5.2.1.1"><a href="#section-2.5.1" class="xref">2.5.1</a>.  <a href="#name-generating-aad" class="xref">Generating AAD</a><a href="#section-toc.1-1.2.2.5.2.1.1" class="pilcrow">¶</a></p>
+</li>
+                  <li class="ulEmpty toc compact" id="section-toc.1-1.2.2.5.2.2">
+                    <p id="section-toc.1-1.2.2.5.2.2.1"><a href="#section-2.5.2" class="xref">2.5.2</a>.  <a href="#name-payload-data" class="xref">Payload Data</a><a href="#section-toc.1-1.2.2.5.2.2.1" class="pilcrow">¶</a></p>
+</li>
+                </ul>
+</li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.2.2.6">
+                <p id="section-toc.1-1.2.2.6.1"><a href="#section-2.6" class="xref">2.6</a>.  <a href="#name-processing" class="xref">Processing</a><a href="#section-toc.1-1.2.2.6.1" class="pilcrow">¶</a></p>
+<ul class="ulEmpty toc compact">
+<li class="ulEmpty toc compact" id="section-toc.1-1.2.2.6.2.1">
+                    <p id="section-toc.1-1.2.2.6.2.1.1"><a href="#section-2.6.1" class="xref">2.6.1</a>.  <a href="#name-node-authentication" class="xref">Node Authentication</a><a href="#section-toc.1-1.2.2.6.2.1.1" class="pilcrow">¶</a></p>
+</li>
+                  <li class="ulEmpty toc compact" id="section-toc.1-1.2.2.6.2.2">
+                    <p id="section-toc.1-1.2.2.6.2.2.1"><a href="#section-2.6.2" class="xref">2.6.2</a>.  <a href="#name-policy-recommendations" class="xref">Policy Recommendations</a><a href="#section-toc.1-1.2.2.6.2.2.1" class="pilcrow">¶</a></p>
+</li>
+                </ul>
+</li>
+            </ul>
 </li>
           <li class="ulEmpty toc compact" id="section-toc.1-1.3">
-            <p id="section-toc.1-1.3.1"><a href="#section-3" class="xref">3</a>.  <a href="#name-bpsec-security-context" class="xref">BPSec Security Context</a><a href="#section-toc.1-1.3.1" class="pilcrow">¶</a></p>
+            <p id="section-toc.1-1.3.1"><a href="#section-3" class="xref">3</a>.  <a href="#name-cose-profile-for-bpsec" class="xref">COSE Profile for BPSec</a><a href="#section-toc.1-1.3.1" class="pilcrow">¶</a></p>
 <ul class="ulEmpty toc compact">
 <li class="ulEmpty toc compact" id="section-toc.1-1.3.2.1">
-                <p id="section-toc.1-1.3.2.1.1"><a href="#section-3.1" class="xref">3.1</a>.  <a href="#name-security-scope" class="xref">Security Scope</a><a href="#section-toc.1-1.3.2.1.1" class="pilcrow">¶</a></p>
+                <p id="section-toc.1-1.3.2.1.1"><a href="#section-3.1" class="xref">3.1</a>.  <a href="#name-cose-messages" class="xref">COSE Messages</a><a href="#section-toc.1-1.3.2.1.1" class="pilcrow">¶</a></p>
 </li>
               <li class="ulEmpty toc compact" id="section-toc.1-1.3.2.2">
-                <p id="section-toc.1-1.3.2.2.1"><a href="#section-3.2" class="xref">3.2</a>.  <a href="#name-parameters" class="xref">Parameters</a><a href="#section-toc.1-1.3.2.2.1" class="pilcrow">¶</a></p>
-<ul class="ulEmpty toc compact">
-<li class="ulEmpty toc compact" id="section-toc.1-1.3.2.2.2.1">
-                    <p id="section-toc.1-1.3.2.2.2.1.1"><a href="#section-3.2.1" class="xref">3.2.1</a>.  <a href="#name-key-containers" class="xref">Key Containers</a><a href="#section-toc.1-1.3.2.2.2.1.1" class="pilcrow">¶</a></p>
-</li>
-                  <li class="ulEmpty toc compact" id="section-toc.1-1.3.2.2.2.2">
-                    <p id="section-toc.1-1.3.2.2.2.2.1"><a href="#section-3.2.2" class="xref">3.2.2</a>.  <a href="#name-additional-header-maps" class="xref">Additional Header Maps</a><a href="#section-toc.1-1.3.2.2.2.2.1" class="pilcrow">¶</a></p>
-</li>
-                  <li class="ulEmpty toc compact" id="section-toc.1-1.3.2.2.2.3">
-                    <p id="section-toc.1-1.3.2.2.2.3.1"><a href="#section-3.2.3" class="xref">3.2.3</a>.  <a href="#name-aad-scope" class="xref">AAD Scope</a><a href="#section-toc.1-1.3.2.2.2.3.1" class="pilcrow">¶</a></p>
-</li>
-                </ul>
+                <p id="section-toc.1-1.3.2.2.1"><a href="#section-3.2" class="xref">3.2</a>.  <a href="#name-interoperability-algorithms" class="xref">Interoperability Algorithms</a><a href="#section-toc.1-1.3.2.2.1" class="pilcrow">¶</a></p>
 </li>
               <li class="ulEmpty toc compact" id="section-toc.1-1.3.2.3">
-                <p id="section-toc.1-1.3.2.3.1"><a href="#section-3.3" class="xref">3.3</a>.  <a href="#name-results" class="xref">Results</a><a href="#section-toc.1-1.3.2.3.1" class="pilcrow">¶</a></p>
+                <p id="section-toc.1-1.3.2.3.1"><a href="#section-3.3" class="xref">3.3</a>.  <a href="#name-asymmetric-key-types-and-id" class="xref">Asymmetric Key Types and Identifiers</a><a href="#section-toc.1-1.3.2.3.1" class="pilcrow">¶</a></p>
 <ul class="ulEmpty toc compact">
 <li class="ulEmpty toc compact" id="section-toc.1-1.3.2.3.2.1">
-                    <p id="section-toc.1-1.3.2.3.2.1.1"><a href="#section-3.3.1" class="xref">3.3.1</a>.  <a href="#name-integrity-messages" class="xref">Integrity Messages</a><a href="#section-toc.1-1.3.2.3.2.1.1" class="pilcrow">¶</a></p>
-</li>
-                  <li class="ulEmpty toc compact" id="section-toc.1-1.3.2.3.2.2">
-                    <p id="section-toc.1-1.3.2.3.2.2.1"><a href="#section-3.3.2" class="xref">3.3.2</a>.  <a href="#name-confidentiality-messages" class="xref">Confidentiality Messages</a><a href="#section-toc.1-1.3.2.3.2.2.1" class="pilcrow">¶</a></p>
-</li>
-                </ul>
-</li>
-              <li class="ulEmpty toc compact" id="section-toc.1-1.3.2.4">
-                <p id="section-toc.1-1.3.2.4.1"><a href="#section-3.4" class="xref">3.4</a>.  <a href="#name-key-considerations" class="xref">Key Considerations</a><a href="#section-toc.1-1.3.2.4.1" class="pilcrow">¶</a></p>
-</li>
-              <li class="ulEmpty toc compact" id="section-toc.1-1.3.2.5">
-                <p id="section-toc.1-1.3.2.5.1"><a href="#section-3.5" class="xref">3.5</a>.  <a href="#name-canonicalization-algorithms" class="xref">Canonicalization Algorithms</a><a href="#section-toc.1-1.3.2.5.1" class="pilcrow">¶</a></p>
-<ul class="ulEmpty toc compact">
-<li class="ulEmpty toc compact" id="section-toc.1-1.3.2.5.2.1">
-                    <p id="section-toc.1-1.3.2.5.2.1.1"><a href="#section-3.5.1" class="xref">3.5.1</a>.  <a href="#name-generating-aad" class="xref">Generating AAD</a><a href="#section-toc.1-1.3.2.5.2.1.1" class="pilcrow">¶</a></p>
-</li>
-                  <li class="ulEmpty toc compact" id="section-toc.1-1.3.2.5.2.2">
-                    <p id="section-toc.1-1.3.2.5.2.2.1"><a href="#section-3.5.2" class="xref">3.5.2</a>.  <a href="#name-payload-data" class="xref">Payload Data</a><a href="#section-toc.1-1.3.2.5.2.2.1" class="pilcrow">¶</a></p>
-</li>
-                </ul>
-</li>
-              <li class="ulEmpty toc compact" id="section-toc.1-1.3.2.6">
-                <p id="section-toc.1-1.3.2.6.1"><a href="#section-3.6" class="xref">3.6</a>.  <a href="#name-processing" class="xref">Processing</a><a href="#section-toc.1-1.3.2.6.1" class="pilcrow">¶</a></p>
-<ul class="ulEmpty toc compact">
-<li class="ulEmpty toc compact" id="section-toc.1-1.3.2.6.2.1">
-                    <p id="section-toc.1-1.3.2.6.2.1.1"><a href="#section-3.6.1" class="xref">3.6.1</a>.  <a href="#name-node-authentication" class="xref">Node Authentication</a><a href="#section-toc.1-1.3.2.6.2.1.1" class="pilcrow">¶</a></p>
-</li>
-                  <li class="ulEmpty toc compact" id="section-toc.1-1.3.2.6.2.2">
-                    <p id="section-toc.1-1.3.2.6.2.2.1"><a href="#section-3.6.2" class="xref">3.6.2</a>.  <a href="#name-policy-recommendations" class="xref">Policy Recommendations</a><a href="#section-toc.1-1.3.2.6.2.2.1" class="pilcrow">¶</a></p>
+                    <p id="section-toc.1-1.3.2.3.2.1.1"><a href="#section-3.3.1" class="xref">3.3.1</a>.  <a href="#name-policy-recommendations-2" class="xref">Policy Recommendations</a><a href="#section-toc.1-1.3.2.3.2.1.1" class="pilcrow">¶</a></p>
 </li>
                 </ul>
 </li>
             </ul>
 </li>
           <li class="ulEmpty toc compact" id="section-toc.1-1.4">
-            <p id="section-toc.1-1.4.1"><a href="#section-4" class="xref">4</a>.  <a href="#name-cose-profile-for-bpsec" class="xref">COSE Profile for BPSec</a><a href="#section-toc.1-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-toc.1-1.4.1"><a href="#section-4" class="xref">4</a>.  <a href="#name-pkix-certificate-profile" class="xref">PKIX Certificate Profile</a><a href="#section-toc.1-1.4.1" class="pilcrow">¶</a></p>
 <ul class="ulEmpty toc compact">
 <li class="ulEmpty toc compact" id="section-toc.1-1.4.2.1">
-                <p id="section-toc.1-1.4.2.1.1"><a href="#section-4.1" class="xref">4.1</a>.  <a href="#name-cose-messages" class="xref">COSE Messages</a><a href="#section-toc.1-1.4.2.1.1" class="pilcrow">¶</a></p>
-</li>
-              <li class="ulEmpty toc compact" id="section-toc.1-1.4.2.2">
-                <p id="section-toc.1-1.4.2.2.1"><a href="#section-4.2" class="xref">4.2</a>.  <a href="#name-interoperability-algorithms" class="xref">Interoperability Algorithms</a><a href="#section-toc.1-1.4.2.2.1" class="pilcrow">¶</a></p>
-</li>
-              <li class="ulEmpty toc compact" id="section-toc.1-1.4.2.3">
-                <p id="section-toc.1-1.4.2.3.1"><a href="#section-4.3" class="xref">4.3</a>.  <a href="#name-asymmetric-key-types-and-id" class="xref">Asymmetric Key Types and Identifiers</a><a href="#section-toc.1-1.4.2.3.1" class="pilcrow">¶</a></p>
-<ul class="ulEmpty toc compact">
-<li class="ulEmpty toc compact" id="section-toc.1-1.4.2.3.2.1">
-                    <p id="section-toc.1-1.4.2.3.2.1.1"><a href="#section-4.3.1" class="xref">4.3.1</a>.  <a href="#name-pkix-certificates" class="xref">PKIX Certificates</a><a href="#section-toc.1-1.4.2.3.2.1.1" class="pilcrow">¶</a></p>
-</li>
-                </ul>
+                <p id="section-toc.1-1.4.2.1.1"><a href="#section-4.1" class="xref">4.1</a>.  <a href="#name-multiple-certificate-uses" class="xref">Multiple-Certificate Uses</a><a href="#section-toc.1-1.4.2.1.1" class="pilcrow">¶</a></p>
 </li>
             </ul>
 </li>
           <li class="ulEmpty toc compact" id="section-toc.1-1.5">
-            <p id="section-toc.1-1.5.1"><a href="#section-5" class="xref">5</a>.  <a href="#name-pkix-certificate-profile" class="xref">PKIX Certificate Profile</a><a href="#section-toc.1-1.5.1" class="pilcrow">¶</a></p>
+            <p id="section-toc.1-1.5.1"><a href="#section-5" class="xref">5</a>.  <a href="#name-implementation-status" class="xref">Implementation Status</a><a href="#section-toc.1-1.5.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="ulEmpty toc compact" id="section-toc.1-1.6">
+            <p id="section-toc.1-1.6.1"><a href="#section-6" class="xref">6</a>.  <a href="#name-security-considerations" class="xref">Security Considerations</a><a href="#section-toc.1-1.6.1" class="pilcrow">¶</a></p>
 <ul class="ulEmpty toc compact">
-<li class="ulEmpty toc compact" id="section-toc.1-1.5.2.1">
-                <p id="section-toc.1-1.5.2.1.1"><a href="#section-5.1" class="xref">5.1</a>.  <a href="#name-multiple-certificate-uses" class="xref">Multiple-Certificate Uses</a><a href="#section-toc.1-1.5.2.1.1" class="pilcrow">¶</a></p>
+<li class="ulEmpty toc compact" id="section-toc.1-1.6.2.1">
+                <p id="section-toc.1-1.6.2.1.1"><a href="#section-6.1" class="xref">6.1</a>.  <a href="#name-threat-bpsec-block-replay" class="xref">Threat: BPSec Block Replay</a><a href="#section-toc.1-1.6.2.1.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.6.2.2">
+                <p id="section-toc.1-1.6.2.2.1"><a href="#section-6.2" class="xref">6.2</a>.  <a href="#name-threat-untrusted-end-entity" class="xref">Threat: Untrusted End-Entity Certificate</a><a href="#section-toc.1-1.6.2.2.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.6.2.3">
+                <p id="section-toc.1-1.6.2.3.1"><a href="#section-6.3" class="xref">6.3</a>.  <a href="#name-threat-certificate-validati" class="xref">Threat: Certificate Validation Vulnerabilities</a><a href="#section-toc.1-1.6.2.3.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.6.2.4">
+                <p id="section-toc.1-1.6.2.4.1"><a href="#section-6.4" class="xref">6.4</a>.  <a href="#name-threat-bp-node-impersonatio" class="xref">Threat: BP Node Impersonation</a><a href="#section-toc.1-1.6.2.4.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.6.2.5">
+                <p id="section-toc.1-1.6.2.5.1"><a href="#section-6.5" class="xref">6.5</a>.  <a href="#name-threat-unidentifiable-key" class="xref">Threat: Unidentifiable Key</a><a href="#section-toc.1-1.6.2.5.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.6.2.6">
+                <p id="section-toc.1-1.6.2.6.1"><a href="#section-6.6" class="xref">6.6</a>.  <a href="#name-threat-non-trusted-public-k" class="xref">Threat: Non-Trusted Public Key</a><a href="#section-toc.1-1.6.2.6.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.6.2.7">
+                <p id="section-toc.1-1.6.2.7.1"><a href="#section-6.7" class="xref">6.7</a>.  <a href="#name-threat-passive-leak-of-key-" class="xref">Threat: Passive Leak of Key Material</a><a href="#section-toc.1-1.6.2.7.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.6.2.8">
+                <p id="section-toc.1-1.6.2.8.1"><a href="#section-6.8" class="xref">6.8</a>.  <a href="#name-threat-algorithm-vulnerabil" class="xref">Threat: Algorithm Vulnerabilities</a><a href="#section-toc.1-1.6.2.8.1" class="pilcrow">¶</a></p>
 </li>
             </ul>
 </li>
-          <li class="ulEmpty toc compact" id="section-toc.1-1.6">
-            <p id="section-toc.1-1.6.1"><a href="#section-6" class="xref">6</a>.  <a href="#name-implementation-status" class="xref">Implementation Status</a><a href="#section-toc.1-1.6.1" class="pilcrow">¶</a></p>
-</li>
           <li class="ulEmpty toc compact" id="section-toc.1-1.7">
-            <p id="section-toc.1-1.7.1"><a href="#section-7" class="xref">7</a>.  <a href="#name-security-considerations" class="xref">Security Considerations</a><a href="#section-toc.1-1.7.1" class="pilcrow">¶</a></p>
+            <p id="section-toc.1-1.7.1"><a href="#section-7" class="xref">7</a>.  <a href="#name-iana-considerations" class="xref">IANA Considerations</a><a href="#section-toc.1-1.7.1" class="pilcrow">¶</a></p>
 <ul class="ulEmpty toc compact">
 <li class="ulEmpty toc compact" id="section-toc.1-1.7.2.1">
-                <p id="section-toc.1-1.7.2.1.1"><a href="#section-7.1" class="xref">7.1</a>.  <a href="#name-threat-bpsec-block-replay" class="xref">Threat: BPSec Block Replay</a><a href="#section-toc.1-1.7.2.1.1" class="pilcrow">¶</a></p>
-</li>
-              <li class="ulEmpty toc compact" id="section-toc.1-1.7.2.2">
-                <p id="section-toc.1-1.7.2.2.1"><a href="#section-7.2" class="xref">7.2</a>.  <a href="#name-threat-untrusted-end-entity" class="xref">Threat: Untrusted End-Entity Certificate</a><a href="#section-toc.1-1.7.2.2.1" class="pilcrow">¶</a></p>
-</li>
-              <li class="ulEmpty toc compact" id="section-toc.1-1.7.2.3">
-                <p id="section-toc.1-1.7.2.3.1"><a href="#section-7.3" class="xref">7.3</a>.  <a href="#name-threat-certificate-validati" class="xref">Threat: Certificate Validation Vulnerabilities</a><a href="#section-toc.1-1.7.2.3.1" class="pilcrow">¶</a></p>
-</li>
-              <li class="ulEmpty toc compact" id="section-toc.1-1.7.2.4">
-                <p id="section-toc.1-1.7.2.4.1"><a href="#section-7.4" class="xref">7.4</a>.  <a href="#name-threat-bp-node-impersonatio" class="xref">Threat: BP Node Impersonation</a><a href="#section-toc.1-1.7.2.4.1" class="pilcrow">¶</a></p>
-</li>
-              <li class="ulEmpty toc compact" id="section-toc.1-1.7.2.5">
-                <p id="section-toc.1-1.7.2.5.1"><a href="#section-7.5" class="xref">7.5</a>.  <a href="#name-threat-unidentifiable-key" class="xref">Threat: Unidentifiable Key</a><a href="#section-toc.1-1.7.2.5.1" class="pilcrow">¶</a></p>
-</li>
-              <li class="ulEmpty toc compact" id="section-toc.1-1.7.2.6">
-                <p id="section-toc.1-1.7.2.6.1"><a href="#section-7.6" class="xref">7.6</a>.  <a href="#name-threat-non-trusted-public-k" class="xref">Threat: Non-Trusted Public Key</a><a href="#section-toc.1-1.7.2.6.1" class="pilcrow">¶</a></p>
-</li>
-              <li class="ulEmpty toc compact" id="section-toc.1-1.7.2.7">
-                <p id="section-toc.1-1.7.2.7.1"><a href="#section-7.7" class="xref">7.7</a>.  <a href="#name-threat-passive-leak-of-key-" class="xref">Threat: Passive Leak of Key Material</a><a href="#section-toc.1-1.7.2.7.1" class="pilcrow">¶</a></p>
-</li>
-              <li class="ulEmpty toc compact" id="section-toc.1-1.7.2.8">
-                <p id="section-toc.1-1.7.2.8.1"><a href="#section-7.8" class="xref">7.8</a>.  <a href="#name-threat-algorithm-vulnerabil" class="xref">Threat: Algorithm Vulnerabilities</a><a href="#section-toc.1-1.7.2.8.1" class="pilcrow">¶</a></p>
+                <p id="section-toc.1-1.7.2.1.1"><a href="#section-7.1" class="xref">7.1</a>.  <a href="#name-bpsec-security-contexts" class="xref">BPSec Security Contexts</a><a href="#section-toc.1-1.7.2.1.1" class="pilcrow">¶</a></p>
 </li>
             </ul>
 </li>
           <li class="ulEmpty toc compact" id="section-toc.1-1.8">
-            <p id="section-toc.1-1.8.1"><a href="#section-8" class="xref">8</a>.  <a href="#name-iana-considerations" class="xref">IANA Considerations</a><a href="#section-toc.1-1.8.1" class="pilcrow">¶</a></p>
+            <p id="section-toc.1-1.8.1"><a href="#section-8" class="xref">8</a>.  <a href="#name-acknowledgments" class="xref">Acknowledgments</a><a href="#section-toc.1-1.8.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="ulEmpty toc compact" id="section-toc.1-1.9">
+            <p id="section-toc.1-1.9.1"><a href="#section-9" class="xref">9</a>.  <a href="#name-references" class="xref">References</a><a href="#section-toc.1-1.9.1" class="pilcrow">¶</a></p>
 <ul class="ulEmpty toc compact">
-<li class="ulEmpty toc compact" id="section-toc.1-1.8.2.1">
-                <p id="section-toc.1-1.8.2.1.1"><a href="#section-8.1" class="xref">8.1</a>.  <a href="#name-bpsec-security-contexts" class="xref">BPSec Security Contexts</a><a href="#section-toc.1-1.8.2.1.1" class="pilcrow">¶</a></p>
+<li class="ulEmpty toc compact" id="section-toc.1-1.9.2.1">
+                <p id="section-toc.1-1.9.2.1.1"><a href="#section-9.1" class="xref">9.1</a>.  <a href="#name-normative-references" class="xref">Normative References</a><a href="#section-toc.1-1.9.2.1.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.9.2.2">
+                <p id="section-toc.1-1.9.2.2.1"><a href="#section-9.2" class="xref">9.2</a>.  <a href="#name-informative-references" class="xref">Informative References</a><a href="#section-toc.1-1.9.2.2.1" class="pilcrow">¶</a></p>
 </li>
             </ul>
 </li>
-          <li class="ulEmpty toc compact" id="section-toc.1-1.9">
-            <p id="section-toc.1-1.9.1"><a href="#section-9" class="xref">9</a>.  <a href="#name-acknowledgments" class="xref">Acknowledgments</a><a href="#section-toc.1-1.9.1" class="pilcrow">¶</a></p>
-</li>
           <li class="ulEmpty toc compact" id="section-toc.1-1.10">
-            <p id="section-toc.1-1.10.1"><a href="#section-10" class="xref">10</a>. <a href="#name-references" class="xref">References</a><a href="#section-toc.1-1.10.1" class="pilcrow">¶</a></p>
+            <p id="section-toc.1-1.10.1"><a href="#section-appendix.a" class="xref">Appendix A</a>.  <a href="#name-examples" class="xref">Examples</a><a href="#section-toc.1-1.10.1" class="pilcrow">¶</a></p>
 <ul class="ulEmpty toc compact">
 <li class="ulEmpty toc compact" id="section-toc.1-1.10.2.1">
-                <p id="section-toc.1-1.10.2.1.1"><a href="#section-10.1" class="xref">10.1</a>.  <a href="#name-normative-references" class="xref">Normative References</a><a href="#section-toc.1-1.10.2.1.1" class="pilcrow">¶</a></p>
+                <p id="section-toc.1-1.10.2.1.1"><a href="#section-a.1" class="xref">A.1</a>.  <a href="#name-symmetric-key-cose_mac0" class="xref">Symmetric Key COSE_Mac0</a><a href="#section-toc.1-1.10.2.1.1" class="pilcrow">¶</a></p>
 </li>
               <li class="ulEmpty toc compact" id="section-toc.1-1.10.2.2">
-                <p id="section-toc.1-1.10.2.2.1"><a href="#section-10.2" class="xref">10.2</a>.  <a href="#name-informative-references" class="xref">Informative References</a><a href="#section-toc.1-1.10.2.2.1" class="pilcrow">¶</a></p>
+                <p id="section-toc.1-1.10.2.2.1"><a href="#section-a.2" class="xref">A.2</a>.  <a href="#name-ec-keypair-cose_sign1" class="xref">EC Keypair COSE_Sign1</a><a href="#section-toc.1-1.10.2.2.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.10.2.3">
+                <p id="section-toc.1-1.10.2.3.1"><a href="#section-a.3" class="xref">A.3</a>.  <a href="#name-rsa-keypair-cose_sign1" class="xref">RSA Keypair COSE_Sign1</a><a href="#section-toc.1-1.10.2.3.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.10.2.4">
+                <p id="section-toc.1-1.10.2.4.1"><a href="#section-a.4" class="xref">A.4</a>.  <a href="#name-symmetric-kek-cose_encrypt" class="xref">Symmetric KEK COSE_Encrypt</a><a href="#section-toc.1-1.10.2.4.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.10.2.5">
+                <p id="section-toc.1-1.10.2.5.1"><a href="#section-a.5" class="xref">A.5</a>.  <a href="#name-ec-keypair-cose_encrypt" class="xref">EC Keypair COSE_Encrypt</a><a href="#section-toc.1-1.10.2.5.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="ulEmpty toc compact" id="section-toc.1-1.10.2.6">
+                <p id="section-toc.1-1.10.2.6.1"><a href="#section-a.6" class="xref">A.6</a>.  <a href="#name-rsa-keypair-cose_encrypt" class="xref">RSA Keypair COSE_Encrypt</a><a href="#section-toc.1-1.10.2.6.1" class="pilcrow">¶</a></p>
 </li>
             </ul>
 </li>
           <li class="ulEmpty toc compact" id="section-toc.1-1.11">
-            <p id="section-toc.1-1.11.1"><a href="#section-appendix.a" class="xref">Appendix A</a>.  <a href="#name-examples" class="xref">Examples</a><a href="#section-toc.1-1.11.1" class="pilcrow">¶</a></p>
-<ul class="ulEmpty toc compact">
-<li class="ulEmpty toc compact" id="section-toc.1-1.11.2.1">
-                <p id="section-toc.1-1.11.2.1.1"><a href="#section-a.1" class="xref">A.1</a>.  <a href="#name-symmetric-key-cose_mac0" class="xref">Symmetric Key COSE_Mac0</a><a href="#section-toc.1-1.11.2.1.1" class="pilcrow">¶</a></p>
-</li>
-              <li class="ulEmpty toc compact" id="section-toc.1-1.11.2.2">
-                <p id="section-toc.1-1.11.2.2.1"><a href="#section-a.2" class="xref">A.2</a>.  <a href="#name-ec-keypair-cose_sign1" class="xref">EC Keypair COSE_Sign1</a><a href="#section-toc.1-1.11.2.2.1" class="pilcrow">¶</a></p>
-</li>
-              <li class="ulEmpty toc compact" id="section-toc.1-1.11.2.3">
-                <p id="section-toc.1-1.11.2.3.1"><a href="#section-a.3" class="xref">A.3</a>.  <a href="#name-rsa-keypair-cose_sign1" class="xref">RSA Keypair COSE_Sign1</a><a href="#section-toc.1-1.11.2.3.1" class="pilcrow">¶</a></p>
-</li>
-              <li class="ulEmpty toc compact" id="section-toc.1-1.11.2.4">
-                <p id="section-toc.1-1.11.2.4.1"><a href="#section-a.4" class="xref">A.4</a>.  <a href="#name-symmetric-kek-cose_encrypt" class="xref">Symmetric KEK COSE_Encrypt</a><a href="#section-toc.1-1.11.2.4.1" class="pilcrow">¶</a></p>
-</li>
-              <li class="ulEmpty toc compact" id="section-toc.1-1.11.2.5">
-                <p id="section-toc.1-1.11.2.5.1"><a href="#section-a.5" class="xref">A.5</a>.  <a href="#name-ec-keypair-cose_encrypt" class="xref">EC Keypair COSE_Encrypt</a><a href="#section-toc.1-1.11.2.5.1" class="pilcrow">¶</a></p>
-</li>
-              <li class="ulEmpty toc compact" id="section-toc.1-1.11.2.6">
-                <p id="section-toc.1-1.11.2.6.1"><a href="#section-a.6" class="xref">A.6</a>.  <a href="#name-rsa-keypair-cose_encrypt" class="xref">RSA Keypair COSE_Encrypt</a><a href="#section-toc.1-1.11.2.6.1" class="pilcrow">¶</a></p>
-</li>
-            </ul>
-</li>
-          <li class="ulEmpty toc compact" id="section-toc.1-1.12">
-            <p id="section-toc.1-1.12.1"><a href="#section-appendix.b" class="xref"></a><a href="#name-authors-address" class="xref">Author's Address</a><a href="#section-toc.1-1.12.1" class="pilcrow">¶</a></p>
+            <p id="section-toc.1-1.11.1"><a href="#section-appendix.b" class="xref"></a><a href="#name-authors-address" class="xref">Author's Address</a><a href="#section-toc.1-1.11.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
 </nav>
@@ -1452,8 +1452,8 @@ A profile of COSE and for PKIX certificates are also defined for BPSec interoper
 The Bundle Protocol Security (BPSec) Specification <span>[<a href="#I-D.ietf-dtn-bpsec" class="xref">I-D.ietf-dtn-bpsec</a>]</span> defines structure and encoding for Block Integrity Block (BIB) and Block Confidentiality Block (BCB) types but does not specify any security contexts to be used by either of the security block types.
 The CBOR Object Signing and Encryption (COSE) specification <span>[<a href="#RFC8152" class="xref">RFC8152</a>]</span> defines a structure, encoding, and algorithms to use for cryptographic signing and encryption.<a href="#section-1-1" class="pilcrow">¶</a></p>
 <p id="section-1-2">
-This document describes how to use the algorithms and encodings of COSE within BPSec blocks to apply those algorithms to Bundle security in <a href="#sec-bpsec-context" class="xref">Section 3</a>.
-A bare minimum of interoperability algorithms and algorithm parameters is specified by this document in <a href="#sec-COSE-profile" class="xref">Section 4</a>.
+This document describes how to use the algorithms and encodings of COSE within BPSec blocks to apply those algorithms to Bundle security in <a href="#sec-bpsec-context" class="xref">Section 2</a>.
+A bare minimum of interoperability algorithms and algorithm parameters is specified by this document in <a href="#sec-COSE-profile" class="xref">Section 3</a>.
 The focus of the recommended algorithms is to allow BPSec to be used in a Public Key Infrastructure (PKI) as described in <a href="#sec-pkix-env" class="xref">Section 1.2</a>.<a href="#section-1-2" class="pilcrow">¶</a></p>
 <p id="section-1-3">
 Examples of specific uses are provided in <a href="#sec-examples" class="xref">Appendix A</a> to aid in implementation support of the interoperability algorithms.<a href="#section-1-3" class="pilcrow">¶</a></p>
@@ -1486,7 +1486,7 @@ Many header parameters used by COSE (e.g., key identifiers) depend on the networ
 This specification gives requirements about how to use PKIX certificates issued by a Certificate Authority (CA), but does not define any mechanisms for how those certificates come to be.<a href="#section-1.2-1" class="pilcrow">¶</a></p>
 <p id="section-1.2-2">
 To support the PKIX uses defined in this document, the CA(s) issuing certificates for BP nodes are aware of the end use of the certificate, have a mechanism for verifying ownership of a Node ID, and are issuing certificates directly for that Node ID.
-BPSec security acceptors authenticate the Node ID of security sources when verifying integrity (see <a href="#sec-context-auth" class="xref">Section 3.6.1</a>) using a public key provided by a PKIX certificate (see <a href="#sec-pkix-certs" class="xref">Section 4.3.1</a>) following the certificate profile of <a href="#sec-pkix-profile" class="xref">Section 5</a>.<a href="#section-1.2-2" class="pilcrow">¶</a></p>
+BPSec security acceptors authenticate the Node ID of security sources when verifying integrity (see <a href="#sec-context-auth" class="xref">Section 2.6.1</a>) using a public key provided by a PKIX certificate (see <a href="#sec-context-auth" class="xref">Section 2.6.1</a>) following the certificate profile of <a href="#sec-pkix-profile" class="xref">Section 4</a>.<a href="#section-1.2-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <section id="section-1.3">
@@ -1509,30 +1509,30 @@ start = bpsec-cose-asb / AAD-structure /
 </pre><a href="#section-1.3-4" class="pilcrow">¶</a>
 </div>
 </section>
+<section id="section-1.4">
+        <h3 id="name-requirements-language">
+<a href="#section-1.4" class="section-number selfRef">1.4. </a><a href="#name-requirements-language" class="section-name selfRef">Requirements Language</a>
+        </h3>
+<p id="section-1.4-1">
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in BCP 14 <span>[<a href="#RFC2119" class="xref">RFC2119</a>]</span> <span>[<a href="#RFC8174" class="xref">RFC8174</a>]</span> when, and only when, they appear in all capitals, as shown here.<a href="#section-1.4-1" class="pilcrow">¶</a></p>
+</section>
 </section>
 </div>
+<div id="sec-bpsec-context">
 <section id="section-2">
-      <h2 id="name-requirements-language">
-<a href="#section-2" class="section-number selfRef">2. </a><a href="#name-requirements-language" class="section-name selfRef">Requirements Language</a>
+      <h2 id="name-bpsec-security-context">
+<a href="#section-2" class="section-number selfRef">2. </a><a href="#name-bpsec-security-context" class="section-name selfRef">BPSec Security Context</a>
       </h2>
 <p id="section-2-1">
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in BCP 14 <span>[<a href="#RFC2119" class="xref">RFC2119</a>]</span> <span>[<a href="#RFC8174" class="xref">RFC8174</a>]</span> when, and only when, they appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶</a></p>
-</section>
-<div id="sec-bpsec-context">
-<section id="section-3">
-      <h2 id="name-bpsec-security-context">
-<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-bpsec-security-context" class="section-name selfRef">BPSec Security Context</a>
-      </h2>
-<p id="section-3-1">
 This document specifies a single security context for use in both BPSec integrity and confidentiality blocks.
-This is done to save code points allocated to this specification and to simplify the encoding of COSE-in-BPSec; the BPSec block type uniquely defines the acceptable parameters and COSE messages which can be present.<a href="#section-3-1" class="pilcrow">¶</a></p>
-<p id="section-3-2">
-The COSE security context SHALL have the Security Context ID specified in <a href="#sec-iana-bpsec-ctx" class="xref">Section 8.1</a>.<a href="#section-3-2" class="pilcrow">¶</a></p>
-<p id="section-3-3">
-Both types of security block can use the same parameters, defined in <a href="#sec-ASB-parameters" class="xref">Section 3.2</a>, to carry public key-related information and each type of security block allows specific COSE message results, defined in <a href="#sec-ASB-results" class="xref">Section 3.3</a>.<a href="#section-3-3" class="pilcrow">¶</a></p>
+This is done to save code points allocated to this specification and to simplify the encoding of COSE-in-BPSec; the BPSec block type uniquely defines the acceptable parameters and COSE messages which can be present.<a href="#section-2-1" class="pilcrow">¶</a></p>
+<p id="section-2-2">
+The COSE security context SHALL have the Security Context ID specified in <a href="#sec-iana-bpsec-ctx" class="xref">Section 7.1</a>.<a href="#section-2-2" class="pilcrow">¶</a></p>
+<p id="section-2-3">
+Both types of security block can use the same parameters, defined in <a href="#sec-ASB-parameters" class="xref">Section 2.2</a>, to carry public key-related information and each type of security block allows specific COSE message results, defined in <a href="#sec-ASB-results" class="xref">Section 2.3</a>.<a href="#section-2-3" class="pilcrow">¶</a></p>
 <span id="name-cose-context-declaration-cd"></span><div id="fig-context-CDDL">
 <figure id="figure-1">
-        <div id="section-3-4.1">
+        <div id="section-2-4.1">
 <pre class="sourcecode lang-cddl">
 ; Specialize the ASB for this context
 bpsec-cose-asb = bpsec-context-use&lt;
@@ -1547,47 +1547,47 @@ $ext-data-asb /= bpsec-cose-asb
 <a href="#name-cose-context-declaration-cd" class="selfRef">COSE context declaration CDDL</a>
         </figcaption></figure>
 </div>
-<section id="section-3.1">
+<section id="section-2.1">
         <h3 id="name-security-scope">
-<a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-security-scope" class="section-name selfRef">Security Scope</a>
+<a href="#section-2.1" class="section-number selfRef">2.1. </a><a href="#name-security-scope" class="section-name selfRef">Security Scope</a>
         </h3>
-<p id="section-3.1-1">
-The scope here refers to the set of information used by the security context to cryptographically bind with the plaintext data being integrity-protected or confididentiality-protected.
-This information is generically referred to as additional authenticated data (AAD), which is also the term used by COSE to describe the same data.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
-<p id="section-3.1-2">
-The sources for AAD within the COSE context are described below, controlled by the AAD Scope Flags parameter of <a href="#sec-ASB-param-AAD-scope" class="xref">Section 3.2.3</a>, and implemented as defined in <a href="#sec-context-AAD" class="xref">Section 3.5.1</a>.<a href="#section-3.1-2" class="pilcrow">¶</a></p>
-<span class="break"></span><dl class="dlParallel" id="section-3.1-3">
-          <dt id="section-3.1-3.1">Bundle Primary Block</dt>
-          <dd style="margin-left: 1.5em" id="section-3.1-3.2">
+<p id="section-2.1-1">
+The scope here refers to the set of information used by the security context to cryptographically bind with the plaintext data being integrity-protected or confidentiality-protected.
+This information is generically referred to as additional authenticated data (AAD), which is also the term used by COSE to describe the same data.<a href="#section-2.1-1" class="pilcrow">¶</a></p>
+<p id="section-2.1-2">
+The sources for AAD within the COSE context are described below, controlled by the AAD Scope Flags parameter of <a href="#sec-ASB-param-AAD-scope" class="xref">Section 2.2.3</a>, and implemented as defined in <a href="#sec-context-AAD" class="xref">Section 2.5.1</a>.<a href="#section-2.1-2" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-2.1-3">
+          <dt id="section-2.1-3.1">Bundle Primary Block</dt>
+          <dd style="margin-left: 1.5em" id="section-2.1-3.2">
 The primary block identifies a bundle and, once created, the contents of this block are immutable.
 Changes to the primary block associated with the security target indicate that the target is no longer in its original bundle.
-Including this data as part of AAD ensures that security target appears in the same bundle that the security source intended.<a href="#section-3.1-3.2" class="pilcrow">¶</a>
+Including this data as part of AAD ensures that security target appears in the same bundle that the security source intended.<a href="#section-2.1-3.2" class="pilcrow">¶</a>
 </dd>
           <dd class="break"></dd>
-<dt id="section-3.1-3.3">Target Block Metadata</dt>
-          <dd style="margin-left: 1.5em" id="section-3.1-3.4">
+<dt id="section-2.1-3.3">Target Block Metadata</dt>
+          <dd style="margin-left: 1.5em" id="section-2.1-3.4">
 When the target block is a canonical block (i.e., not the primary block) it contains its block-type-specific data, which is the subject of the security operation, but also metadata identifying the block.
 This metadata explicitly excludes the CRC type and value fields because the CRC is derived from the block-type-specific data.   
-Including this data as part of AAD ensures that the target data appears in the same block that the security source intended.<a href="#section-3.1-3.4" class="pilcrow">¶</a>
+Including this data as part of AAD ensures that the target data appears in the same block that the security source intended.<a href="#section-2.1-3.4" class="pilcrow">¶</a>
 </dd>
           <dd class="break"></dd>
-<dt id="section-3.1-3.5">Security Block Metadata</dt>
-          <dd style="margin-left: 1.5em" id="section-3.1-3.6">
+<dt id="section-2.1-3.5">Security Block Metadata</dt>
+          <dd style="margin-left: 1.5em" id="section-2.1-3.6">
 The BPSec block containing the security result for which the AAD is assembled also has metadata identifying the block.
-Including this data as part of AAD ensures that the security result appears in the same block that the security source intended.<a href="#section-3.1-3.6" class="pilcrow">¶</a>
+Including this data as part of AAD ensures that the security result appears in the same block that the security source intended.<a href="#section-2.1-3.6" class="pilcrow">¶</a>
 </dd>
         <dd class="break"></dd>
 </dl>
 </section>
 <div id="sec-ASB-parameters">
-<section id="section-3.2">
+<section id="section-2.2">
         <h3 id="name-parameters">
-<a href="#section-3.2" class="section-number selfRef">3.2. </a><a href="#name-parameters" class="section-name selfRef">Parameters</a>
+<a href="#section-2.2" class="section-number selfRef">2.2. </a><a href="#name-parameters" class="section-name selfRef">Parameters</a>
         </h3>
-<p id="section-3.2-1">
+<p id="section-2.2-1">
 Each COSE context parameter value SHALL consist of the COSE structure indicated by <a href="#tab-ASB-parameters" class="xref">Table 1</a> in its decoded (CBOR item) form.
 Each security block MAY contain any number of each parameter type.
-When a parameter is not present, the security acceptor SHALL use the Default Value of <a href="#tab-ASB-parameters" class="xref">Table 1</a>.<a href="#section-3.2-1" class="pilcrow">¶</a></p>
+When a parameter is not present, the security acceptor SHALL use the Default Value of <a href="#tab-ASB-parameters" class="xref">Table 1</a>.<a href="#section-2.2-1" class="pilcrow">¶</a></p>
 <span id="name-cose-security-parameters"></span><div id="tab-ASB-parameters">
 <table class="center" id="table-1">
           <caption>
@@ -1623,57 +1623,57 @@ When a parameter is not present, the security acceptor SHALL use the Default Val
               <td class="text-left" rowspan="1" colspan="1">3</td>
               <td class="text-left" rowspan="1" colspan="1">additional-protected</td>
               <td class="text-left" rowspan="1" colspan="1">
-                <a href="#sec-ASB-param-additional" class="xref">Section 3.2.2</a> of this document</td>
+                <a href="#sec-ASB-param-additional" class="xref">Section 2.2.2</a> of this document</td>
               <td class="text-left" rowspan="1" colspan="1">
-                <div id="section-3.2-2.2.3.4.1">
-<pre class="sourcecode lang-cbor">''</pre><a href="#section-3.2-2.2.3.4.1" class="pilcrow">¶</a>
+                <div id="section-2.2-2.2.3.4.1">
+<pre class="sourcecode">''</pre><a href="#section-2.2-2.2.3.4.1" class="pilcrow">¶</a>
 </div>
-<p id="section-3.2-2.2.3.4.2">(empty bstr)<a href="#section-3.2-2.2.3.4.2" class="pilcrow">¶</a></p>
+<p id="section-2.2-2.2.3.4.2">(empty bstr)<a href="#section-2.2-2.2.3.4.2" class="pilcrow">¶</a></p>
 </td>
             </tr>
             <tr>
               <td class="text-left" rowspan="1" colspan="1">4</td>
               <td class="text-left" rowspan="1" colspan="1">additional-unprotected</td>
               <td class="text-left" rowspan="1" colspan="1">
-                <a href="#sec-ASB-param-additional" class="xref">Section 3.2.2</a> of this document</td>
+                <a href="#sec-ASB-param-additional" class="xref">Section 2.2.2</a> of this document</td>
               <td class="text-left" rowspan="1" colspan="1">
-                <div id="section-3.2-2.2.4.4.1">
-<pre class="sourcecode lang-cbor">{}</pre><a href="#section-3.2-2.2.4.4.1" class="pilcrow">¶</a>
+                <div id="section-2.2-2.2.4.4.1">
+<pre class="sourcecode">{}</pre><a href="#section-2.2-2.2.4.4.1" class="pilcrow">¶</a>
 </div>
-<p id="section-3.2-2.2.4.4.2">(empty map)<a href="#section-3.2-2.2.4.4.2" class="pilcrow">¶</a></p>
+<p id="section-2.2-2.2.4.4.2">(empty map)<a href="#section-2.2-2.2.4.4.2" class="pilcrow">¶</a></p>
 </td>
             </tr>
             <tr>
               <td class="text-left" rowspan="1" colspan="1">5</td>
               <td class="text-left" rowspan="1" colspan="1">AAD_Scope</td>
               <td class="text-left" rowspan="1" colspan="1">
-                <a href="#sec-ASB-param-AAD-scope" class="xref">Section 3.2.3</a> of this document</td>
+                <a href="#sec-ASB-param-AAD-scope" class="xref">Section 2.2.3</a> of this document</td>
               <td class="text-left" rowspan="1" colspan="1">
-                <div id="section-3.2-2.2.5.4.1">
-<pre class="sourcecode lang-cbor">0x7</pre><a href="#section-3.2-2.2.5.4.1" class="pilcrow">¶</a>
+                <div id="section-2.2-2.2.5.4.1">
+<pre class="sourcecode">0x7</pre><a href="#section-2.2-2.2.5.4.1" class="pilcrow">¶</a>
 </div>
-<p id="section-3.2-2.2.5.4.2">(all AAD contexts)<a href="#section-3.2-2.2.5.4.2" class="pilcrow">¶</a></p>
+<p id="section-2.2-2.2.5.4.2">(all AAD contexts)<a href="#section-2.2-2.2.5.4.2" class="pilcrow">¶</a></p>
 </td>
             </tr>
           </tbody>
         </table>
 </div>
 <div id="sec-ASB-param-keys">
-<section id="section-3.2.1">
+<section id="section-2.2.1">
           <h4 id="name-key-containers">
-<a href="#section-3.2.1" class="section-number selfRef">3.2.1. </a><a href="#name-key-containers" class="section-name selfRef">Key Containers</a>
+<a href="#section-2.2.1" class="section-number selfRef">2.2.1. </a><a href="#name-key-containers" class="section-name selfRef">Key Containers</a>
           </h4>
-<p id="section-3.2.1-1">
-Implementations capable of handling asymmetric-keyed algorithms SHOULD support the public key handling COSE_Key and COSE_KeySet parameters.<a href="#section-3.2.1-1" class="pilcrow">¶</a></p>
-<p id="section-3.2.1-2">
+<p id="section-2.2.1-1">
+Implementations capable of handling asymmetric-keyed algorithms SHOULD support the public key handling COSE_Key and COSE_KeySet parameters.<a href="#section-2.2.1-1" class="pilcrow">¶</a></p>
+<p id="section-2.2.1-2">
 No more than one total COSE_Key or COSE_KeySet parameter SHALL be present in a single security block.
-Security acceptors are sill required to aggregate multiple parameters, if present, in <a href="#sec-asym-keys" class="xref">Section 4.3</a>.<a href="#section-3.2.1-2" class="pilcrow">¶</a></p>
-<p id="section-3.2.1-3">
+Security acceptors are sill required to aggregate multiple parameters, if present, in <a href="#sec-asym-keys" class="xref">Section 3.3</a>.<a href="#section-2.2.1-2" class="pilcrow">¶</a></p>
+<p id="section-2.2.1-3">
 Key container parameters SHALL NOT contain any private key material.
-The security parameters are all stored in the bundle as plaintext and are visible to any bundle handlers.<a href="#section-3.2.1-3" class="pilcrow">¶</a></p>
+The security parameters are all stored in the bundle as plaintext and are visible to any bundle handlers.<a href="#section-2.2.1-3" class="pilcrow">¶</a></p>
 <span id="name-key-containers-cddl"></span><div id="fig-param-keys-cddl">
 <figure id="figure-2">
-            <div id="section-3.2.1-4.1">
+            <div id="section-2.2.1-4.1">
 <pre class="sourcecode lang-cddl">
 $bpsec-cose-param /= [1, COSE_Key]
 $bpsec-cose-param /= [2, COSE_KeySet]
@@ -1686,34 +1686,34 @@ $bpsec-cose-param /= [2, COSE_KeySet]
 </section>
 </div>
 <div id="sec-ASB-param-additional">
-<section id="section-3.2.2">
+<section id="section-2.2.2">
           <h4 id="name-additional-header-maps">
-<a href="#section-3.2.2" class="section-number selfRef">3.2.2. </a><a href="#name-additional-header-maps" class="section-name selfRef">Additional Header Maps</a>
+<a href="#section-2.2.2" class="section-number selfRef">2.2.2. </a><a href="#name-additional-header-maps" class="section-name selfRef">Additional Header Maps</a>
           </h4>
-<p id="section-3.2.2-1">
+<p id="section-2.2.2-1">
 The two parameters Additional Protected and Additional Unprotected allow de-duplicating header items which are common to all COSE results.
 Both additional header values contain a CBOR map which is to be merged with each of the result's unprotected headers.
-Although the additional header items are all treated as unprotected from the perspective of the COSE message, the additional protected map is included within the "external_aad" (see <a href="#sec-context-AAD" class="xref">Section 3.5.1</a>).
-The expected use of additional header map is to contain an "x5chain" or "x5bag" which applies to all results in the same security block.<a href="#section-3.2.2-1" class="pilcrow">¶</a></p>
-<p id="section-3.2.2-2">
+Although the additional header items are all treated as unprotected from the perspective of the COSE message, the additional protected map is included within the "external_aad" (see <a href="#sec-context-AAD" class="xref">Section 2.5.1</a>).
+The expected use of additional header map is to contain a certificate (chain) or identifier (see <a href="#sec-asym-keys" class="xref">Section 3.3</a>) which applies to all results in the same security block.<a href="#section-2.2.2-1" class="pilcrow">¶</a></p>
+<p id="section-2.2.2-2">
 Following the same pattern as COSE, when both additional header maps are present in a single security block they SHALL not contain any duplicated labels.
-Security acceptors SHALL treat a pair of additional header maps containing duplciated lablels as invalid.<a href="#section-3.2.2-2" class="pilcrow">¶</a></p>
-<p id="section-3.2.2-3">
+Security acceptors SHALL treat a pair of additional header maps containing duplicated labels as invalid.<a href="#section-2.2.2-2" class="pilcrow">¶</a></p>
+<p id="section-2.2.2-3">
 No more than one of each Additional Protected and Additional Unprotected parameter SHALL be present in a single security block.
 Security acceptors SHALL treat a security block with multiple instances of either additional header type as invalid.
-There is no well-defined behavior for a security acceptor to handle multiple Additional Protected parameters.<a href="#section-3.2.2-3" class="pilcrow">¶</a></p>
-<p id="section-3.2.2-4">
+There is no well-defined behavior for a security acceptor to handle multiple Additional Protected parameters.<a href="#section-2.2.2-3" class="pilcrow">¶</a></p>
+<p id="section-2.2.2-4">
 Security sources SHOULD NOT include an additional header parameter which represents an empty map.
-Security acceptors SHALL handle empty header map parameters, specifically the Additional Protected parameter because it is part of the external_aad.<a href="#section-3.2.2-4" class="pilcrow">¶</a></p>
-<p id="section-3.2.2-5">
+Security acceptors SHALL handle empty header map parameters, specifically the Additional Protected parameter because it is part of the external_aad.<a href="#section-2.2.2-4" class="pilcrow">¶</a></p>
+<p id="section-2.2.2-5">
 Security acceptors SHALL treat the aggregate of both additional header maps as being present in the "unprotected" header map of the COSE message of each result.
-If the same header label is present in a additional header map and a result message the item in the result message SHALL take precedence (i.e., the additional header items are added only if they are not already present in a result message).<a href="#section-3.2.2-5" class="pilcrow">¶</a></p>
-<p id="section-3.2.2-6">
+If the same header label is present in a additional header map and a result message the item in the result message SHALL take precedence (i.e., the additional header items are added only if they are not already present in a result message).<a href="#section-2.2.2-5" class="pilcrow">¶</a></p>
+<p id="section-2.2.2-6">
 Additional header maps SHALL NOT contain any private key material.
-The security parameters are all stored in the bundle as plaintext and are visible to any bundle handlers.<a href="#section-3.2.2-6" class="pilcrow">¶</a></p>
+The security parameters are all stored in the bundle as plaintext and are visible to any bundle handlers.<a href="#section-2.2.2-6" class="pilcrow">¶</a></p>
 <span id="name-additional-headers-cddl"></span><div id="fig-additional-cddl">
 <figure id="figure-3">
-            <div id="section-3.2.2-7.1">
+            <div id="section-2.2.2-7.1">
 <pre class="sourcecode lang-cddl">
 $bpsec-cose-param /= [3, additional-protected]
 additional-protected = empty_or_serialized_map
@@ -1729,18 +1729,18 @@ additional-unprotected = header_map
 </section>
 </div>
 <div id="sec-ASB-param-AAD-scope">
-<section id="section-3.2.3">
+<section id="section-2.2.3">
           <h4 id="name-aad-scope">
-<a href="#section-3.2.3" class="section-number selfRef">3.2.3. </a><a href="#name-aad-scope" class="section-name selfRef">AAD Scope</a>
+<a href="#section-2.2.3" class="section-number selfRef">2.2.3. </a><a href="#name-aad-scope" class="section-name selfRef">AAD Scope</a>
           </h4>
-<p id="section-3.2.3-1">
+<p id="section-2.2.3-1">
 The AAD Scope parameter controls what data is included in the AAD for both integrity and confidentiality operations.
 The AAD Scope parameter SHALL be encoded as a uint value with bit flags defined in <a href="#tab-AAD-scope-flags" class="xref">Table 2</a>.
 All reserved bits SHALL be set to zero (which will be elided by CBOR encoding) by security sources.
 All reserved bits SHALL be ignored by security acceptors.
-The default value for this parameter has all flags set, meaning the AAD includes all available context.<a href="#section-3.2.3-1" class="pilcrow">¶</a></p>
-<p id="section-3.2.3-2">
-A CDDL representation of this definition is included in <a href="#fig-AAD-scope-cddl" class="xref">Figure 4</a> for reference.<a href="#section-3.2.3-2" class="pilcrow">¶</a></p>
+The default value for this parameter has all flags set, meaning the AAD includes all available context.<a href="#section-2.2.3-1" class="pilcrow">¶</a></p>
+<p id="section-2.2.3-2">
+A CDDL representation of this definition is included in <a href="#fig-AAD-scope-cddl" class="xref">Figure 4</a> for reference.<a href="#section-2.2.3-2" class="pilcrow">¶</a></p>
 <span id="name-aad-scope-flags"></span><div id="tab-AAD-scope-flags">
 <table class="center" id="table-2">
             <caption>
@@ -1780,7 +1780,7 @@ A CDDL representation of this definition is included in <a href="#fig-AAD-scope-
 </div>
 <span id="name-aad-scope-cddl"></span><div id="fig-AAD-scope-cddl">
 <figure id="figure-4">
-            <div id="section-3.2.3-4.1">
+            <div id="section-2.2.3-4.1">
 <pre class="sourcecode lang-cddl">
 $bpsec-cose-param /= [5, AAD-scope]
 AAD-scope = uint .bits AAD-scope-flags
@@ -1800,25 +1800,25 @@ AAD-scope-flags = &amp;(
 </section>
 </div>
 <div id="sec-ASB-results">
-<section id="section-3.3">
+<section id="section-2.3">
         <h3 id="name-results">
-<a href="#section-3.3" class="section-number selfRef">3.3. </a><a href="#name-results" class="section-name selfRef">Results</a>
+<a href="#section-2.3" class="section-number selfRef">2.3. </a><a href="#name-results" class="section-name selfRef">Results</a>
         </h3>
-<p id="section-3.3-1">
-Although each COSE context result is a COSE message, the types of message allowed depend upon the security block type in which the result is present: only MAC or signature messages are allowed in a BIB and only encryption messages are allowed in a BCB.<a href="#section-3.3-1" class="pilcrow">¶</a></p>
-<p id="section-3.3-2">
+<p id="section-2.3-1">
+Although each COSE context result is a COSE message, the types of message allowed depend upon the security block type in which the result is present: only MAC or signature messages are allowed in a BIB and only encryption messages are allowed in a BCB.<a href="#section-2.3-1" class="pilcrow">¶</a></p>
+<p id="section-2.3-2">
 The code points for Result ID values are identical to the  existing COSE message-marking tags in <span><a href="https://rfc-editor.org/rfc/rfc8152#section-2" class="relref">Section 2</a> of [<a href="#RFC8152" class="xref">RFC8152</a>]</span>.
-This avoids the need for value-mapping between code points of the two registries.<a href="#section-3.3-2" class="pilcrow">¶</a></p>
-<p id="section-3.3-3">
+This avoids the need for value-mapping between code points of the two registries.<a href="#section-2.3-2" class="pilcrow">¶</a></p>
+<p id="section-2.3-3">
 When embedding COSE messages, the message CBOR structure SHALL be encoded as a byte string used as the result value.
 This allows a security acceptor to skip over unwanted results without needing to decode the result structure.
 When embedding COSE messages, the CBOR-tagged form SHALL NOT be used.
-The Result ID values already provide the same information as the COSE tags (using the same code points).<a href="#section-3.3-3" class="pilcrow">¶</a></p>
-<p id="section-3.3-4">
-These generic requirements are formalized in the CDDL fragment of <a href="#fig-results-CDDL" class="xref">Figure 5</a>.<a href="#section-3.3-4" class="pilcrow">¶</a></p>
+The Result ID values already provide the same information as the COSE tags (using the same code points).<a href="#section-2.3-3" class="pilcrow">¶</a></p>
+<p id="section-2.3-4">
+These generic requirements are formalized in the CDDL fragment of <a href="#fig-results-CDDL" class="xref">Figure 5</a>.<a href="#section-2.3-4" class="pilcrow">¶</a></p>
 <span id="name-cose-context-results-cddl"></span><div id="fig-results-CDDL">
 <figure id="figure-5">
-          <div id="section-3.3-5.1">
+          <div id="section-2.3-5.1">
 <pre class="sourcecode lang-cddl">
 $bpsec-cose-result /= [16, bstr .cbor COSE_Encrypt0]
 $bpsec-cose-result /= [17, bstr .cbor COSE_Mac0]
@@ -1833,13 +1833,13 @@ $bpsec-cose-result /= [98, bstr .cbor COSE_Sign]
           </figcaption></figure>
 </div>
 <div id="sec-ASB-results-BIB">
-<section id="section-3.3.1">
+<section id="section-2.3.1">
           <h4 id="name-integrity-messages">
-<a href="#section-3.3.1" class="section-number selfRef">3.3.1. </a><a href="#name-integrity-messages" class="section-name selfRef">Integrity Messages</a>
+<a href="#section-2.3.1" class="section-number selfRef">2.3.1. </a><a href="#name-integrity-messages" class="section-name selfRef">Integrity Messages</a>
           </h4>
-<p id="section-3.3.1-1">
+<p id="section-2.3.1-1">
 When used within a Block Integrity Block, the COSE context SHALL allow only the Result IDs from <a href="#tab-BIB-results" class="xref">Table 3</a>.
-Each integrity result value SHALL consist of the COSE message indicated by <a href="#tab-BIB-results" class="xref">Table 3</a> in its decoded form.<a href="#section-3.3.1-1" class="pilcrow">¶</a></p>
+Each integrity result value SHALL consist of the COSE message indicated by <a href="#tab-BIB-results" class="xref">Table 3</a> in its decoded form.<a href="#section-2.3.1-1" class="pilcrow">¶</a></p>
 <span id="name-cose-integrity-results"></span><div id="tab-BIB-results">
 <table class="center" id="table-3">
             <caption>
@@ -1885,23 +1885,23 @@ Each integrity result value SHALL consist of the COSE message indicated by <a hr
             </tbody>
           </table>
 </div>
-<p id="section-3.3.1-3">
+<p id="section-2.3.1-3">
 Each integrity result SHALL use the "detached" payload form with nil payload value.
 The integrity result for COSE_Mac and COSE_Mac0 messages are computed by the procedure in <span><a href="https://rfc-editor.org/rfc/rfc8152#section-6.3" class="relref">Section 6.3</a> of [<a href="#RFC8152" class="xref">RFC8152</a>]</span>.
-The integrity result for COSE_Sign and COSE_Sign1 messages are computed by the procedure in <span><a href="https://rfc-editor.org/rfc/rfc8152#section-4.4" class="relref">Section 4.4</a> of [<a href="#RFC8152" class="xref">RFC8152</a>]</span>.<a href="#section-3.3.1-3" class="pilcrow">¶</a></p>
-<p id="section-3.3.1-4">
-The COSE "protected attributes from the application" used for a signature or MAC result SHALL be the encoded data defined in <a href="#sec-context-AAD" class="xref">Section 3.5.1</a>.
-The COSE payload used for a signature or MAC result SHALL be either the block-type-specific data of the target, if the target is not the primary block, or an empty byte string if the target is the primary block.<a href="#section-3.3.1-4" class="pilcrow">¶</a></p>
+The integrity result for COSE_Sign and COSE_Sign1 messages are computed by the procedure in <span><a href="https://rfc-editor.org/rfc/rfc8152#section-4.4" class="relref">Section 4.4</a> of [<a href="#RFC8152" class="xref">RFC8152</a>]</span>.<a href="#section-2.3.1-3" class="pilcrow">¶</a></p>
+<p id="section-2.3.1-4">
+The COSE "protected attributes from the application" used for a signature or MAC result SHALL be the encoded data defined in <a href="#sec-context-AAD" class="xref">Section 2.5.1</a>.
+The COSE payload used for a signature or MAC result SHALL be either the block-type-specific data of the target, if the target is not the primary block, or an empty byte string if the target is the primary block.<a href="#section-2.3.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="sec-ASB-results-BCB">
-<section id="section-3.3.2">
+<section id="section-2.3.2">
           <h4 id="name-confidentiality-messages">
-<a href="#section-3.3.2" class="section-number selfRef">3.3.2. </a><a href="#name-confidentiality-messages" class="section-name selfRef">Confidentiality Messages</a>
+<a href="#section-2.3.2" class="section-number selfRef">2.3.2. </a><a href="#name-confidentiality-messages" class="section-name selfRef">Confidentiality Messages</a>
           </h4>
-<p id="section-3.3.2-1">
+<p id="section-2.3.2-1">
 When used within a Block Confidentiality Block, COSE context SHALL allow only the Result IDs from <a href="#tab-BCB-results" class="xref">Table 4</a>.
-Each confidentiality result value SHALL consist of the COSE message indicated by <a href="#tab-BCB-results" class="xref">Table 4</a> in its decoded form.<a href="#section-3.3.2-1" class="pilcrow">¶</a></p>
+Each confidentiality result value SHALL consist of the COSE message indicated by <a href="#tab-BCB-results" class="xref">Table 4</a> in its decoded form.<a href="#section-2.3.2-1" class="pilcrow">¶</a></p>
 <span id="name-cose-confidentiality-result"></span><div id="tab-BCB-results">
 <table class="center" id="table-4">
             <caption>
@@ -1933,60 +1933,60 @@ Each confidentiality result value SHALL consist of the COSE message indicated by
             </tbody>
           </table>
 </div>
-<p id="section-3.3.2-3">
+<p id="section-2.3.2-3">
 Only algorithms which support Authenticated Encryption with Authenticated Data (AEAD) SHALL be usable in the first (content) layer of a confidentiality result.
 Because COSE encryption with AEAD appends the authentication tag with the ciphertext, the size of the block-type-specific-data will grow after an encryption operation.
-Security acceptors MUST NOT assume that the size of the plaintext is the same as the size of the ciphertext.<a href="#section-3.3.2-3" class="pilcrow">¶</a></p>
-<p id="section-3.3.2-4">
+Security acceptors MUST NOT assume that the size of the plaintext is the same as the size of the ciphertext.<a href="#section-2.3.2-3" class="pilcrow">¶</a></p>
+<p id="section-2.3.2-4">
 Each confidentiality result SHALL use the "detached" payload form with nil payload value.
-The confidentiality result for COSE_Encrypt and COSE_Encrypt0 messages are computed by the procedure in <span><a href="https://rfc-editor.org/rfc/rfc8152#section-5.3" class="relref">Section 5.3</a> of [<a href="#RFC8152" class="xref">RFC8152</a>]</span>.<a href="#section-3.3.2-4" class="pilcrow">¶</a></p>
-<p id="section-3.3.2-5">
-The COSE "protected attributes from the application" used for an encryption result SHALL be the encoded data defined in <a href="#sec-context-AAD" class="xref">Section 3.5.1</a>.
+The confidentiality result for COSE_Encrypt and COSE_Encrypt0 messages are computed by the procedure in <span><a href="https://rfc-editor.org/rfc/rfc8152#section-5.3" class="relref">Section 5.3</a> of [<a href="#RFC8152" class="xref">RFC8152</a>]</span>.<a href="#section-2.3.2-4" class="pilcrow">¶</a></p>
+<p id="section-2.3.2-5">
+The COSE "protected attributes from the application" used for an encryption result SHALL be the encoded data defined in <a href="#sec-context-AAD" class="xref">Section 2.5.1</a>.
 The COSE payload used for an encryption result SHALL be the block-type-specific data of the target.
-Because confidentiality of the primary block is disallowed by BPSec, there is no logic here for handling a BCB with a target on the primary block.<a href="#section-3.3.2-5" class="pilcrow">¶</a></p>
+Because confidentiality of the primary block is disallowed by BPSec, there is no logic here for handling a BCB with a target on the primary block.<a href="#section-2.3.2-5" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
 </div>
-<section id="section-3.4">
+<section id="section-2.4">
         <h3 id="name-key-considerations">
-<a href="#section-3.4" class="section-number selfRef">3.4. </a><a href="#name-key-considerations" class="section-name selfRef">Key Considerations</a>
+<a href="#section-2.4" class="section-number selfRef">2.4. </a><a href="#name-key-considerations" class="section-name selfRef">Key Considerations</a>
         </h3>
-<p id="section-3.4-1">
-This specification does not impose any additional key requirements beyond those already specified for each COSE algorithim required in <a href="#sec-COSE-profile" class="xref">Section 4</a>.<a href="#section-3.4-1" class="pilcrow">¶</a></p>
+<p id="section-2.4-1">
+This specification does not impose any additional key requirements beyond those already specified for each COSE algorithm required in <a href="#sec-COSE-profile" class="xref">Section 3</a>.<a href="#section-2.4-1" class="pilcrow">¶</a></p>
 </section>
-<section id="section-3.5">
+<section id="section-2.5">
         <h3 id="name-canonicalization-algorithms">
-<a href="#section-3.5" class="section-number selfRef">3.5. </a><a href="#name-canonicalization-algorithms" class="section-name selfRef">Canonicalization Algorithms</a>
+<a href="#section-2.5" class="section-number selfRef">2.5. </a><a href="#name-canonicalization-algorithms" class="section-name selfRef">Canonicalization Algorithms</a>
         </h3>
-<p id="section-3.5-1">
-Generating or processing COSE messages for the COSE context follows the profile defined in <a href="#sec-COSE-profile" class="xref">Section 4</a> with the "protected attributes from the application" (i.e., the "external_aad" item) generated as defined in <a href="#sec-context-AAD" class="xref">Section 3.5.1</a>.<a href="#section-3.5-1" class="pilcrow">¶</a></p>
+<p id="section-2.5-1">
+Generating or processing COSE messages for the COSE context follows the profile defined in <a href="#sec-COSE-profile" class="xref">Section 3</a> with the "protected attributes from the application" (i.e., the "external_aad" item) generated as defined in <a href="#sec-context-AAD" class="xref">Section 2.5.1</a>.<a href="#section-2.5-1" class="pilcrow">¶</a></p>
 <div id="sec-context-AAD">
-<section id="section-3.5.1">
+<section id="section-2.5.1">
           <h4 id="name-generating-aad">
-<a href="#section-3.5.1" class="section-number selfRef">3.5.1. </a><a href="#name-generating-aad" class="section-name selfRef">Generating AAD</a>
+<a href="#section-2.5.1" class="section-number selfRef">2.5.1. </a><a href="#name-generating-aad" class="section-name selfRef">Generating AAD</a>
           </h4>
-<p id="section-3.5.1-1">
-The AAD used for both integrity and confidentiality messages SHALL be the determistically encoded form of a CBOR array containing the following:<a href="#section-3.5.1-1" class="pilcrow">¶</a></p>
-<ol start="1" type="1" class="normal type-1" id="section-3.5.1-2">
-            <li id="section-3.5.1-2.1">
-The first item SHALL be either: the CBOR array (unencoded) form of the primary block of the bundle if the AAD Scope has the has-primary-ctx flag set, otherwise the null value.<a href="#section-3.5.1-2.1" class="pilcrow">¶</a>
+<p id="section-2.5.1-1">
+The AAD used for both integrity and confidentiality messages SHALL be the deterministically encoded form of a CBOR array containing the following:<a href="#section-2.5.1-1" class="pilcrow">¶</a></p>
+<ol start="1" type="1" class="normal type-1" id="section-2.5.1-2">
+            <li id="section-2.5.1-2.1">
+The first item SHALL be either: the CBOR array (unencoded) form of the primary block of the bundle if the AAD Scope has the has-primary-ctx flag set, otherwise the null value.<a href="#section-2.5.1-2.1" class="pilcrow">¶</a>
 </li>
-            <li id="section-3.5.1-2.2">
-The second item SHALL be either: a CBOR array containing the first three fields of the target block (i.e., the block type code, block number, and control flags) if the AAD Scope has the has-target-ctx flag set, otherwise the null value.<a href="#section-3.5.1-2.2" class="pilcrow">¶</a>
+            <li id="section-2.5.1-2.2">
+The second item SHALL be either: a CBOR array containing the first three fields of the target block (i.e., the block type code, block number, and control flags) if the AAD Scope has the has-target-ctx flag set, otherwise the null value.<a href="#section-2.5.1-2.2" class="pilcrow">¶</a>
 </li>
-            <li id="section-3.5.1-2.3">
-The third item SHALL be either: a CBOR array containing the first three fields of the security block containing the result (i.e., the block type code, block number, and control flags) if the AAD Scope has the has-security-ctx flag set, otherwise the null value.<a href="#section-3.5.1-2.3" class="pilcrow">¶</a>
+            <li id="section-2.5.1-2.3">
+The third item SHALL be either: a CBOR array containing the first three fields of the security block containing the result (i.e., the block type code, block number, and control flags) if the AAD Scope has the has-security-ctx flag set, otherwise the null value.<a href="#section-2.5.1-2.3" class="pilcrow">¶</a>
 </li>
-            <li id="section-3.5.1-2.4">
-The fourth item SHALL be the Additional Protected header map, which is a bstr value and has a default value of the empty bstr.<a href="#section-3.5.1-2.4" class="pilcrow">¶</a>
+            <li id="section-2.5.1-2.4">
+The fourth item SHALL be the Additional Protected header map, which is a bstr value and has a default value of the empty bstr.<a href="#section-2.5.1-2.4" class="pilcrow">¶</a>
 </li>
           </ol>
-<p id="section-3.5.1-3">
-A CDDL representation of this data is shown below in <a href="#fig-AAD-CDDL" class="xref">Figure 6</a>.<a href="#section-3.5.1-3" class="pilcrow">¶</a></p>
+<p id="section-2.5.1-3">
+A CDDL representation of this data is shown below in <a href="#fig-AAD-CDDL" class="xref">Figure 6</a>.<a href="#section-2.5.1-3" class="pilcrow">¶</a></p>
 <span id="name-cose-context-aad-cddl"></span><div id="fig-AAD-CDDL">
 <figure id="figure-6">
-            <div id="section-3.5.1-4.1">
+            <div id="section-2.5.1-4.1">
 <pre class="sourcecode lang-cddl">
 AAD-structure = [
     ; non-null if has-primary-ctx is set
@@ -2012,132 +2012,135 @@ block-metadata = [
 </div>
 </section>
 </div>
-<section id="section-3.5.2">
+<section id="section-2.5.2">
           <h4 id="name-payload-data">
-<a href="#section-3.5.2" class="section-number selfRef">3.5.2. </a><a href="#name-payload-data" class="section-name selfRef">Payload Data</a>
+<a href="#section-2.5.2" class="section-number selfRef">2.5.2. </a><a href="#name-payload-data" class="section-name selfRef">Payload Data</a>
           </h4>
-<p id="section-3.5.2-1">
+<p id="section-2.5.2-1">
 When correlating between BPSec target block-type-specific-data and COSE plaintext or payload, any byte string SHALL be handled in its decoded (CBOR item) form.
 This means any CBOR header or tag in a source encoding are ignored for the purposes of security processing.
-This also means that if the source byte string was encoded in a non-conforming way, for example in indefinite-length form or with a non-minimum-size lengnth, the security processing always treats it in a determistically encoded CBOR form.<a href="#section-3.5.2-1" class="pilcrow">¶</a></p>
+This also means that if the source byte string was encoded in a non-conforming way, for example in indefinite-length form or with a non-minimum-size length, the security processing always treats it in a deterministically encoded CBOR form.<a href="#section-2.5.2-1" class="pilcrow">¶</a></p>
 </section>
 </section>
-<section id="section-3.6">
+<section id="section-2.6">
         <h3 id="name-processing">
-<a href="#section-3.6" class="section-number selfRef">3.6. </a><a href="#name-processing" class="section-name selfRef">Processing</a>
+<a href="#section-2.6" class="section-number selfRef">2.6. </a><a href="#name-processing" class="section-name selfRef">Processing</a>
         </h3>
-<p id="section-3.6-1">
-This section describes block-level requirements for handling COSE security data.<a href="#section-3.6-1" class="pilcrow">¶</a></p>
-<p id="section-3.6-2">
-Security results generated for BIB or BCB results SHALL conform to the COSE profile of <a href="#sec-COSE-profile" class="xref">Section 4</a>.
-Security acceptors SHOULD<a href="#section-3.6-2" class="pilcrow">¶</a></p>
+<p id="section-2.6-1">
+This section describes block-level requirements for handling COSE security data.<a href="#section-2.6-1" class="pilcrow">¶</a></p>
+<p id="section-2.6-2">
+Security results generated for BIB or BCB results SHALL conform to the COSE profile of <a href="#sec-COSE-profile" class="xref">Section 3</a>.
+Security acceptors SHOULD<a href="#section-2.6-2" class="pilcrow">¶</a></p>
 <div id="sec-context-auth">
-<section id="section-3.6.1">
+<section id="section-2.6.1">
           <h4 id="name-node-authentication">
-<a href="#section-3.6.1" class="section-number selfRef">3.6.1. </a><a href="#name-node-authentication" class="section-name selfRef">Node Authentication</a>
+<a href="#section-2.6.1" class="section-number selfRef">2.6.1. </a><a href="#name-node-authentication" class="section-name selfRef">Node Authentication</a>
           </h4>
-<p id="section-3.6.1-1">
-This section explains how the certificate profile of <a href="#sec-pkix-profile" class="xref">Section 5</a> is used by a security acceptor to both validate an end-entity certificate and to use that certificate to authenticate the security source for an integrity result.
+<p id="section-2.6.1-1">
+This section explains how the certificate profile of <a href="#sec-pkix-profile" class="xref">Section 4</a> is used by a security acceptor to both validate an end-entity certificate and to use that certificate to authenticate the security source for an integrity result.
 For a confidentiality result, some of the requirements in this section are implicit in an implementation using a private key associated with a certificate used by a result recipient.
-It is an implementation matter to ensure that a BP agent is configured to generate or receive results associated with valid certificates.<a href="#section-3.6.1-1" class="pilcrow">¶</a></p>
-<p id="section-3.6.1-2">
-A security source MAY prohibit generating a result (either integrity or confidentiality) for an end-entity certificate which is not considered valid according to <a href="#sec-context-auth-valid-cert" class="xref">Section 3.6.1.2</a>.
-Generating a result which is likely to be discarded is wasteful of bundle size and transport resources.<a href="#section-3.6.1-2" class="pilcrow">¶</a></p>
-<section id="section-3.6.1.1">
+It is an implementation matter to ensure that a BP agent is configured to generate or receive results associated with valid certificates.<a href="#section-2.6.1-1" class="pilcrow">¶</a></p>
+<p id="section-2.6.1-2">
+A security source MAY prohibit generating a result (either integrity or confidentiality) for an end-entity certificate which is not considered valid according to <a href="#sec-context-auth-valid-cert" class="xref">Section 2.6.1.2</a>.
+Generating a result which is likely to be discarded is wasteful of bundle size and transport resources.<a href="#section-2.6.1-2" class="pilcrow">¶</a></p>
+<section id="section-2.6.1.1">
             <h5 id="name-certificate-identification">
-<a href="#section-3.6.1.1" class="section-number selfRef">3.6.1.1. </a><a href="#name-certificate-identification" class="section-name selfRef">Certificate Identification</a>
+<a href="#section-2.6.1.1" class="section-number selfRef">2.6.1.1. </a><a href="#name-certificate-identification" class="section-name selfRef">Certificate Identification</a>
             </h5>
-<p id="section-3.6.1.1-1">
-Because of the standard policy of using separate certificates for transport, signing, and encryption (see <a href="#sec-pkix-multiple-certs" class="xref">Section 5.1</a>) a single Node ID is likely to be associated with mulitple certificates, and any or all of those certificates MAY be present within an "x5bag" in an Additional Protected parameter (see <a href="#sec-ASB-param-additional" class="xref">Section 3.2.2</a>).
-When present, a security acceptor SHALL use an "x5t" identifier from a COSE recipient to identify an end-entity certificate to use for result processing.
-Security acceptors SHALL NOT assume that a validated certificate containing a NODE-ID matching a security source is enough to associate a certificate with a COSE message or recipient.<a href="#section-3.6.1.1-1" class="pilcrow">¶</a></p>
+<p id="section-2.6.1.1-1">
+Because of the standard policy of using separate certificates for transport, signing, and encryption (see <a href="#sec-pkix-multiple-certs" class="xref">Section 4.1</a>) a single Node ID is likely to be associated with multiple certificates, and any or all of those certificates MAY be present within an "x5bag" in an Additional Protected parameter (see <a href="#sec-ASB-param-additional" class="xref">Section 2.2.2</a>).
+When present, a security acceptor SHALL use an "x5chain" or "x5t" to identify an end-entity certificate to use for result processing.
+Security acceptors SHALL NOT assume that a validated certificate containing a NODE-ID matching a security source is enough to associate a certificate with a COSE message or recipient (see <a href="#sec-asym-keys" class="xref">Section 3.3</a>).<a href="#section-2.6.1.1-1" class="pilcrow">¶</a></p>
 </section>
 <div id="sec-context-auth-valid-cert">
-<section id="section-3.6.1.2">
+<section id="section-2.6.1.2">
             <h5 id="name-certificate-validation">
-<a href="#section-3.6.1.2" class="section-number selfRef">3.6.1.2. </a><a href="#name-certificate-validation" class="section-name selfRef">Certificate Validation</a>
+<a href="#section-2.6.1.2" class="section-number selfRef">2.6.1.2. </a><a href="#name-certificate-validation" class="section-name selfRef">Certificate Validation</a>
             </h5>
-<p id="section-3.6.1.2-1">
-For each end-entity certificate referenced by a COSE context result, the security acceptor SHALL perform the certification path validation of <span><a href="https://rfc-editor.org/rfc/rfc5280#section-6" class="relref">Section 6</a> of [<a href="#RFC5280" class="xref">RFC5280</a>]</span> up to one of the acceptor's trusted CA certificates.
-When evaluating a certificate Validity period, the security acceptor SHALL use the bundle Creation Timestamp time (if not unknown) as the reference instead of the curent time.
-If enabled by local policy, the entity SHALL perform an OCSP check of each certificate providing OCSP authoritiy information in accordance with <span>[<a href="#RFC6960" class="xref">RFC6960</a>]</span>.
+<p id="section-2.6.1.2-1">
+For each end-entity certificate contained in or identified by by a COSE result, the security acceptor SHALL perform the certification path validation of <span><a href="https://rfc-editor.org/rfc/rfc5280#section-6" class="relref">Section 6</a> of [<a href="#RFC5280" class="xref">RFC5280</a>]</span> up to one of the acceptor's trusted CA certificates.
+When evaluating a certificate Validity period, the security acceptor SHALL use the bundle Creation Timestamp time (if not unknown) as the reference instead of the current time.
+If enabled by local policy, the entity SHALL perform an OCSP check of each certificate providing OCSP authority information in accordance with <span>[<a href="#RFC6960" class="xref">RFC6960</a>]</span>.
 If certificate validation fails or if security policy disallows a certificate for any reason, the acceptor SHALL treat the associated security result as failed.
-Leaving out part of the certification chain can cause the entity to fail to validate a certificate if the left-out certificates are unknown to the entity (see <a href="#sec-threat-untrust-cert" class="xref">Section 7.2</a>).<a href="#section-3.6.1.2-1" class="pilcrow">¶</a></p>
-<p id="section-3.6.1.2-2">
-For each end-entity certificate referenced by a COSE context result, the security acceptor SHALL apply security policy to the Key Usage extension (if present) and Extended Key Usage extension (if present) in accordance with <span><a href="https://rfc-editor.org/rfc/rfc5280#section-4.2.1.12" class="relref">Section 4.2.1.12</a> of [<a href="#RFC5280" class="xref">RFC5280</a>]</span> and the profile in <a href="#sec-pkix-profile" class="xref">Section 5</a>.<a href="#section-3.6.1.2-2" class="pilcrow">¶</a></p>
+Leaving out part of the certification chain can cause the entity to fail to validate a certificate if the left-out certificates are unknown to the entity (see <a href="#sec-threat-untrust-cert" class="xref">Section 6.2</a>).<a href="#section-2.6.1.2-1" class="pilcrow">¶</a></p>
+<p id="section-2.6.1.2-2">
+For each end-entity certificate contained in or identified by a COSE context result, the security acceptor SHALL apply security policy to the Key Usage extension (if present) and Extended Key Usage extension (if present) in accordance with <span><a href="https://rfc-editor.org/rfc/rfc5280#section-4.2.1.12" class="relref">Section 4.2.1.12</a> of [<a href="#RFC5280" class="xref">RFC5280</a>]</span> and the profile in <a href="#sec-pkix-profile" class="xref">Section 4</a>.<a href="#section-2.6.1.2-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="sec-context-auth-valid-nodeid">
-<section id="section-3.6.1.3">
+<section id="section-2.6.1.3">
             <h5 id="name-node-id-authentication">
-<a href="#section-3.6.1.3" class="section-number selfRef">3.6.1.3. </a><a href="#name-node-id-authentication" class="section-name selfRef">Node ID Authentication</a>
+<a href="#section-2.6.1.3" class="section-number selfRef">2.6.1.3. </a><a href="#name-node-id-authentication" class="section-name selfRef">Node ID Authentication</a>
             </h5>
-<p id="section-3.6.1.3-1">
+<p id="section-2.6.1.3-1">
 If required by security policy, for each end-entity certificate referenced by a COSE context integrity result the security acceptor SHALL validate the certificate NODE-ID in accordance with <span><a href="https://rfc-editor.org/rfc/rfc6125#section-6" class="relref">Section 6</a> of [<a href="#RFC6125" class="xref">RFC6125</a>]</span> using the NODE-ID reference identifier from the Security Source of the containing security block.
-If the NODE-ID validation result is Failure or if the result is Absent and security policy requires an authenticated Node ID, the security acceptor SHALL treat the result as failed.<a href="#section-3.6.1.3-1" class="pilcrow">¶</a></p>
+If the NODE-ID validation result is Failure or if the result is Absent and security policy requires an authenticated Node ID, the security acceptor SHALL treat the result as failed.<a href="#section-2.6.1.3-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
 </div>
 <div id="sec-context-auth-policy-rec">
-<section id="section-3.6.2">
+<section id="section-2.6.2">
           <h4 id="name-policy-recommendations">
-<a href="#section-3.6.2" class="section-number selfRef">3.6.2. </a><a href="#name-policy-recommendations" class="section-name selfRef">Policy Recommendations</a>
+<a href="#section-2.6.2" class="section-number selfRef">2.6.2. </a><a href="#name-policy-recommendations" class="section-name selfRef">Policy Recommendations</a>
           </h4>
-<p id="section-3.6.2-1">
+<p id="section-2.6.2-1">
 A RECOMMENDED security policy is to enable the use of OCSP checking when internet connectivity is present.
 A RECOMMENDED security policy is that if an Extended Key Usage is present that it needs to contain "id-kp-bundleSecurity" to be usable as an end-entity certificate for COSE security results.
-A RECOMMENDED security policy is to require a validated Node ID (of <a href="#sec-context-auth-valid-nodeid" class="xref">Section 3.6.1.3</a>) and to ignore any other identifiers in the end-entity certificate.<a href="#section-3.6.2-1" class="pilcrow">¶</a></p>
-<p id="section-3.6.2-2">
-This policy relies on and informs the certificate requirements in <a href="#sec-pkix-certs" class="xref">Section 4.3.1</a>.
-This policy assumes that a DTN-aware CA (see <a href="#sec-pkix-env" class="xref">Section 1.2</a>) will only issue a certificate for a Node ID when it has verified that the private key holder actually controls the DTN node; this is needed to avoid the threat identified in <a href="#sec-threat-node-impersonation" class="xref">Section 7.4</a>.
+A RECOMMENDED security policy is to require a validated Node ID (of <a href="#sec-context-auth-valid-nodeid" class="xref">Section 2.6.1.3</a>) and to ignore any other identifiers in the end-entity certificate.<a href="#section-2.6.2-1" class="pilcrow">¶</a></p>
+<p id="section-2.6.2-2">
+This policy relies on and informs the certificate requirements in <a href="#sec-asym-keys-policy-rec" class="xref">Section 3.3.1</a> and <a href="#sec-pkix-profile" class="xref">Section 4</a>.
+This policy assumes that a DTN-aware CA (see <a href="#sec-pkix-env" class="xref">Section 1.2</a>) will only issue a certificate for a Node ID when it has verified that the private key holder actually controls the DTN node; this is needed to avoid the threat identified in <a href="#sec-threat-node-impersonation" class="xref">Section 6.4</a>.
 This policy requires that a certificate contain a NODE-ID and allows the certificate to also contain network-level identifiers.
-A tailored policy on a more controlled network could relax the requirement on Node ID validation and/or Extended Key Usage presence.<a href="#section-3.6.2-2" class="pilcrow">¶</a></p>
+A tailored policy on a more controlled network could relax the requirement on Node ID validation and/or Extended Key Usage presence.<a href="#section-2.6.2-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
 </section>
 </div>
 <div id="sec-COSE-profile">
-<section id="section-4">
+<section id="section-3">
       <h2 id="name-cose-profile-for-bpsec">
-<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-cose-profile-for-bpsec" class="section-name selfRef">COSE Profile for BPSec</a>
+<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-cose-profile-for-bpsec" class="section-name selfRef">COSE Profile for BPSec</a>
       </h2>
-<p id="section-4-1">
-This section contains requirements which apply to the use of COSE within BPSec across any security context use.<a href="#section-4-1" class="pilcrow">¶</a></p>
+<p id="section-3-1">
+This section contains requirements which apply to the use of COSE within BPSec across any security context use.<a href="#section-3-1" class="pilcrow">¶</a></p>
 <div id="sec-COSE-messages">
-<section id="section-4.1">
+<section id="section-3.1">
         <h3 id="name-cose-messages">
-<a href="#section-4.1" class="section-number selfRef">4.1. </a><a href="#name-cose-messages" class="section-name selfRef">COSE Messages</a>
+<a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-cose-messages" class="section-name selfRef">COSE Messages</a>
         </h3>
-<p id="section-4.1-1">
+<p id="section-3.1-1">
 When generating a BPSec result, security sources SHALL use encode COSE labels with a uint value.
-When processing a BPSec result, security acceptors MAY handle COSE labels with with a tstr value.<a href="#section-4.1-1" class="pilcrow">¶</a></p>
-<p id="section-4.1-2">
+When processing a BPSec result, security acceptors MAY handle COSE labels with with a tstr value.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
+<p id="section-3.1-2">
 When used in a BPSec result, each COSE message SHALL contain an explicit algorithm identifier in the lower (content) layers.
 When available and not implied by the bundle source, a COSE message SHALL contain a key identifier in the highest (recipient) layer.
-See <a href="#sec-asym-keys" class="xref">Section 4.3</a> for specifics about asymmetric key identifiers.
+See <a href="#sec-asym-keys" class="xref">Section 3.3</a> for specifics about asymmetric key identifiers.
 When a key identifier is not available, BPSec acceptors SHALL use the Security Source (if available) and the Bundle Source to imply which keys can be used for security operations.
-Using implied keys has an interoperability risk, see <a href="#sec-threat-unident-key" class="xref">Section 7.5</a> for details.
-A BPSec security operation always occurs within the context of the immutable primary block with its parameters (specifically the Source Node ID) and the security block with its optional Security Source.<a href="#section-4.1-2" class="pilcrow">¶</a></p>
-<p id="section-4.1-3">
+Using implied keys has an interoperability risk, see <a href="#sec-threat-unident-key" class="xref">Section 6.5</a> for details.
+A BPSec security operation always occurs within the context of the immutable primary block with its parameters (specifically the Source Node ID) and the security block with its optional Security Source.<a href="#section-3.1-2" class="pilcrow">¶</a></p>
+<p id="section-3.1-3">
 The algorithms required by this profile focuses on networks using shared symmetric-keys, with recommended algorithms for Elliptic Curve (EC) keypairs and RSA keypairs.
 The focus of this profile is to enable interoperation between security sources and acceptors on an open network, where more explicit COSE parameters make it easier for BPSec acceptors to avoid assumptions and avoid out-of-band parameters.
-The requirements of this profile still allow the use of potentially not-easily-interoperable algorithms and message/recipient configurations for use by private networks, where message size is more important than explicit COSE parameters.<a href="#section-4.1-3" class="pilcrow">¶</a></p>
+The requirements of this profile still allow the use of potentially not-easily-interoperable algorithms and message/recipient configurations for use by private networks, where message size is more important than explicit COSE parameters.<a href="#section-3.1-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="sec-interop-alg">
-<section id="section-4.2">
+<section id="section-3.2">
         <h3 id="name-interoperability-algorithms">
-<a href="#section-4.2" class="section-number selfRef">4.2. </a><a href="#name-interoperability-algorithms" class="section-name selfRef">Interoperability Algorithms</a>
+<a href="#section-3.2" class="section-number selfRef">3.2. </a><a href="#name-interoperability-algorithms" class="section-name selfRef">Interoperability Algorithms</a>
         </h3>
-<p id="section-4.2-1">
-[NOTE: The required list is identical to the <span>[<a href="#I-D.ietf-dtn-bpsec-interop-sc" class="xref">I-D.ietf-dtn-bpsec-interop-sc</a>]</span> list.]
+<p id="section-3.2-1">
 The set of integrity algorithms needed for interoperability is listed here.
-The full set of COSE algorithms available is managed at <span>[<a href="#IANA-COSE" class="xref">IANA-COSE</a>]</span>.<a href="#section-4.2-1" class="pilcrow">¶</a></p>
-<p id="section-4.2-2">
+The full set of COSE algorithms available is managed at <span>[<a href="#IANA-COSE" class="xref">IANA-COSE</a>]</span>.<a href="#section-3.2-1" class="pilcrow">¶</a></p>
+<p id="section-3.2-2">
 Implementations conforming to this specification SHALL support the symmetric keyed and key-encryption algorithms of <a href="#tab-interop" class="xref">Table 5</a>.
-Implementations capable of doing so SHOULD support the asymmetric keyed and key-encryption algorithms of <a href="#tab-interop" class="xref">Table 5</a>.<a href="#section-4.2-2" class="pilcrow">¶</a></p>
+Implementations capable of doing so SHOULD support the asymmetric keyed and key-encryption algorithms of <a href="#tab-interop" class="xref">Table 5</a>.<a href="#section-3.2-2" class="pilcrow">¶</a></p>
+<aside id="section-3.2-3">
+          <p id="section-3.2-3.1">
+The layer-1 required list is identical to the <span>[<a href="#I-D.ietf-dtn-bpsec-default-sc" class="xref">I-D.ietf-dtn-bpsec-default-sc</a>]</span> context list.<a href="#section-3.2-3.1" class="pilcrow">¶</a></p>
+</aside>
 <span id="name-interoperability-algorithms-2"></span><div id="tab-interop">
 <table class="center" id="table-5">
           <caption>
@@ -2206,6 +2209,13 @@ Implementations capable of doing so SHOULD support the asymmetric keyed and key-
             <tr>
               <td class="text-left" rowspan="1" colspan="1">Confidentiality</td>
               <td class="text-left" rowspan="1" colspan="1">2</td>
+              <td class="text-left" rowspan="1" colspan="1">ECDH-SS + A256KW</td>
+              <td class="text-left" rowspan="1" colspan="1">-34</td>
+              <td class="text-left" rowspan="1" colspan="1">Recommended</td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">Confidentiality</td>
+              <td class="text-left" rowspan="1" colspan="1">2</td>
               <td class="text-left" rowspan="1" colspan="1">RSAES-OAEP w/ SHA-256</td>
               <td class="text-left" rowspan="1" colspan="1">-41</td>
               <td class="text-left" rowspan="1" colspan="1">Recommended</td>
@@ -2213,85 +2223,99 @@ Implementations capable of doing so SHOULD support the asymmetric keyed and key-
           </tbody>
         </table>
 </div>
-<p id="section-4.2-4">
-The following are recommended key and recipient uses within COSE/BPSec:<a href="#section-4.2-4" class="pilcrow">¶</a></p>
-<span class="break"></span><dl class="dlParallel" id="section-4.2-5">
-          <dt id="section-4.2-5.1">Symmetric Key Integrity:</dt>
-          <dd style="margin-left: 1.5em" id="section-4.2-5.2">
-When generating a BIB result from a symmetric key, implementations SHOULD use either a COSE_Mac0 or a COSE_Mac using the private key directly.
-When a COSE_Mac is used with a direct key, the recipient layer SHALL include a key identifier.<a href="#section-4.2-5.2" class="pilcrow">¶</a>
+<p id="section-3.2-5">
+The following are recommended key and recipient uses within COSE/BPSec:<a href="#section-3.2-5" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-3.2-6">
+          <dt id="section-3.2-6.1">Symmetric Key Integrity:</dt>
+          <dd style="margin-left: 1.5em" id="section-3.2-6.2">
+When generating a BIB result from a symmetric key, implementations SHALL use a COSE_Mac0 using the private key directly.
+When a COSE_Mac0 is used with a direct key, the headers SHALL include a key identifier ("kid" header).<a href="#section-3.2-6.2" class="pilcrow">¶</a>
 </dd>
           <dd class="break"></dd>
-<dt id="section-4.2-5.3">EC Keypair Integrity:</dt>
-          <dd style="margin-left: 1.5em" id="section-4.2-5.4">
-When generating a BIB result from an EC keypair, implementations SHOULD use either a COSE_Sign1 or a COSE_Sign using the private key directly.
-When a COSE_Sign is used with an EC keypair, the recipient layer SHALL include a public key identifier (see <a href="#sec-asym-keys" class="xref">Section 4.3</a>).<a href="#section-4.2-5.4" class="pilcrow">¶</a>
+<dt id="section-3.2-6.3">EC Keypair Integrity:</dt>
+          <dd style="margin-left: 1.5em" id="section-3.2-6.4">
+When generating a BIB result from an EC keypair, implementations SHALL use a COSE_Sign1 using the private key directly.
+When a COSE_Sign1 is used with an EC keypair, the headers SHALL include a public key identifier (see <a href="#sec-asym-keys" class="xref">Section 3.3</a>).<a href="#section-3.2-6.4" class="pilcrow">¶</a>
 </dd>
           <dd class="break"></dd>
-<dt id="section-4.2-5.5">RSA Keypair Integrity:</dt>
-          <dd style="margin-left: 1.5em" id="section-4.2-5.6">
-When generating a BIB result from an RSA keypair, implementations SHOULD use either a COSE_Sign1 or a COSE_Sign using the private key directly.
-When a COSE_Sign is used with an RSA keypair, the recipient layer SHALL include a public key identifier (see <a href="#sec-asym-keys" class="xref">Section 4.3</a>).
-When a COSE_Sign or COSE_Sign1 is used with an RSA keypair, the signature uses a PSS salt in accordance with <span><a href="https://rfc-editor.org/rfc/rfc8230#section-2" class="relref">Section 2</a> of [<a href="#RFC8230" class="xref">RFC8230</a>]</span>.<a href="#section-4.2-5.6" class="pilcrow">¶</a>
+<dt id="section-3.2-6.5">RSA Keypair Integrity:</dt>
+          <dd style="margin-left: 1.5em" id="section-3.2-6.6">
+When generating a BIB result from an RSA keypair, implementations SHALL use a COSE_Sign1 using the private key directly.
+When a COSE_Sign1 is used with an RSA keypair, the headers SHALL include a public key identifier (see <a href="#sec-asym-keys" class="xref">Section 3.3</a>).
+When a COSE signature is generated with an RSA keypair, the signature uses a PSS salt in accordance with <span><a href="https://rfc-editor.org/rfc/rfc8230#section-2" class="relref">Section 2</a> of [<a href="#RFC8230" class="xref">RFC8230</a>]</span>.<a href="#section-3.2-6.6" class="pilcrow">¶</a>
 </dd>
           <dd class="break"></dd>
-<dt id="section-4.2-5.7">Symmetric Key Confidentiality:</dt>
-          <dd style="margin-left: 1.5em" id="section-4.2-5.8">
-When generating a BCB result from an symmetric key, implementations SHOULD use a COSE_Encrypt message with a recipient containing a key-wrapped CEK.
-When generating a BCB result from a symmetric key, implementations SHOULD NOT use COSE_Encrypt0 or COSE_Encrypt with direct content encryption key (CEK).
+<dt id="section-3.2-6.7">Symmetric Key Confidentiality:</dt>
+          <dd style="margin-left: 1.5em" id="section-3.2-6.8">
+When generating a BCB result from an symmetric key, implementations SHALL use a COSE_Encrypt message with a recipient containing an indirect (wrapped or derived) content encryption key (CEK).
+When generating a BCB result from a symmetric key, implementations SHOULD NOT use COSE_Encrypt0 or COSE_Encrypt with direct CEK.
 Doing so risks key overuse and the vulnerabilities associated with large amount of ciphertext from the same key.
-When a COSE_Encrypt is used with an overall key-encryption key (KEK), the recipient layer SHALL include a key identifier for the KEK.<a href="#section-4.2-5.8" class="pilcrow">¶</a>
+When a COSE_Encrypt is used with an overall key-encryption key (KEK), the recipient layer SHALL include a key identifier for the KEK.<a href="#section-3.2-6.8" class="pilcrow">¶</a>
 </dd>
           <dd class="break"></dd>
-<dt id="section-4.2-5.9">EC Keypair Confidentiality:</dt>
-          <dd style="margin-left: 1.5em" id="section-4.2-5.10">
-When generating a BCB result from an EC keypair, implementations SHOULD use a COSE_Encrypt message with a recipient containing a key-wrapped CEK.
-When a COSE_Encrypt is used with an EC keypair, the recipient layer SHALL include a public key identifier (see <a href="#sec-asym-keys" class="xref">Section 4.3</a>).
-When a COSE_Encrypt is used with an EC keypair, the security source SHALL generate an ephemeral EC keypair for each security operation.
-When processing a COSE_Encrypt with an EC keypair, the security acceptor SHALL process all KDF and HMAC context data from the recipient headers in accordance with <span><a href="https://rfc-editor.org/rfc/rfc8152#section-11.2" class="relref">Section 11.2</a> of [<a href="#RFC8152" class="xref">RFC8152</a>]</span> even though the source is not required to provide any of those parameters.<a href="#section-4.2-5.10" class="pilcrow">¶</a>
+<dt id="section-3.2-6.9">EC Keypair Confidentiality:</dt>
+          <dd style="margin-left: 1.5em" id="section-3.2-6.10">
+When generating a BCB result from an EC keypair, implementations SHALL use a COSE_Encrypt message with a recipient containing an indirect (wrapped or derived) CEK.
+When a COSE_Encrypt is used with an EC keypair, the recipient layer SHALL include a public key identifier (see <a href="#sec-asym-keys" class="xref">Section 3.3</a>).
+When a COSE_Encrypt is used with an EC keypair, the security source SHALL either generate an ephemeral EC keypair or choose a unique PartyU Nonce for each security operation.
+When processing a COSE_Encrypt with an EC keypair, the security acceptor SHALL process all KDF and HMAC context data from the recipient headers in accordance with <span><a href="https://rfc-editor.org/rfc/rfc8152#section-11.2" class="relref">Section 11.2</a> of [<a href="#RFC8152" class="xref">RFC8152</a>]</span> even though the source is not required to provide any of those parameters.<a href="#section-3.2-6.10" class="pilcrow">¶</a>
 </dd>
           <dd class="break"></dd>
-<dt id="section-4.2-5.11">RSA Keypair Confidentiality:</dt>
-          <dd style="margin-left: 1.5em" id="section-4.2-5.12">
-When generating a BCB result from an RSA keypair, implementations SHOULD use a COSE_Encrypt message with a recipient containing a key-wrapped CEK.
-When a COSE_Encrypt is used with an RSA keypair, the recipient layer SHALL include a public key identifier (see <a href="#sec-asym-keys" class="xref">Section 4.3</a>).<a href="#section-4.2-5.12" class="pilcrow">¶</a>
+<dt id="section-3.2-6.11">RSA Keypair Confidentiality:</dt>
+          <dd style="margin-left: 1.5em" id="section-3.2-6.12">
+When generating a BCB result from an RSA keypair, implementations SHALL use a COSE_Encrypt message with a recipient containing a key-wrapped CEK.
+When a COSE_Encrypt is used with an RSA keypair, the recipient layer SHALL include a public key identifier (see <a href="#sec-asym-keys" class="xref">Section 3.3</a>).<a href="#section-3.2-6.12" class="pilcrow">¶</a>
 </dd>
         <dd class="break"></dd>
 </dl>
 </section>
 </div>
 <div id="sec-asym-keys">
-<section id="section-4.3">
+<section id="section-3.3">
         <h3 id="name-asymmetric-key-types-and-id">
-<a href="#section-4.3" class="section-number selfRef">4.3. </a><a href="#name-asymmetric-key-types-and-id" class="section-name selfRef">Asymmetric Key Types and Identifiers</a>
+<a href="#section-3.3" class="section-number selfRef">3.3. </a><a href="#name-asymmetric-key-types-and-id" class="section-name selfRef">Asymmetric Key Types and Identifiers</a>
         </h3>
-<p id="section-4.3-1">
+<p id="section-3.3-1">
 This section applies when a BIB uses a public key for verification, or when a BCB uses a public key for encryption.
 When using asymmetric keyed algorithms, the security source SHALL include a public key identifier as a recipient header.
-The public key identifier SHALL be either a "kid" of <span>[<a href="#RFC8152" class="xref">RFC8152</a>]</span>, an "x5t" of <span>[<a href="#I-D.ietf-cose-x509" class="xref">I-D.ietf-cose-x509</a>]</span>, or an equivalent identifier.<a href="#section-4.3-1" class="pilcrow">¶</a></p>
-<p id="section-4.3-2">
-When a BIB result contains a "kid" identifier, the security source MAY include an appropriate COSE public key "COSE_Key" in a key container security parameter (see <a href="#sec-ASB-param-keys" class="xref">Section 3.2.1</a>).
-When BIB result contains a "x5t" identifier, the security source MAY include an appropriate PKIX certificate chain ("x5chain" of <span>[<a href="#I-D.ietf-cose-x509" class="xref">I-D.ietf-cose-x509</a>]</span>) in an additional header map security parameter (see <a href="#sec-ASB-param-additional" class="xref">Section 3.2.2</a>).
+The public key identifier SHALL be either a "kid" of <span>[<a href="#RFC8152" class="xref">RFC8152</a>]</span>, an "x5t" or "x5chain" of <span>[<a href="#I-D.ietf-cose-x509" class="xref">I-D.ietf-cose-x509</a>]</span>, or an equivalent identifier.<a href="#section-3.3-1" class="pilcrow">¶</a></p>
+<p id="section-3.3-2">
+When a BIB result contains a "kid" identifier, the security source MAY include an appropriate COSE public key "COSE_Key" in a key container security parameter (see <a href="#sec-ASB-param-keys" class="xref">Section 2.2.1</a>).
+When BIB result contains a "x5t" identifier, the security source MAY include an appropriate PKIX certificate container ("x5chain" or "x5bag" of <span>[<a href="#I-D.ietf-cose-x509" class="xref">I-D.ietf-cose-x509</a>]</span>) in a direct COSE header or an additional header security parameter (see <a href="#sec-ASB-param-additional" class="xref">Section 2.2.2</a>).
+When a BIB result contains an "x5chain", the security source SHOULD NOT also include an "x5t" as the first certificate in the chain is implicitly the applicable end-entity certificate.
 For a BIB, if all potential security acceptors are known to possess related public key and/or certificate data then the public key or additional header parameters can be omitted.
-Risks of not including related data are described in <a href="#sec-threat-unident-key" class="xref">Section 7.5</a> and <a href="#sec-threat-notrust-key" class="xref">Section 7.6</a>.<a href="#section-4.3-2" class="pilcrow">¶</a></p>
-<p id="section-4.3-3">
-When present, public keys and certificates SHOULD be included as ASB parameters rather than within ASB results.
+Risks of not including related data are described in <a href="#sec-threat-unident-key" class="xref">Section 6.5</a> and <a href="#sec-threat-notrust-key" class="xref">Section 6.6</a>.<a href="#section-3.3-2" class="pilcrow">¶</a></p>
+<p id="section-3.3-3">
+When present, public keys and certificates SHOULD be included as additional header parameters rather than within result COSE messages.
 This provides size efficiency when multiple security results are present because they will all be from the same security source and likely share the same public key material.
-Security acceptors SHALL still process public keys or certificates present in a result message or recipient as applying to that individual COSE level.<a href="#section-4.3-3" class="pilcrow">¶</a></p>
-<p id="section-4.3-4">
-Security acceptors SHALL aggregate all public keys from all parameters within a single BIB or BCB, independent of encoded type or order of parameters.
-Because each context contains a single set of security parameters which apply to all results in the same context, security acceptors SHALL treat all public keys as being related to the security source itself and potentially applying to every result.<a href="#section-4.3-4" class="pilcrow">¶</a></p>
-<div id="sec-pkix-certs">
-<section id="section-4.3.1">
-          <h4 id="name-pkix-certificates">
-<a href="#section-4.3.1" class="section-number selfRef">4.3.1. </a><a href="#name-pkix-certificates" class="section-name selfRef">PKIX Certificates</a>
+Security acceptors SHALL still process public keys or certificates present in a result message or recipient as applying to that individual COSE level.<a href="#section-3.3-3" class="pilcrow">¶</a></p>
+<p id="section-3.3-4">
+Security acceptors SHALL aggregate all COSE_Key objects from all parameters within a single BIB or BCB, independent of encoded type or order of parameters.
+Because each context contains a single set of security parameters which apply to all results in the same context, security acceptors SHALL treat all public keys as being related to the security source itself and potentially applying to every result.<a href="#section-3.3-4" class="pilcrow">¶</a></p>
+<div id="sec-asym-keys-policy-rec">
+<section id="section-3.3.1">
+          <h4 id="name-policy-recommendations-2">
+<a href="#section-3.3.1" class="section-number selfRef">3.3.1. </a><a href="#name-policy-recommendations-2" class="section-name selfRef">Policy Recommendations</a>
           </h4>
-<p id="section-4.3.1-1">
-When PKIX certificates are present as parameters, security sources SHOULD include the entire certification chain to the root CA.
-When PKIX certificates are used by security acceptors and the end-entity certificate is not explicitly trusted (i.e. pinned), the security acceptor SHALL perform the certification path validation of <span>[<a href="#RFC5280" class="xref">RFC5280</a>]</span> up to one or more trusted CA certificates.
-Leaving out part of the certification chain can cause the security acceptor to fail to validate a BIB if the left-out certificates are unknown to the acceptor (see <a href="#sec-threat-notrust-key" class="xref">Section 7.6</a>).<a href="#section-4.3.1-1" class="pilcrow">¶</a></p>
-<p id="section-4.3.1-2">
-The end entity certificate associated with a BPSec security source SHALL adhere to the profile of <a href="#sec-pkix-profile" class="xref">Section 5</a>.<a href="#section-4.3.1-2" class="pilcrow">¶</a></p>
+<p id="section-3.3.1-1">
+The RECOMMENDED priority policy for including PKIX material for BIB results is as follows:<a href="#section-3.3.1-1" class="pilcrow">¶</a></p>
+<ol start="1" type="1" class="normal type-1" id="section-3.3.1-2">
+            <li id="section-3.3.1-2.1">When receivers are not known to possess certificate chains, a full chain is included (as an "x5chain").<a href="#section-3.3.1-2.1" class="pilcrow">¶</a>
+</li>
+            <li id="section-3.3.1-2.2">When receivers are known to possess root and intermediate CAs, just the end-entity certificate is included (again as an "x5chain").<a href="#section-3.3.1-2.2" class="pilcrow">¶</a>
+</li>
+            <li id="section-3.3.1-2.3">When receivers are known to possess associated chains including end-entity certificates, a certificate thumbnail (as an "x5t").<a href="#section-3.3.1-2.3" class="pilcrow">¶</a>
+</li>
+            <li id="section-3.3.1-2.4">Some arbitrary identifier is used to correlate to an end-entity certificate (as a "kid").<a href="#section-3.3.1-2.4" class="pilcrow">¶</a>
+</li>
+            <li id="section-3.3.1-2.5">The BIB Security Source is used to imply an associated end-entity certificate which identifies that Node ID.<a href="#section-3.3.1-2.5" class="pilcrow">¶</a>
+</li>
+          </ol>
+<p id="section-3.3.1-3">
+When PKIX certificates are used by security acceptors and the end-entity certificate is not explicitly trusted (i.e. pinned), the security acceptor SHALL perform the certification path validation of <a href="#sec-context-auth-valid-cert" class="xref">Section 2.6.1.2</a> up to one or more trusted CA certificates.
+Leaving out part of the certification chain can cause the security acceptor to fail to validate a BIB if the left-out certificates are unknown to the acceptor (see <a href="#sec-threat-notrust-key" class="xref">Section 6.6</a>).<a href="#section-3.3.1-3" class="pilcrow">¶</a></p>
+<p id="section-3.3.1-4">
+Any end-entity certificate associated with a BPSec security source SHALL adhere to the profile of <a href="#sec-pkix-profile" class="xref">Section 4</a>.<a href="#section-3.3.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -2299,75 +2323,75 @@ The end entity certificate associated with a BPSec security source SHALL adhere 
 </section>
 </div>
 <div id="sec-pkix-profile">
-<section id="section-5">
+<section id="section-4">
       <h2 id="name-pkix-certificate-profile">
-<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-pkix-certificate-profile" class="section-name selfRef">PKIX Certificate Profile</a>
+<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-pkix-certificate-profile" class="section-name selfRef">PKIX Certificate Profile</a>
       </h2>
-<p id="section-5-1">
-This section contains requirements on certificates used for the COSE context, while <a href="#sec-asym-keys" class="xref">Section 4.3</a> contains requirements for how such certificates are transported or identified.<a href="#section-5-1" class="pilcrow">¶</a></p>
-<p id="section-5-2">
-All end-entity certificates used for BPSec SHALL conform to <span>[<a href="#RFC5280" class="xref">RFC5280</a>]</span>, or any updates or successors to that profile.<a href="#section-5-2" class="pilcrow">¶</a></p>
-<p id="section-5-3">
+<p id="section-4-1">
+This section contains requirements on certificates used for the COSE context, while <a href="#sec-asym-keys" class="xref">Section 3.3</a> contains requirements for how such certificates are transported or identified.<a href="#section-4-1" class="pilcrow">¶</a></p>
+<p id="section-4-2">
+All end-entity certificates used for BPSec SHALL conform to <span>[<a href="#RFC5280" class="xref">RFC5280</a>]</span>, or any updates or successors to that profile.<a href="#section-4-2" class="pilcrow">¶</a></p>
+<p id="section-4-3">
 This profile requires Version 3 certificates due to the extensions used by this profile.
-Security acceptors SHALL reject as invalid Version 1 and Version 2 end-entity certificates.<a href="#section-5-3" class="pilcrow">¶</a></p>
-<p id="section-5-4">
+Security acceptors SHALL reject as invalid Version 1 and Version 2 end-entity certificates.<a href="#section-4-3" class="pilcrow">¶</a></p>
+<p id="section-4-4">
 Security acceptors SHALL accept certificates that contain an empty Subject field or contain a Subject without a Common Name.
-Identity information in end-entity certificates is contained entirely in the subjectAltName extension as a NODE-ID, as defined in <span>[<a href="#I-D.ietf-dtn-tcpclv4" class="xref">I-D.ietf-dtn-tcpclv4</a>]</span>.<a href="#section-5-4" class="pilcrow">¶</a></p>
-<p id="section-5-5">
+Identity information in end-entity certificates is contained entirely in the subjectAltName extension as a NODE-ID, as defined in <span>[<a href="#I-D.ietf-dtn-tcpclv4" class="xref">I-D.ietf-dtn-tcpclv4</a>]</span>.<a href="#section-4-4" class="pilcrow">¶</a></p>
+<p id="section-4-5">
 All end-entity and CA certificates used for BPSec SHOULD contain both a Subject Key Identifier extension in accordance with <span><a href="https://rfc-editor.org/rfc/rfc5280#section-4.2.1.2" class="relref">Section 4.2.1.2</a> of [<a href="#RFC5280" class="xref">RFC5280</a>]</span> and an Authority Key Identifier extension in accordance with <span><a href="https://rfc-editor.org/rfc/rfc5280#section-4.2.1.1" class="relref">Section 4.2.1.1</a> of [<a href="#RFC5280" class="xref">RFC5280</a>]</span>.
 Security acceptors SHOULD NOT rely on either a Subject Key Identifier and an Authority Key Identifier being present in any received certificate.
-Including key identifiers simplifies the work of an entity needing to assemble a certification chain.<a href="#section-5-5" class="pilcrow">¶</a></p>
-<p id="section-5-6">
+Including key identifiers simplifies the work of an entity needing to assemble a certification chain.<a href="#section-4-5" class="pilcrow">¶</a></p>
+<p id="section-4-6">
 A BPSec end-entity certificate SHALL contain a NODE-ID which authenticates the Node ID of the security source (for integrity) or the security acceptor (for confidentiality).
-The identifier type NODE-ID is defined in <span>[<a href="#I-D.ietf-dtn-tcpclv4" class="xref">I-D.ietf-dtn-tcpclv4</a>]</span>.<a href="#section-5-6" class="pilcrow">¶</a></p>
-<p id="section-5-7">
+The identifier type NODE-ID is defined in <span>[<a href="#I-D.ietf-dtn-tcpclv4" class="xref">I-D.ietf-dtn-tcpclv4</a>]</span>.<a href="#section-4-6" class="pilcrow">¶</a></p>
+<p id="section-4-7">
 When allowed by CA policy, a BPSec end-entity certificate SHOULD contain a PKIX Extended Key Usage extension in accordance with <span><a href="https://rfc-editor.org/rfc/rfc5280#section-4.2.1.12" class="relref">Section 4.2.1.12</a> of [<a href="#RFC5280" class="xref">RFC5280</a>]</span>.
 When the PKIX Extended Key Usage extension is present, it SHALL contain a key purpose "id-kp-bundleSecurity" as defined in <span>[<a href="#I-D.ietf-dtn-tcpclv4" class="xref">I-D.ietf-dtn-tcpclv4</a>]</span>.
-The "id-kp-bundleSecurity" purpose MAY be combined with other purposes in the same certificate.<a href="#section-5-7" class="pilcrow">¶</a></p>
-<p id="section-5-8">
+The "id-kp-bundleSecurity" purpose MAY be combined with other purposes in the same certificate.<a href="#section-4-7" class="pilcrow">¶</a></p>
+<p id="section-4-8">
 When allowed by CA policy, a BPSec end-entity certificate SHALL contain a PKIX Key Usage extension in accordance with <span><a href="https://rfc-editor.org/rfc/rfc5280#section-4.2.1.3" class="relref">Section 4.2.1.3</a> of [<a href="#RFC5280" class="xref">RFC5280</a>]</span>.
 The PKIX Key Usage bits which are consistent with COSE security are: digitalSignature, nonRepudiation, keyEncipherment, and keyAgreement.
 The specific algorithms used by COSE messages in security results determine which of those key uses are exercised.
-See <a href="#sec-pkix-multiple-certs" class="xref">Section 5.1</a> for discussion of key use policies across multiple certificates.<a href="#section-5-8" class="pilcrow">¶</a></p>
-<p id="section-5-9">
+See <a href="#sec-pkix-multiple-certs" class="xref">Section 4.1</a> for discussion of key use policies across multiple certificates.<a href="#section-4-8" class="pilcrow">¶</a></p>
+<p id="section-4-9">
 A BPSec end-entity certificate MAY contain an Online Certificate Status Protocol (OCSP) URI within an Authority Information Access extension in accordance with <span><a href="https://rfc-editor.org/rfc/rfc5280#section-4.2.2.1" class="relref">Section 4.2.2.1</a> of [<a href="#RFC5280" class="xref">RFC5280</a>]</span>.
-Security acceptors are not expected to have continuous internet connectivity sufficient to perform OCSP verification.<a href="#section-5-9" class="pilcrow">¶</a></p>
+Security acceptors are not expected to have continuous internet connectivity sufficient to perform OCSP verification.<a href="#section-4-9" class="pilcrow">¶</a></p>
 <div id="sec-pkix-multiple-certs">
-<section id="section-5.1">
+<section id="section-4.1">
         <h3 id="name-multiple-certificate-uses">
-<a href="#section-5.1" class="section-number selfRef">5.1. </a><a href="#name-multiple-certificate-uses" class="section-name selfRef">Multiple-Certificate Uses</a>
+<a href="#section-4.1" class="section-number selfRef">4.1. </a><a href="#name-multiple-certificate-uses" class="section-name selfRef">Multiple-Certificate Uses</a>
         </h3>
-<p id="section-5.1-1">
-A RECOMMENDED security policy is to limit asymmetric keys (and thus public key certificates) to single uses among the following:<a href="#section-5.1-1" class="pilcrow">¶</a></p>
-<span class="break"></span><dl class="dlParallel" id="section-5.1-2">
-          <dt id="section-5.1-2.1">Bundle transport:</dt>
-          <dd style="margin-left: 1.5em" id="section-5.1-2.2">With key uses as defined in the convergence layer specification(s).<a href="#section-5.1-2.2" class="pilcrow">¶</a>
+<p id="section-4.1-1">
+A RECOMMENDED security policy is to limit asymmetric keys (and thus public key certificates) to single uses among the following:<a href="#section-4.1-1" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-4.1-2">
+          <dt id="section-4.1-2.1">Bundle transport:</dt>
+          <dd style="margin-left: 1.5em" id="section-4.1-2.2">With key uses as defined in the convergence layer specification(s).<a href="#section-4.1-2.2" class="pilcrow">¶</a>
 </dd>
           <dd class="break"></dd>
-<dt id="section-5.1-2.3">Block signing:</dt>
-          <dd style="margin-left: 1.5em" id="section-5.1-2.4">With key use digitalSignature and/or nonRepudiation.<a href="#section-5.1-2.4" class="pilcrow">¶</a>
+<dt id="section-4.1-2.3">Block signing:</dt>
+          <dd style="margin-left: 1.5em" id="section-4.1-2.4">With key use digitalSignature and/or nonRepudiation.<a href="#section-4.1-2.4" class="pilcrow">¶</a>
 </dd>
           <dd class="break"></dd>
-<dt id="section-5.1-2.5">Block encryption:</dt>
-          <dd style="margin-left: 1.5em" id="section-5.1-2.6">With key use keyEncipherment and/or keyAgreement.<a href="#section-5.1-2.6" class="pilcrow">¶</a>
+<dt id="section-4.1-2.5">Block encryption:</dt>
+          <dd style="margin-left: 1.5em" id="section-4.1-2.6">With key use keyEncipherment and/or keyAgreement.<a href="#section-4.1-2.6" class="pilcrow">¶</a>
 </dd>
         <dd class="break"></dd>
 </dl>
-<p id="section-5.1-3">
+<p id="section-4.1-3">
 This policy is the same one recommended by <span><a href="https://rfc-editor.org/rfc/rfc8551#section-6" class="relref">Section 6</a> of [<a href="#RFC8551" class="xref">RFC8551</a>]</span> for email security and by Section 5.2 of <span>[<a href="#NIST-SP800-57" class="xref">NIST-SP800-57</a>]</span> more generally.
-Effectively this means that a BP node uses separate certificates for transport (e.g., as a TCPCL entity), BIB signing (as a security source), and BCB encryption (as a security acceptor).<a href="#section-5.1-3" class="pilcrow">¶</a></p>
+Effectively this means that a BP node uses separate certificates for transport (e.g., as a TCPCL entity), BIB signing (as a security source), and BCB encryption (as a security acceptor).<a href="#section-4.1-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
 </div>
-<section id="section-6">
+<section id="section-5">
       <h2 id="name-implementation-status">
-<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-implementation-status" class="section-name selfRef">Implementation Status</a>
+<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-implementation-status" class="section-name selfRef">Implementation Status</a>
       </h2>
-<p id="section-6-1">This section is to be removed before publishing as an RFC.<a href="#section-6-1" class="pilcrow">¶</a></p>
-<p id="section-6-2">
-[NOTE to the RFC Editor: please remove this section before publication, as well as the reference to <span>[<a href="#RFC7942" class="xref">RFC7942</a>]</span> and <span>[<a href="#github-dtn-bpsec-cose" class="xref">github-dtn-bpsec-cose</a>]</span>.]<a href="#section-6-2" class="pilcrow">¶</a></p>
-<p id="section-6-3">
+<p id="section-5-1">This section is to be removed before publishing as an RFC.<a href="#section-5-1" class="pilcrow">¶</a></p>
+<p id="section-5-2">
+[NOTE to the RFC Editor: please remove this section before publication, as well as the reference to <span>[<a href="#RFC7942" class="xref">RFC7942</a>]</span> and <span>[<a href="#github-dtn-bpsec-cose" class="xref">github-dtn-bpsec-cose</a>]</span>.]<a href="#section-5-2" class="pilcrow">¶</a></p>
+<p id="section-5-3">
 This section records the status of known implementations of the
 protocol defined by this specification at the time of posting of
 this Internet-Draft, and is based on a proposal described in
@@ -2380,124 +2404,124 @@ Furthermore, no effort has been spent to verify the information
 presented here that was supplied by IETF contributors. This is not
 intended as, and must not be construed to be, a catalog of available
 implementations or their features. Readers are advised to note that
-other implementations can exist.<a href="#section-6-3" class="pilcrow">¶</a></p>
-<p id="section-6-4">
+other implementations can exist.<a href="#section-5-3" class="pilcrow">¶</a></p>
+<p id="section-5-4">
 An example implementation of COSE over Blocks has been created as a GitHub project <span>[<a href="#github-dtn-bpsec-cose" class="xref">github-dtn-bpsec-cose</a>]</span> and is intended to use as a proof-of-concept and as a possible source of interoperability testing.
-This example implementation only handles CBOR encoding/decoding and cryptographic functions, it does not construct actual BIB or BCB and does not integrate with a BP Agent.<a href="#section-6-4" class="pilcrow">¶</a></p>
+This example implementation only handles CBOR encoding/decoding and cryptographic functions, it does not construct actual BIB or BCB and does not integrate with a BP Agent.<a href="#section-5-4" class="pilcrow">¶</a></p>
 </section>
 <div id="sec-security">
-<section id="section-7">
+<section id="section-6">
       <h2 id="name-security-considerations">
-<a href="#section-7" class="section-number selfRef">7. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
+<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
       </h2>
-<p id="section-7-1">
-This section separates security considerations into threat categories based on guidance of BCP 72 <span>[<a href="#RFC3552" class="xref">RFC3552</a>]</span>.<a href="#section-7-1" class="pilcrow">¶</a></p>
-<p id="section-7-2">
-All of the security considerations of the underlying BPSec <span>[<a href="#I-D.ietf-dtn-bpsec" class="xref">I-D.ietf-dtn-bpsec</a>]</span> apply to these new security contexts.<a href="#section-7-2" class="pilcrow">¶</a></p>
-<section id="section-7.1">
+<p id="section-6-1">
+This section separates security considerations into threat categories based on guidance of BCP 72 <span>[<a href="#RFC3552" class="xref">RFC3552</a>]</span>.<a href="#section-6-1" class="pilcrow">¶</a></p>
+<p id="section-6-2">
+All of the security considerations of the underlying BPSec <span>[<a href="#I-D.ietf-dtn-bpsec" class="xref">I-D.ietf-dtn-bpsec</a>]</span> apply to these new security contexts.<a href="#section-6-2" class="pilcrow">¶</a></p>
+<section id="section-6.1">
         <h3 id="name-threat-bpsec-block-replay">
-<a href="#section-7.1" class="section-number selfRef">7.1. </a><a href="#name-threat-bpsec-block-replay" class="section-name selfRef">Threat: BPSec Block Replay</a>
+<a href="#section-6.1" class="section-number selfRef">6.1. </a><a href="#name-threat-bpsec-block-replay" class="section-name selfRef">Threat: BPSec Block Replay</a>
         </h3>
-<p id="section-7.1-1">
-The bundle's primary block contains fields which uniquely identify a bundle: the Source Node ID, Creation Timestamp, and fragment parameters (see <span><a href="https://tools.ietf.org/html/draft-ietf-dtn-bpbis-30#section-4.2.2" class="relref">Section 4.2.2</a> of [<a href="#I-D.ietf-dtn-bpbis" class="xref">I-D.ietf-dtn-bpbis</a>]</span>).
+<p id="section-6.1-1">
+The bundle's primary block contains fields which uniquely identify a bundle: the Source Node ID, Creation Timestamp, and fragment parameters (see <span><a href="https://tools.ietf.org/html/draft-ietf-dtn-bpbis-31#section-4.3.1" class="relref">Section 4.3.1</a> of [<a href="#I-D.ietf-dtn-bpbis" class="xref">I-D.ietf-dtn-bpbis</a>]</span>).
 These same fields are used to correlate Administrative Records with the bundles for which the records were generated.
-Including the primary block in the AAD for BPSec integrity and confidentiality binds the verification of the secured block to its parent bundle and disallows replay of any block with its BIB or BCB.<a href="#section-7.1-1" class="pilcrow">¶</a></p>
-<p id="section-7.1-2">
+Including the primary block in the AAD Scope for integrity and confidentiality (see <a href="#sec-ASB-param-AAD-scope" class="xref">Section 2.2.3</a>) binds the verification of the secured block to its parent bundle and disallows replay of any block with its BIB or BCB.<a href="#section-6.1-1" class="pilcrow">¶</a></p>
+<p id="section-6.1-2">
 This profile of COSE limits the encryption algorithms to only AEAD in order to include the context of the encrypted data as AAD.
-If an agent mistakenly allows the use of non-AEAD encryption when decrypting and verifying a BCB, the possibility of block replay attack is present.<a href="#section-7.1-2" class="pilcrow">¶</a></p>
+If an agent mistakenly allows the use of non-AEAD encryption when decrypting and verifying a BCB, the possibility of block replay attack is present.<a href="#section-6.1-2" class="pilcrow">¶</a></p>
 </section>
 <div id="sec-threat-untrust-cert">
-<section id="section-7.2">
+<section id="section-6.2">
         <h3 id="name-threat-untrusted-end-entity">
-<a href="#section-7.2" class="section-number selfRef">7.2. </a><a href="#name-threat-untrusted-end-entity" class="section-name selfRef">Threat: Untrusted End-Entity Certificate</a>
+<a href="#section-6.2" class="section-number selfRef">6.2. </a><a href="#name-threat-untrusted-end-entity" class="section-name selfRef">Threat: Untrusted End-Entity Certificate</a>
         </h3>
-<p id="section-7.2-1">
-The profile in <a href="#sec-context-auth" class="xref">Section 3.6.1</a> uses end-entity certificates chained up to a trusted root CA.
+<p id="section-6.2-1">
+The profile in <a href="#sec-context-auth" class="xref">Section 2.6.1</a> uses end-entity certificates chained up to a trusted root CA.
 A security source can include a certificate set which does not contain the full chain, possibly excluding intermediate or root CAs.
-In an environment where security acceptors are known to already contain needed root and intermediate CAs there is no need to include those CAs, but this has a risk of an acceptor not actually having one of the needed CAs.<a href="#section-7.2-1" class="pilcrow">¶</a></p>
+In an environment where security acceptors are known to already contain needed root and intermediate CAs there is no need to include those CAs, but this has a risk of an acceptor not actually having one of the needed CAs.<a href="#section-6.2-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<section id="section-7.3">
+<section id="section-6.3">
         <h3 id="name-threat-certificate-validati">
-<a href="#section-7.3" class="section-number selfRef">7.3. </a><a href="#name-threat-certificate-validati" class="section-name selfRef">Threat: Certificate Validation Vulnerabilities</a>
+<a href="#section-6.3" class="section-number selfRef">6.3. </a><a href="#name-threat-certificate-validati" class="section-name selfRef">Threat: Certificate Validation Vulnerabilities</a>
         </h3>
-<p id="section-7.3-1">
+<p id="section-6.3-1">
 Even when a security acceptor is operating properly an attacker can attempt to exploit vulnerabilities within certificate check algorithms or configuration to authenticate using an invalid certificate.
-An invalid certificate exploit could lead to higher-level security issues and/or denial of service to the Node ID being impersonated.<a href="#section-7.3-1" class="pilcrow">¶</a></p>
-<p id="section-7.3-2">
+An invalid certificate exploit could lead to higher-level security issues and/or denial of service to the Node ID being impersonated.<a href="#section-6.3-1" class="pilcrow">¶</a></p>
+<p id="section-6.3-2">
 There are many reasons, described in <span>[<a href="#RFC5280" class="xref">RFC5280</a>]</span> and <span>[<a href="#RFC6125" class="xref">RFC6125</a>]</span>, why a certificate can fail to validate, including using the certificate outside of its valid time interval, using purposes for which it was not authorized, or using it after it has been revoked by its CA.
 Validating a certificate is a complex task and can require network connectivity outside of the primary BP convergence layer network path(s) if a mechanism such as OCSP <span>[<a href="#RFC6960" class="xref">RFC6960</a>]</span> is used by the CA.
-The configuration and use of particular certificate validation methods are outside of the scope of this document.<a href="#section-7.3-2" class="pilcrow">¶</a></p>
+The configuration and use of particular certificate validation methods are outside of the scope of this document.<a href="#section-6.3-2" class="pilcrow">¶</a></p>
 </section>
 <div id="sec-threat-node-impersonation">
-<section id="section-7.4">
+<section id="section-6.4">
         <h3 id="name-threat-bp-node-impersonatio">
-<a href="#section-7.4" class="section-number selfRef">7.4. </a><a href="#name-threat-bp-node-impersonatio" class="section-name selfRef">Threat: BP Node Impersonation</a>
+<a href="#section-6.4" class="section-number selfRef">6.4. </a><a href="#name-threat-bp-node-impersonatio" class="section-name selfRef">Threat: BP Node Impersonation</a>
         </h3>
-<p id="section-7.4-1">
+<p id="section-6.4-1">
 When certificates are referenced by BIB results it is possible that the certificate does not contain a NODE-ID or does contain one but has a mismatch with the actual security source (see <a href="#sec-pkix-env" class="xref">Section 1.2</a>).
-Having a CA-validated certificate does not alone guarantee the identity of the security source from which the certificate is provided; additional validation procedures in <a href="#sec-pkix-certs" class="xref">Section 4.3.1</a> bind the Node ID based on the contents of the certificate.<a href="#section-7.4-1" class="pilcrow">¶</a></p>
+Having a CA-validated certificate does not alone guarantee the identity of the security source from which the certificate is provided; additional validation procedures in <a href="#sec-context-auth" class="xref">Section 2.6.1</a> bind the Node ID based on the contents of the certificate.<a href="#section-6.4-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="sec-threat-unident-key">
-<section id="section-7.5">
+<section id="section-6.5">
         <h3 id="name-threat-unidentifiable-key">
-<a href="#section-7.5" class="section-number selfRef">7.5. </a><a href="#name-threat-unidentifiable-key" class="section-name selfRef">Threat: Unidentifiable Key</a>
+<a href="#section-6.5" class="section-number selfRef">6.5. </a><a href="#name-threat-unidentifiable-key" class="section-name selfRef">Threat: Unidentifiable Key</a>
         </h3>
-<p id="section-7.5-1">
-The profile in <a href="#sec-interop-alg" class="xref">Section 4.2</a> recommends key identifiers when possible and the parameters in section <a href="#sec-ASB-parameters" class="xref">Section 3.2</a> allow encoding public keys where available.
+<p id="section-6.5-1">
+The profile in <a href="#sec-interop-alg" class="xref">Section 3.2</a> recommends key identifiers when possible and the parameters in section <a href="#sec-ASB-parameters" class="xref">Section 2.2</a> allow encoding public keys where available.
 If the application using a COSE Integrity or COSE Confidentiality context leaves out key identification data (in a COSE recipient structure), the security acceptor for those BPSec blocks only has the primary block available to use when verifying or decrypting the target block.
-This leads to a situation, identified in BPSec Security Considerations, where a signature is verified to be valid but not from the expected Security Source.<a href="#section-7.5-1" class="pilcrow">¶</a></p>
-<p id="section-7.5-2">
-Because the key identifier headers are unprotected (see <a href="#sec-asym-keys" class="xref">Section 4.3</a>), there is still the possibility that an active attacker removes or alters key identifier(s) in the result.
-This can cause the security acceptor to not be able to properly verify a valid signature or not use the correct private key to decrypt valid ciphertext.<a href="#section-7.5-2" class="pilcrow">¶</a></p>
+This leads to a situation, identified in BPSec Security Considerations, where a signature is verified to be valid but not from the expected Security Source.<a href="#section-6.5-1" class="pilcrow">¶</a></p>
+<p id="section-6.5-2">
+Because the key identifier headers are unprotected (see <a href="#sec-asym-keys" class="xref">Section 3.3</a>), there is still the possibility that an active attacker removes or alters key identifier(s) in the result.
+This can cause the security acceptor to not be able to properly verify a valid signature or not use the correct private key to decrypt valid ciphertext.<a href="#section-6.5-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="sec-threat-notrust-key">
-<section id="section-7.6">
+<section id="section-6.6">
         <h3 id="name-threat-non-trusted-public-k">
-<a href="#section-7.6" class="section-number selfRef">7.6. </a><a href="#name-threat-non-trusted-public-k" class="section-name selfRef">Threat: Non-Trusted Public Key</a>
+<a href="#section-6.6" class="section-number selfRef">6.6. </a><a href="#name-threat-non-trusted-public-k" class="section-name selfRef">Threat: Non-Trusted Public Key</a>
         </h3>
-<p id="section-7.6-1">
-The profile in <a href="#sec-interop-alg" class="xref">Section 4.2</a> allows the use of PKIX which typically involves end-entity certificates chained up to a trusted root CA.
+<p id="section-6.6-1">
+The profile in <a href="#sec-interop-alg" class="xref">Section 3.2</a> allows the use of PKIX which typically involves end-entity certificates chained up to a trusted root CA.
 This allows a BIB to contain end-entity certificates not previously known to a security acceptor but still trust the certificate by verifying it up to a trusted CA.
-In an environment where security acceptors are known to already contain needed root and intermediate CAs there is no need to include those CAs in a proper chain within the security parameters, but this has a risk of an acceptor not actually having one of the needed CAs.<a href="#section-7.6-1" class="pilcrow">¶</a></p>
-<p id="section-7.6-2">
+In an environment where security acceptors are known to already contain needed root and intermediate CAs there is no need to include those CAs in a proper chain within the security parameters, but this has a risk of an acceptor not actually having one of the needed CAs.<a href="#section-6.6-1" class="pilcrow">¶</a></p>
+<p id="section-6.6-2">
 Because the security parameters are not included as AAD, there is still the possibility that an active attacker removes or alters certification chain data in the parameters.
-This can cause the security acceptor to be able to verify a valid signature but not trust the public key used to perform the verification.<a href="#section-7.6-2" class="pilcrow">¶</a></p>
+This can cause the security acceptor to be able to verify a valid signature but not trust the public key used to perform the verification.<a href="#section-6.6-2" class="pilcrow">¶</a></p>
 </section>
 </div>
-<section id="section-7.7">
+<section id="section-6.7">
         <h3 id="name-threat-passive-leak-of-key-">
-<a href="#section-7.7" class="section-number selfRef">7.7. </a><a href="#name-threat-passive-leak-of-key-" class="section-name selfRef">Threat: Passive Leak of Key Material</a>
+<a href="#section-6.7" class="section-number selfRef">6.7. </a><a href="#name-threat-passive-leak-of-key-" class="section-name selfRef">Threat: Passive Leak of Key Material</a>
         </h3>
-<p id="section-7.7-1">
-It is important that the key requirements of <a href="#sec-ASB-parameters" class="xref">Section 3.2</a> apply only to public keys and PKIX certificates.
-Including non-public key material in ASB parameters will expose that material in the bundle data and over the bundle convergence layer during transport.<a href="#section-7.7-1" class="pilcrow">¶</a></p>
+<p id="section-6.7-1">
+It is important that the key requirements of <a href="#sec-ASB-parameters" class="xref">Section 2.2</a> apply only to public keys and PKIX certificates.
+Including non-public key material in ASB parameters will expose that material in the bundle data and over the bundle convergence layer during transport.<a href="#section-6.7-1" class="pilcrow">¶</a></p>
 </section>
-<section id="section-7.8">
+<section id="section-6.8">
         <h3 id="name-threat-algorithm-vulnerabil">
-<a href="#section-7.8" class="section-number selfRef">7.8. </a><a href="#name-threat-algorithm-vulnerabil" class="section-name selfRef">Threat: Algorithm Vulnerabilities</a>
+<a href="#section-6.8" class="section-number selfRef">6.8. </a><a href="#name-threat-algorithm-vulnerabil" class="section-name selfRef">Threat: Algorithm Vulnerabilities</a>
         </h3>
-<p id="section-7.8-1">
-Because this use of COSE leaves the specific algorithms chosen for BIB and BCB use up to the applications securing bundle data, it is important to use only COSE algorithms which are marked as recommended in the IANA registry <span>[<a href="#IANA-COSE" class="xref">IANA-COSE</a>]</span>.<a href="#section-7.8-1" class="pilcrow">¶</a></p>
+<p id="section-6.8-1">
+Because this use of COSE leaves the specific algorithms chosen for BIB and BCB use up to the applications securing bundle data, it is important to use only COSE algorithms which are marked as recommended in the IANA registry <span>[<a href="#IANA-COSE" class="xref">IANA-COSE</a>]</span>.<a href="#section-6.8-1" class="pilcrow">¶</a></p>
 </section>
 </section>
 </div>
 <div id="sec-iana">
-<section id="section-8">
+<section id="section-7">
       <h2 id="name-iana-considerations">
-<a href="#section-8" class="section-number selfRef">8. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
+<a href="#section-7" class="section-number selfRef">7. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
       </h2>
-<p id="section-8-1">
-Registration procedures referred to in this section are defined in <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span>.<a href="#section-8-1" class="pilcrow">¶</a></p>
+<p id="section-7-1">
+Registration procedures referred to in this section are defined in <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span>.<a href="#section-7-1" class="pilcrow">¶</a></p>
 <div id="sec-iana-bpsec-ctx">
-<section id="section-8.1">
+<section id="section-7.1">
         <h3 id="name-bpsec-security-contexts">
-<a href="#section-8.1" class="section-number selfRef">8.1. </a><a href="#name-bpsec-security-contexts" class="section-name selfRef">BPSec Security Contexts</a>
+<a href="#section-7.1" class="section-number selfRef">7.1. </a><a href="#name-bpsec-security-contexts" class="section-name selfRef">BPSec Security Contexts</a>
         </h3>
-<p id="section-8.1-1">
-Within the "Bundle Protocol" registry <span>[<a href="#IANA-BUNDLE" class="xref">IANA-BUNDLE</a>]</span>, the following entry has been added to the "BPSec Security Context Identifiers" sub-registry.<a href="#section-8.1-1" class="pilcrow">¶</a></p>
+<p id="section-7.1-1">
+Within the "Bundle Protocol" registry <span>[<a href="#IANA-BUNDLE" class="xref">IANA-BUNDLE</a>]</span>, the following entry has been added to the "BPSec Security Context Identifiers" sub-registry.<a href="#section-7.1-1" class="pilcrow">¶</a></p>
 <table class="center" id="table-6">
           <caption><a href="#table-6" class="selfRef">Table 6</a></caption>
 <thead>
@@ -2520,21 +2544,21 @@ Within the "Bundle Protocol" registry <span>[<a href="#IANA-BUNDLE" class="xref"
 </section>
 </div>
 <div id="sec-doc-ack">
-<section id="section-9">
+<section id="section-8">
       <h2 id="name-acknowledgments">
-<a href="#section-9" class="section-number selfRef">9. </a><a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
+<a href="#section-8" class="section-number selfRef">8. </a><a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
       </h2>
-<p id="section-9-1">
-The interoperability minimum algorithms and parameters are based on the draft <span>[<a href="#I-D.ietf-dtn-bpsec-interop-sc" class="xref">I-D.ietf-dtn-bpsec-interop-sc</a>]</span>.<a href="#section-9-1" class="pilcrow">¶</a></p>
+<p id="section-8-1">
+The interoperability minimum algorithms and parameters are based on the draft <span>[<a href="#I-D.ietf-dtn-bpsec-default-sc" class="xref">I-D.ietf-dtn-bpsec-default-sc</a>]</span>.<a href="#section-8-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<section id="section-10">
+<section id="section-9">
       <h2 id="name-references">
-<a href="#section-10" class="section-number selfRef">10. </a><a href="#name-references" class="section-name selfRef">References</a>
+<a href="#section-9" class="section-number selfRef">9. </a><a href="#name-references" class="section-name selfRef">References</a>
       </h2>
-<section id="section-10.1">
+<section id="section-9.1">
         <h3 id="name-normative-references">
-<a href="#section-10.1" class="section-number selfRef">10.1. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
+<a href="#section-9.1" class="section-number selfRef">9.1. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
         </h3>
 <dl class="references">
 <dt id="IANA-BUNDLE">[IANA-BUNDLE]</dt>
@@ -2587,7 +2611,7 @@ The interoperability minimum algorithms and parameters are based on the draft <s
 <dd class="break"></dd>
 <dt id="I-D.ietf-dtn-bpsec">[I-D.ietf-dtn-bpsec]</dt>
         <dd>
-<span class="refAuthor">Birrane, E.</span><span class="refAuthor"> and K. McKeever</span>, <span class="refTitle">"Bundle Protocol Security Specification"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-dtn-bpsec-25</span>, <time datetime="2020-12-01" class="refDate">1 December 2020</time>, <span>&lt;<a href="https://tools.ietf.org/html/draft-ietf-dtn-bpsec-25">https://tools.ietf.org/html/draft-ietf-dtn-bpsec-25</a>&gt;</span>. </dd>
+<span class="refAuthor">Birrane, E.</span><span class="refAuthor"> and K. McKeever</span>, <span class="refTitle">"Bundle Protocol Security Specification"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-dtn-bpsec-26</span>, <time datetime="2021-01-08" class="refDate">8 January 2021</time>, <span>&lt;<a href="https://tools.ietf.org/html/draft-ietf-dtn-bpsec-26">https://tools.ietf.org/html/draft-ietf-dtn-bpsec-26</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="I-D.ietf-dtn-tcpclv4">[I-D.ietf-dtn-tcpclv4]</dt>
         <dd>
@@ -2599,9 +2623,9 @@ The interoperability minimum algorithms and parameters are based on the draft <s
 <dd class="break"></dd>
 </dl>
 </section>
-<section id="section-10.2">
+<section id="section-9.2">
         <h3 id="name-informative-references">
-<a href="#section-10.2" class="section-number selfRef">10.2. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
+<a href="#section-9.2" class="section-number selfRef">9.2. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
         </h3>
 <dl class="references">
 <dt id="NIST-SP800-57">[NIST-SP800-57]</dt>
@@ -2618,15 +2642,19 @@ The interoperability minimum algorithms and parameters are based on the draft <s
 <dd class="break"></dd>
 <dt id="I-D.ietf-dtn-bpbis">[I-D.ietf-dtn-bpbis]</dt>
         <dd>
-<span class="refAuthor">Burleigh, S.</span><span class="refAuthor">, Fall, K.</span><span class="refAuthor">, and E. Birrane</span>, <span class="refTitle">"Bundle Protocol Version 7"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-dtn-bpbis-30</span>, <time datetime="2020-12-10" class="refDate">10 December 2020</time>, <span>&lt;<a href="https://tools.ietf.org/html/draft-ietf-dtn-bpbis-30">https://tools.ietf.org/html/draft-ietf-dtn-bpbis-30</a>&gt;</span>. </dd>
+<span class="refAuthor">Burleigh, S.</span><span class="refAuthor">, Fall, K.</span><span class="refAuthor">, and E. Birrane</span>, <span class="refTitle">"Bundle Protocol Version 7"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-dtn-bpbis-31</span>, <time datetime="2021-01-25" class="refDate">25 January 2021</time>, <span>&lt;<a href="https://tools.ietf.org/html/draft-ietf-dtn-bpbis-31">https://tools.ietf.org/html/draft-ietf-dtn-bpbis-31</a>&gt;</span>. </dd>
 <dd class="break"></dd>
-<dt id="I-D.ietf-dtn-bpsec-interop-sc">[I-D.ietf-dtn-bpsec-interop-sc]</dt>
+<dt id="I-D.ietf-dtn-bpsec-default-sc">[I-D.ietf-dtn-bpsec-default-sc]</dt>
         <dd>
-<span class="refAuthor">Birrane, E.</span>, <span class="refTitle">"BPSec Default Security Contexts"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-dtn-bpsec-interop-sc-02</span>, <time datetime="2020-11-01" class="refDate">1 November 2020</time>, <span>&lt;<a href="https://tools.ietf.org/html/draft-ietf-dtn-bpsec-interop-sc-02">https://tools.ietf.org/html/draft-ietf-dtn-bpsec-interop-sc-02</a>&gt;</span>. </dd>
+<span class="refAuthor">Birrane, E.</span>, <span class="refTitle">"BPSec Default Security Contexts"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-dtn-bpsec-default-sc-00</span>, <time datetime="2021-01-26" class="refDate">26 January 2021</time>, <span>&lt;<a href="https://tools.ietf.org/html/draft-ietf-dtn-bpsec-default-sc-00">https://tools.ietf.org/html/draft-ietf-dtn-bpsec-default-sc-00</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="github-dtn-bpsec-cose">[github-dtn-bpsec-cose]</dt>
-      <dd>
+        <dd>
 <span class="refAuthor">Sipos, B.</span>, <span class="refTitle">"DTN Bundle Protocol Security COSE Security Context"</span>, <span>&lt;<a href="https://github.com/BSipos-RKF/dtn-bpsec-cose/">https://github.com/BSipos-RKF/dtn-bpsec-cose/</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="github-dtn-demo-agent">[github-dtn-demo-agent]</dt>
+      <dd>
+<span class="refAuthor">Sipos, B.</span>, <span class="refTitle">"Demo Convergence Layer Agent"</span>, <span>&lt;<a href="https://github.com/BSipos-RKF/dtn-demo-agent/">https://github.com/BSipos-RKF/dtn-demo-agent/</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 </dl>
 </section>
@@ -3047,7 +3075,7 @@ The external_aad is the encoded data from <a href="#fig-ex-AAD-structure" class=
   "Encrypt", / context /
   h'a10103', / protected /
   h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
+72632f820018281a000f424083070200f640' / external_aad /
 ]
 </pre>
 </div>
@@ -3162,7 +3190,7 @@ The external_aad is the encoded data from <a href="#fig-ex-AAD-structure" class=
   "Encrypt", / context /
   h'a10103', / protected /
   h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
+72632f820018281a000f424083070200f640' / external_aad /
 ]
 </pre>
 </div>
@@ -3234,7 +3262,7 @@ f493c1c9c0670f28d62'
 <a href="#section-a.6" class="section-number selfRef">A.6. </a><a href="#name-rsa-keypair-cose_encrypt" class="section-name selfRef">RSA Keypair COSE_Encrypt</a>
         </h2>
 <p id="section-a.6-1">
-This is an example of an encrypion with a recipient having a 1024-bit RSA keypair identified by a "kid".
+This is an example of an encryption with a recipient having a 1024-bit RSA keypair identified by a "kid".
 The associated public key is included as a security parameter.<a href="#section-a.6-1" class="pilcrow">¶</a></p>
 <p id="section-a.6-2">
 This key strength is not supposed to be a secure configuration, only intended to explain the procedure.
@@ -3297,7 +3325,7 @@ The external_aad is the encoded data from <a href="#fig-ex-AAD-structure" class=
   "Encrypt", / context /
   h'a10103', / protected /
   h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
+72632f820018281a000f424083070200f640' / external_aad /
 ]
 </pre>
 </div>

@@ -1,196 +1,4 @@
 INFO:root:Processing element text:
-''
-*** Unused rule Internal_Types
-*** Unused rule COSE_Messages
-*** Unused rule COSE_Untagged_Message
-*** Unused rule COSE_Tagged_Message
-*** Unused rule COSE_Sign_Tagged
-*** Unused rule COSE_Sign1_Tagged
-*** Unused rule COSE_Encrypt_Tagged
-*** Unused rule COSE_Encrypt0_Tagged
-*** Unused rule COSE_Mac_Tagged
-*** Unused rule COSE_Mac0_Tagged
-*** Unused rule PartyInfo
-*** Unused rule COSE_KDF_Context
-*** Unused rule COSE_X509
-*** Unused rule COSE_CertHash
-*** Unused rule bpv7_start
-*** Unused rule bundle
-*** Unused rule payload-block
-*** Unused rule payload-block-structure
-*** Unused rule $payload-block-data
-*** Unused rule admin-record
-*** Unused rule admin-record-structure
-*** Unused rule $admin-record
-*** Unused rule status-record-content
-*** Unused rule bundle-status-information
-*** Unused rule status-info-content
-CDDL validation failure (nil for ""):
-["",
- [:array,
-  [:member,
-   1,
-   Infinity,
-   nil,
-   [:map,
-    [:member,
-     1,
-     1,
-     [:int, 1],
-     [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]],
-    [:member, 0, 1, [:int, 2], [:prim, 2]],
-    [:member,
-     0,
-     1,
-     [:int, 3],
-     [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]],
-    [:member,
-     0,
-     1,
-     [:int, 4],
-     [:array,
-      [:member,
-       1,
-       Infinity,
-       nil,
-       [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]]]],
-    [:member, 0, 1, [:int, 5], [:prim, 2]],
-    [:member,
-     0,
-     Infinity,
-     [:type1, [:prim, 0], [:prim, 1], [:prim, 3]],
-     [:prim]]]]],
- nil]
-[h'', [:array, [:member, 1, Infinity, null, [:map, [:member, 1, 1, [:int, 1], [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]], [:member, 0, 1, [:int, 2], [:prim, 2]], [:member, 0, 1, [:int, 3], [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]], [:member, 0, 1, [:int, 4], [:array, [:member, 1, Infinity, null, [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]]]], [:member, 0, 1, [:int, 5], [:prim, 2]], [:member, 0, Infinity, [:type1, [:prim, 0], [:prim, 1], [:prim, 3]], [:prim]]]]], null]
-INFO:root:Processing element text:
-{}
-*** Unused rule Internal_Types
-*** Unused rule COSE_Messages
-*** Unused rule COSE_Untagged_Message
-*** Unused rule COSE_Tagged_Message
-*** Unused rule COSE_Sign_Tagged
-*** Unused rule COSE_Sign1_Tagged
-*** Unused rule COSE_Encrypt_Tagged
-*** Unused rule COSE_Encrypt0_Tagged
-*** Unused rule COSE_Mac_Tagged
-*** Unused rule COSE_Mac0_Tagged
-*** Unused rule PartyInfo
-*** Unused rule COSE_KDF_Context
-*** Unused rule COSE_X509
-*** Unused rule COSE_CertHash
-*** Unused rule bpv7_start
-*** Unused rule bundle
-*** Unused rule payload-block
-*** Unused rule payload-block-structure
-*** Unused rule $payload-block-data
-*** Unused rule admin-record
-*** Unused rule admin-record-structure
-*** Unused rule $admin-record
-*** Unused rule status-record-content
-*** Unused rule bundle-status-information
-*** Unused rule status-info-content
-CDDL validation failure (nil for {}):
-[{},
- [:array,
-  [:member,
-   1,
-   Infinity,
-   nil,
-   [:map,
-    [:member,
-     1,
-     1,
-     [:int, 1],
-     [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]],
-    [:member, 0, 1, [:int, 2], [:prim, 2]],
-    [:member,
-     0,
-     1,
-     [:int, 3],
-     [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]],
-    [:member,
-     0,
-     1,
-     [:int, 4],
-     [:array,
-      [:member,
-       1,
-       Infinity,
-       nil,
-       [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]]]],
-    [:member, 0, 1, [:int, 5], [:prim, 2]],
-    [:member,
-     0,
-     Infinity,
-     [:type1, [:prim, 0], [:prim, 1], [:prim, 3]],
-     [:prim]]]]],
- nil]
-[{}, [:array, [:member, 1, Infinity, null, [:map, [:member, 1, 1, [:int, 1], [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]], [:member, 0, 1, [:int, 2], [:prim, 2]], [:member, 0, 1, [:int, 3], [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]], [:member, 0, 1, [:int, 4], [:array, [:member, 1, Infinity, null, [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]]]], [:member, 0, 1, [:int, 5], [:prim, 2]], [:member, 0, Infinity, [:type1, [:prim, 0], [:prim, 1], [:prim, 3]], [:prim]]]]], null]
-INFO:root:Processing element text:
-0x7
-*** Unused rule Internal_Types
-*** Unused rule COSE_Messages
-*** Unused rule COSE_Untagged_Message
-*** Unused rule COSE_Tagged_Message
-*** Unused rule COSE_Sign_Tagged
-*** Unused rule COSE_Sign1_Tagged
-*** Unused rule COSE_Encrypt_Tagged
-*** Unused rule COSE_Encrypt0_Tagged
-*** Unused rule COSE_Mac_Tagged
-*** Unused rule COSE_Mac0_Tagged
-*** Unused rule PartyInfo
-*** Unused rule COSE_KDF_Context
-*** Unused rule COSE_X509
-*** Unused rule COSE_CertHash
-*** Unused rule bpv7_start
-*** Unused rule bundle
-*** Unused rule payload-block
-*** Unused rule payload-block-structure
-*** Unused rule $payload-block-data
-*** Unused rule admin-record
-*** Unused rule admin-record-structure
-*** Unused rule $admin-record
-*** Unused rule status-record-content
-*** Unused rule bundle-status-information
-*** Unused rule status-info-content
-CDDL validation failure (nil for 7):
-[7,
- [:array,
-  [:member,
-   1,
-   Infinity,
-   nil,
-   [:map,
-    [:member,
-     1,
-     1,
-     [:int, 1],
-     [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]],
-    [:member, 0, 1, [:int, 2], [:prim, 2]],
-    [:member,
-     0,
-     1,
-     [:int, 3],
-     [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]],
-    [:member,
-     0,
-     1,
-     [:int, 4],
-     [:array,
-      [:member,
-       1,
-       Infinity,
-       nil,
-       [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]]]],
-    [:member, 0, 1, [:int, 5], [:prim, 2]],
-    [:member,
-     0,
-     Infinity,
-     [:type1, [:prim, 0], [:prim, 1], [:prim, 3]],
-     [:prim]]]]],
- nil]
-[7, [:array, [:member, 1, Infinity, null, [:map, [:member, 1, 1, [:int, 1], [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]], [:member, 0, 1, [:int, 2], [:prim, 2]], [:member, 0, 1, [:int, 3], [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]], [:member, 0, 1, [:int, 4], [:array, [:member, 1, Infinity, null, [:type1, [:prim, 3], [:type1, [:prim, 0], [:prim, 1]]]]]], [:member, 0, 1, [:int, 5], [:prim, 2]], [:member, 0, Infinity, [:type1, [:prim, 0], [:prim, 1], [:prim, 3]], [:prim]]]]], null]
-INFO:root:Processing element text:
 [
   7, / BP version /
   0, / flags /
@@ -1019,31 +827,44 @@ INFO:root:Processing element text:
   "Encrypt", / context /
   h'a10103', / protected /
   h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
+72632f820018281a000f424083070200f640' / external_aad /
 ]
-/var/lib/gems/2.7.0/gems/json-2.5.1/lib/json/common.rb:216:in `parse': 809: unexpected token at '*** can't parse [ (JSON::ParserError)
-  "Encrypt", / context /
-  h'a10103', / protected /
-  h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
-]
-*** Expected one of [ \\t\\n\\r], "/", '"', '{', '[', [0-9], [-+], '0', 'Infinity', '-Infinity', 'NaN', 'false', 'true', 'null', 'undefined', 'simple(', "h'", "'", "b64'", "<<", '(' at line 6, column 1 (byte 180) after [
-  "Encrypt", / context /
-  h'a10103', / protected /
-  h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
-'
-	from /var/lib/gems/2.7.0/gems/json-2.5.1/lib/json/common.rb:216:in `parse'
-	from /var/lib/gems/2.7.0/gems/json-2.5.1/lib/json/common.rb:569:in `load'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:97:in `rescue in block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:97:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
-/var/lib/gems/2.7.0/gems/cbor-diag-0.5.17/lib/cbor-pure.rb:310:in `decode_item_final': extra bytes follow after a deserialized object of 1 bytes (RuntimeError)
-	from /var/lib/gems/2.7.0/gems/cbor-diag-0.5.17/lib/cbor-pure.rb:88:in `decode'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:97:in `block in <top (required)>'
+*** Unused rule Internal_Types
+*** Unused rule COSE_Messages
+*** Unused rule COSE_Untagged_Message
+*** Unused rule COSE_Tagged_Message
+*** Unused rule COSE_Sign_Tagged
+*** Unused rule COSE_Sign1_Tagged
+*** Unused rule COSE_Encrypt_Tagged
+*** Unused rule COSE_Encrypt0_Tagged
+*** Unused rule COSE_Mac_Tagged
+*** Unused rule COSE_Mac0_Tagged
+*** Unused rule PartyInfo
+*** Unused rule COSE_KDF_Context
+*** Unused rule COSE_X509
+*** Unused rule COSE_CertHash
+*** Unused rule bpv7_start
+*** Unused rule bundle
+*** Unused rule payload-block
+*** Unused rule payload-block-structure
+*** Unused rule $payload-block-data
+*** Unused rule admin-record
+*** Unused rule admin-record-structure
+*** Unused rule $admin-record
+*** Unused rule status-record-content
+*** Unused rule bundle-status-information
+*** Unused rule status-info-content
+/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
 	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
 	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
 	from /usr/local/bin/cddl:23:in `load'
@@ -1214,31 +1035,44 @@ INFO:root:Processing element text:
   "Encrypt", / context /
   h'a10103', / protected /
   h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
+72632f820018281a000f424083070200f640' / external_aad /
 ]
-/var/lib/gems/2.7.0/gems/json-2.5.1/lib/json/common.rb:216:in `parse': 809: unexpected token at '*** can't parse [ (JSON::ParserError)
-  "Encrypt", / context /
-  h'a10103', / protected /
-  h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
-]
-*** Expected one of [ \\t\\n\\r], "/", '"', '{', '[', [0-9], [-+], '0', 'Infinity', '-Infinity', 'NaN', 'false', 'true', 'null', 'undefined', 'simple(', "h'", "'", "b64'", "<<", '(' at line 6, column 1 (byte 180) after [
-  "Encrypt", / context /
-  h'a10103', / protected /
-  h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
-'
-	from /var/lib/gems/2.7.0/gems/json-2.5.1/lib/json/common.rb:216:in `parse'
-	from /var/lib/gems/2.7.0/gems/json-2.5.1/lib/json/common.rb:569:in `load'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:97:in `rescue in block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:97:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
-/var/lib/gems/2.7.0/gems/cbor-diag-0.5.17/lib/cbor-pure.rb:310:in `decode_item_final': extra bytes follow after a deserialized object of 1 bytes (RuntimeError)
-	from /var/lib/gems/2.7.0/gems/cbor-diag-0.5.17/lib/cbor-pure.rb:88:in `decode'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:97:in `block in <top (required)>'
+*** Unused rule Internal_Types
+*** Unused rule COSE_Messages
+*** Unused rule COSE_Untagged_Message
+*** Unused rule COSE_Tagged_Message
+*** Unused rule COSE_Sign_Tagged
+*** Unused rule COSE_Sign1_Tagged
+*** Unused rule COSE_Encrypt_Tagged
+*** Unused rule COSE_Encrypt0_Tagged
+*** Unused rule COSE_Mac_Tagged
+*** Unused rule COSE_Mac0_Tagged
+*** Unused rule PartyInfo
+*** Unused rule COSE_KDF_Context
+*** Unused rule COSE_X509
+*** Unused rule COSE_CertHash
+*** Unused rule bpv7_start
+*** Unused rule bundle
+*** Unused rule payload-block
+*** Unused rule payload-block-structure
+*** Unused rule $payload-block-data
+*** Unused rule admin-record
+*** Unused rule admin-record-structure
+*** Unused rule $admin-record
+*** Unused rule status-record-content
+*** Unused rule bundle-status-information
+*** Unused rule status-info-content
+/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
 	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
 	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
 	from /usr/local/bin/cddl:23:in `load'
@@ -1426,31 +1260,44 @@ INFO:root:Processing element text:
   "Encrypt", / context /
   h'a10103', / protected /
   h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
+72632f820018281a000f424083070200f640' / external_aad /
 ]
-/var/lib/gems/2.7.0/gems/json-2.5.1/lib/json/common.rb:216:in `parse': 809: unexpected token at '*** can't parse [ (JSON::ParserError)
-  "Encrypt", / context /
-  h'a10103', / protected /
-  h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
-]
-*** Expected one of [ \\t\\n\\r], "/", '"', '{', '[', [0-9], [-+], '0', 'Infinity', '-Infinity', 'NaN', 'false', 'true', 'null', 'undefined', 'simple(', "h'", "'", "b64'", "<<", '(' at line 6, column 1 (byte 180) after [
-  "Encrypt", / context /
-  h'a10103', / protected /
-  h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
-'
-	from /var/lib/gems/2.7.0/gems/json-2.5.1/lib/json/common.rb:216:in `parse'
-	from /var/lib/gems/2.7.0/gems/json-2.5.1/lib/json/common.rb:569:in `load'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:97:in `rescue in block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:97:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
-/var/lib/gems/2.7.0/gems/cbor-diag-0.5.17/lib/cbor-pure.rb:310:in `decode_item_final': extra bytes follow after a deserialized object of 1 bytes (RuntimeError)
-	from /var/lib/gems/2.7.0/gems/cbor-diag-0.5.17/lib/cbor-pure.rb:88:in `decode'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:97:in `block in <top (required)>'
+*** Unused rule Internal_Types
+*** Unused rule COSE_Messages
+*** Unused rule COSE_Untagged_Message
+*** Unused rule COSE_Tagged_Message
+*** Unused rule COSE_Sign_Tagged
+*** Unused rule COSE_Sign1_Tagged
+*** Unused rule COSE_Encrypt_Tagged
+*** Unused rule COSE_Encrypt0_Tagged
+*** Unused rule COSE_Mac_Tagged
+*** Unused rule COSE_Mac0_Tagged
+*** Unused rule PartyInfo
+*** Unused rule COSE_KDF_Context
+*** Unused rule COSE_X509
+*** Unused rule COSE_CertHash
+*** Unused rule bpv7_start
+*** Unused rule bundle
+*** Unused rule payload-block
+*** Unused rule payload-block-structure
+*** Unused rule $payload-block-data
+*** Unused rule admin-record
+*** Unused rule admin-record-structure
+*** Unused rule $admin-record
+*** Unused rule status-record-content
+*** Unused rule bundle-status-information
+*** Unused rule status-info-content
+/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
 	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
 	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
 	from /usr/local/bin/cddl:23:in `load'
