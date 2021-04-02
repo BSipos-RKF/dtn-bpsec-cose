@@ -34,21 +34,6 @@ INFO:root:Processing element text:
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   7, / type code - bundle age /
@@ -82,21 +67,6 @@ INFO:root:Processing element text:
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   [ 7, 0, 0, [ 1, "//dst/svc" ], [ 1, "//src/" ], [ 1, "//src/" ],
@@ -130,25 +100,6 @@ INFO:root:Processing element text:
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:657:in `validate_result': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:839:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:710:in `validate_linear'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:684:in `block in validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   7, / type code - bundle age /
@@ -182,21 +133,6 @@ INFO:root:Processing element text:
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   {
@@ -231,21 +167,6 @@ INFO:root:Processing element text:
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   "MAC0", / context /
@@ -279,21 +200,6 @@ INFO:root:Processing element text:
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   [2], / targets /
@@ -349,33 +255,6 @@ a4efcea5' / tag /
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:861:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:710:in `validate_linear'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:684:in `block in validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   { / signing private key /
@@ -415,21 +294,6 @@ e4fe0a1787a8',
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   "Signature1", / context /
@@ -463,21 +327,6 @@ INFO:root:Processing element text:
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   [2], / targets /
@@ -534,33 +383,6 @@ eb5c' / signature /
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:861:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:710:in `validate_linear'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:684:in `block in validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   { / signing private key /
@@ -619,21 +441,6 @@ f4f92865ca3'
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   "Signature1", / context /
@@ -667,21 +474,6 @@ INFO:root:Processing element text:
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   [2], / targets /
@@ -740,33 +532,6 @@ c6' / signature /
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:861:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:710:in `validate_linear'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:684:in `block in validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   {
@@ -807,21 +572,6 @@ ae38ad7a972e'
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   "Encrypt", / context /
@@ -854,21 +604,6 @@ INFO:root:Processing element text:
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   [2], / targets /
@@ -933,33 +668,6 @@ d403a6331159e3d691a708e9984d' / key-wrapped /
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:861:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:710:in `validate_linear'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:684:in `block in validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   { / sender ephemeral private key /
@@ -1015,21 +723,6 @@ e4fe0a1787a8',
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   "Encrypt", / context /
@@ -1062,21 +755,6 @@ INFO:root:Processing element text:
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   [2], / targets /
@@ -1149,33 +827,6 @@ f493c1c9c0670f28d62'
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:861:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:710:in `validate_linear'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:684:in `block in validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   { / recipient private key /
@@ -1240,21 +891,6 @@ f4f92865ca3'
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   "Encrypt", / context /
@@ -1287,21 +923,6 @@ INFO:root:Processing element text:
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
 INFO:root:Processing element text:
 [
   [2], / targets /
@@ -1369,30 +990,3 @@ af1d4fa2f1bd7f1fd17d89506e75a1e2687374aa2a1cf21ce387916039d84ecc14
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:692:in `block in validate_forward': undefined method `<<' for nil:NilClass (NoMethodError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:861:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:710:in `validate_linear'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:684:in `block in validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:666:in `validate_forward'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:838:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `block in validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `any?'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:820:in `validate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:797:in `validate1a'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/lib/cddl.rb:637:in `validate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:101:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.21/bin/cddl:92:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
