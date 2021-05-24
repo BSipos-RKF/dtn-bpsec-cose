@@ -27,23 +27,4 @@
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-/var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:553:in `generate1': Generated .cborseq sequence for [:anno, :cborseq, [:prim, 2], [:prim]] not an array (RuntimeError)
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:370:in `block in generate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:369:in `initialize'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:369:in `new'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:369:in `generate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:332:in `block in generate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:332:in `each'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:332:in `flat_map'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:332:in `generate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:282:in `generate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:560:in `block in generate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:559:in `times'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:559:in `generate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:282:in `generate1'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:273:in `generate'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/bin/cddl:74:in `block in <top (required)>'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/bin/cddl:73:in `times'
-	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/bin/cddl:73:in `<top (required)>'
-	from /usr/local/bin/cddl:23:in `load'
-	from /usr/local/bin/cddl:23:in `<main>'
+[{1: -274, 2: h'746963', 4: ["tac", "toe"], 5: h'746963', 17: "tac", 2089: "toe"}, {1: "tic", 2: h'746163', 3: 824, 4: ["toe"], 3029: "tic", -356: "tac", 2389: "toe"}]
