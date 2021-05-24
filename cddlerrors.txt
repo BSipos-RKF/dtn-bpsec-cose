@@ -27,4 +27,23 @@
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-["CounterSignature", h'', h'A3013902F104437469630643746163', h'746F65', h'746963']
+/var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:553:in `generate1': Generated .cborseq sequence for [:anno, :cborseq, [:prim, 2], [:prim]] not an array (RuntimeError)
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:370:in `block in generate1'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:369:in `initialize'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:369:in `new'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:369:in `generate1'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:332:in `block in generate1'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:332:in `each'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:332:in `flat_map'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:332:in `generate1'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:282:in `generate1'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:560:in `block in generate1'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:559:in `times'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:559:in `generate1'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:282:in `generate1'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/lib/cddl.rb:273:in `generate'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/bin/cddl:74:in `block in <top (required)>'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/bin/cddl:73:in `times'
+	from /var/lib/gems/2.7.0/gems/cddl-0.8.24/bin/cddl:73:in `<top (required)>'
+	from /usr/local/bin/cddl:23:in `load'
+	from /usr/local/bin/cddl:23:in `<main>'
