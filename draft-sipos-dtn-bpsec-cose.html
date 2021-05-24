@@ -12,13 +12,13 @@ This document defines a security context suitable for using CBOR Object Signing 
 A profile of COSE and for PKIX certificates are also defined for BPSec interoperation.
        
     " name="description">
-<meta content="xml2rfc 3.6.0" name="generator">
+<meta content="xml2rfc 3.8.0" name="generator">
 <meta content="draft-bsipos-dtn-bpsec-cose-05" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.6.0
+  xml2rfc 3.8.0
     Python 3.8.5
     appdirs 1.4.4
-    ConfigArgParse 1.4
+    ConfigArgParse 1.4.1
     google-i18n-address 2.4.0
     html5lib 1.1
     intervaltree 3.1.0
@@ -1178,11 +1178,11 @@ li > p:last-of-type {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">DTN BPSec COSE</td>
-<td class="right">April 2021</td>
+<td class="right">May 2021</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Sipos</td>
-<td class="center">Expires 4 October 2021</td>
+<td class="center">Expires 25 November 2021</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1195,12 +1195,12 @@ li > p:last-of-type {
 <dd class="internet-draft">draft-bsipos-dtn-bpsec-cose-05</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2021-04-02" class="published">2 April 2021</time>
+<time datetime="2021-05-24" class="published">24 May 2021</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2021-10-04">4 October 2021</time></dd>
+<dd class="expires"><time datetime="2021-11-25">25 November 2021</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -1236,7 +1236,7 @@ A profile of COSE and for PKIX certificates are also defined for BPSec interoper
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 4 October 2021.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 25 November 2021.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1264,187 +1264,187 @@ A profile of COSE and for PKIX certificates are also defined for BPSec interoper
         <a href="#" onclick="scroll(0,0)" class="toplink">▲</a><h2 id="name-table-of-contents">
 <a href="#name-table-of-contents" class="section-name selfRef">Table of Contents</a>
         </h2>
-<nav class="toc"><ul class="compact ulEmpty toc">
-<li class="compact ulEmpty toc" id="section-toc.1-1.1">
+<nav class="toc"><ul class="compact toc ulEmpty">
+<li class="compact toc ulEmpty" id="section-toc.1-1.1">
             <p id="section-toc.1-1.1.1"><a href="#section-1" class="xref">1</a>.  <a href="#name-introduction" class="xref">Introduction</a></p>
-<ul class="compact ulEmpty toc">
-<li class="compact ulEmpty toc" id="section-toc.1-1.1.2.1">
+<ul class="compact toc ulEmpty">
+<li class="compact toc ulEmpty" id="section-toc.1-1.1.2.1">
                 <p id="section-toc.1-1.1.2.1.1" class="keepWithNext"><a href="#section-1.1" class="xref">1.1</a>.  <a href="#name-scope" class="xref">Scope</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.1.2.2">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.1.2.2">
                 <p id="section-toc.1-1.1.2.2.1" class="keepWithNext"><a href="#section-1.2" class="xref">1.2</a>.  <a href="#name-pkix-environments-and-ca-po" class="xref">PKIX Environments and CA Policy</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.1.2.3">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.1.2.3">
                 <p id="section-toc.1-1.1.2.3.1" class="keepWithNext"><a href="#section-1.3" class="xref">1.3</a>.  <a href="#name-use-of-cddl" class="xref">Use of CDDL</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.1.2.4">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.1.2.4">
                 <p id="section-toc.1-1.1.2.4.1"><a href="#section-1.4" class="xref">1.4</a>.  <a href="#name-requirements-language" class="xref">Requirements Language</a></p>
 </li>
             </ul>
 </li>
-          <li class="compact ulEmpty toc" id="section-toc.1-1.2">
+          <li class="compact toc ulEmpty" id="section-toc.1-1.2">
             <p id="section-toc.1-1.2.1"><a href="#section-2" class="xref">2</a>.  <a href="#name-bpsec-security-context" class="xref">BPSec Security Context</a></p>
-<ul class="compact ulEmpty toc">
-<li class="compact ulEmpty toc" id="section-toc.1-1.2.2.1">
+<ul class="compact toc ulEmpty">
+<li class="compact toc ulEmpty" id="section-toc.1-1.2.2.1">
                 <p id="section-toc.1-1.2.2.1.1"><a href="#section-2.1" class="xref">2.1</a>.  <a href="#name-security-scope" class="xref">Security Scope</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.2.2.2">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.2.2.2">
                 <p id="section-toc.1-1.2.2.2.1"><a href="#section-2.2" class="xref">2.2</a>.  <a href="#name-parameters" class="xref">Parameters</a></p>
-<ul class="compact ulEmpty toc">
-<li class="compact ulEmpty toc" id="section-toc.1-1.2.2.2.2.1">
+<ul class="compact toc ulEmpty">
+<li class="compact toc ulEmpty" id="section-toc.1-1.2.2.2.2.1">
                     <p id="section-toc.1-1.2.2.2.2.1.1"><a href="#section-2.2.1" class="xref">2.2.1</a>.  <a href="#name-key-containers" class="xref">Key Containers</a></p>
 </li>
-                  <li class="compact ulEmpty toc" id="section-toc.1-1.2.2.2.2.2">
+                  <li class="compact toc ulEmpty" id="section-toc.1-1.2.2.2.2.2">
                     <p id="section-toc.1-1.2.2.2.2.2.1"><a href="#section-2.2.2" class="xref">2.2.2</a>.  <a href="#name-additional-header-maps" class="xref">Additional Header Maps</a></p>
 </li>
-                  <li class="compact ulEmpty toc" id="section-toc.1-1.2.2.2.2.3">
+                  <li class="compact toc ulEmpty" id="section-toc.1-1.2.2.2.2.3">
                     <p id="section-toc.1-1.2.2.2.2.3.1"><a href="#section-2.2.3" class="xref">2.2.3</a>.  <a href="#name-aad-scope" class="xref">AAD Scope</a></p>
 </li>
                 </ul>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.2.2.3">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.2.2.3">
                 <p id="section-toc.1-1.2.2.3.1"><a href="#section-2.3" class="xref">2.3</a>.  <a href="#name-results" class="xref">Results</a></p>
-<ul class="compact ulEmpty toc">
-<li class="compact ulEmpty toc" id="section-toc.1-1.2.2.3.2.1">
+<ul class="compact toc ulEmpty">
+<li class="compact toc ulEmpty" id="section-toc.1-1.2.2.3.2.1">
                     <p id="section-toc.1-1.2.2.3.2.1.1"><a href="#section-2.3.1" class="xref">2.3.1</a>.  <a href="#name-integrity-messages" class="xref">Integrity Messages</a></p>
 </li>
-                  <li class="compact ulEmpty toc" id="section-toc.1-1.2.2.3.2.2">
+                  <li class="compact toc ulEmpty" id="section-toc.1-1.2.2.3.2.2">
                     <p id="section-toc.1-1.2.2.3.2.2.1"><a href="#section-2.3.2" class="xref">2.3.2</a>.  <a href="#name-confidentiality-messages" class="xref">Confidentiality Messages</a></p>
 </li>
                 </ul>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.2.2.4">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.2.2.4">
                 <p id="section-toc.1-1.2.2.4.1"><a href="#section-2.4" class="xref">2.4</a>.  <a href="#name-key-considerations" class="xref">Key Considerations</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.2.2.5">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.2.2.5">
                 <p id="section-toc.1-1.2.2.5.1"><a href="#section-2.5" class="xref">2.5</a>.  <a href="#name-canonicalization-algorithms" class="xref">Canonicalization Algorithms</a></p>
-<ul class="compact ulEmpty toc">
-<li class="compact ulEmpty toc" id="section-toc.1-1.2.2.5.2.1">
+<ul class="compact toc ulEmpty">
+<li class="compact toc ulEmpty" id="section-toc.1-1.2.2.5.2.1">
                     <p id="section-toc.1-1.2.2.5.2.1.1"><a href="#section-2.5.1" class="xref">2.5.1</a>.  <a href="#name-generating-aad" class="xref">Generating AAD</a></p>
 </li>
-                  <li class="compact ulEmpty toc" id="section-toc.1-1.2.2.5.2.2">
+                  <li class="compact toc ulEmpty" id="section-toc.1-1.2.2.5.2.2">
                     <p id="section-toc.1-1.2.2.5.2.2.1"><a href="#section-2.5.2" class="xref">2.5.2</a>.  <a href="#name-payload-data" class="xref">Payload Data</a></p>
 </li>
                 </ul>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.2.2.6">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.2.2.6">
                 <p id="section-toc.1-1.2.2.6.1"><a href="#section-2.6" class="xref">2.6</a>.  <a href="#name-processing" class="xref">Processing</a></p>
-<ul class="compact ulEmpty toc">
-<li class="compact ulEmpty toc" id="section-toc.1-1.2.2.6.2.1">
+<ul class="compact toc ulEmpty">
+<li class="compact toc ulEmpty" id="section-toc.1-1.2.2.6.2.1">
                     <p id="section-toc.1-1.2.2.6.2.1.1"><a href="#section-2.6.1" class="xref">2.6.1</a>.  <a href="#name-node-authentication" class="xref">Node Authentication</a></p>
 </li>
-                  <li class="compact ulEmpty toc" id="section-toc.1-1.2.2.6.2.2">
+                  <li class="compact toc ulEmpty" id="section-toc.1-1.2.2.6.2.2">
                     <p id="section-toc.1-1.2.2.6.2.2.1"><a href="#section-2.6.2" class="xref">2.6.2</a>.  <a href="#name-policy-recommendations" class="xref">Policy Recommendations</a></p>
 </li>
                 </ul>
 </li>
             </ul>
 </li>
-          <li class="compact ulEmpty toc" id="section-toc.1-1.3">
+          <li class="compact toc ulEmpty" id="section-toc.1-1.3">
             <p id="section-toc.1-1.3.1"><a href="#section-3" class="xref">3</a>.  <a href="#name-cose-profile-for-bpsec" class="xref">COSE Profile for BPSec</a></p>
-<ul class="compact ulEmpty toc">
-<li class="compact ulEmpty toc" id="section-toc.1-1.3.2.1">
+<ul class="compact toc ulEmpty">
+<li class="compact toc ulEmpty" id="section-toc.1-1.3.2.1">
                 <p id="section-toc.1-1.3.2.1.1"><a href="#section-3.1" class="xref">3.1</a>.  <a href="#name-cose-messages" class="xref">COSE Messages</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.3.2.2">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.3.2.2">
                 <p id="section-toc.1-1.3.2.2.1"><a href="#section-3.2" class="xref">3.2</a>.  <a href="#name-interoperability-algorithms" class="xref">Interoperability Algorithms</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.3.2.3">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.3.2.3">
                 <p id="section-toc.1-1.3.2.3.1"><a href="#section-3.3" class="xref">3.3</a>.  <a href="#name-asymmetric-key-types-and-id" class="xref">Asymmetric Key Types and Identifiers</a></p>
-<ul class="compact ulEmpty toc">
-<li class="compact ulEmpty toc" id="section-toc.1-1.3.2.3.2.1">
+<ul class="compact toc ulEmpty">
+<li class="compact toc ulEmpty" id="section-toc.1-1.3.2.3.2.1">
                     <p id="section-toc.1-1.3.2.3.2.1.1"><a href="#section-3.3.1" class="xref">3.3.1</a>.  <a href="#name-policy-recommendations-2" class="xref">Policy Recommendations</a></p>
 </li>
                 </ul>
 </li>
             </ul>
 </li>
-          <li class="compact ulEmpty toc" id="section-toc.1-1.4">
+          <li class="compact toc ulEmpty" id="section-toc.1-1.4">
             <p id="section-toc.1-1.4.1"><a href="#section-4" class="xref">4</a>.  <a href="#name-pkix-certificate-profile" class="xref">PKIX Certificate Profile</a></p>
-<ul class="compact ulEmpty toc">
-<li class="compact ulEmpty toc" id="section-toc.1-1.4.2.1">
+<ul class="compact toc ulEmpty">
+<li class="compact toc ulEmpty" id="section-toc.1-1.4.2.1">
                 <p id="section-toc.1-1.4.2.1.1"><a href="#section-4.1" class="xref">4.1</a>.  <a href="#name-multiple-certificate-uses" class="xref">Multiple-Certificate Uses</a></p>
 </li>
             </ul>
 </li>
-          <li class="compact ulEmpty toc" id="section-toc.1-1.5">
+          <li class="compact toc ulEmpty" id="section-toc.1-1.5">
             <p id="section-toc.1-1.5.1"><a href="#section-5" class="xref">5</a>.  <a href="#name-implementation-status" class="xref">Implementation Status</a></p>
 </li>
-          <li class="compact ulEmpty toc" id="section-toc.1-1.6">
+          <li class="compact toc ulEmpty" id="section-toc.1-1.6">
             <p id="section-toc.1-1.6.1"><a href="#section-6" class="xref">6</a>.  <a href="#name-security-considerations" class="xref">Security Considerations</a></p>
-<ul class="compact ulEmpty toc">
-<li class="compact ulEmpty toc" id="section-toc.1-1.6.2.1">
+<ul class="compact toc ulEmpty">
+<li class="compact toc ulEmpty" id="section-toc.1-1.6.2.1">
                 <p id="section-toc.1-1.6.2.1.1"><a href="#section-6.1" class="xref">6.1</a>.  <a href="#name-threat-bpsec-block-replay" class="xref">Threat: BPSec Block Replay</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.6.2.2">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.6.2.2">
                 <p id="section-toc.1-1.6.2.2.1"><a href="#section-6.2" class="xref">6.2</a>.  <a href="#name-threat-untrusted-end-entity" class="xref">Threat: Untrusted End-Entity Certificate</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.6.2.3">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.6.2.3">
                 <p id="section-toc.1-1.6.2.3.1"><a href="#section-6.3" class="xref">6.3</a>.  <a href="#name-threat-certificate-validati" class="xref">Threat: Certificate Validation Vulnerabilities</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.6.2.4">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.6.2.4">
                 <p id="section-toc.1-1.6.2.4.1"><a href="#section-6.4" class="xref">6.4</a>.  <a href="#name-threat-bp-node-impersonatio" class="xref">Threat: BP Node Impersonation</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.6.2.5">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.6.2.5">
                 <p id="section-toc.1-1.6.2.5.1"><a href="#section-6.5" class="xref">6.5</a>.  <a href="#name-threat-unidentifiable-key" class="xref">Threat: Unidentifiable Key</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.6.2.6">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.6.2.6">
                 <p id="section-toc.1-1.6.2.6.1"><a href="#section-6.6" class="xref">6.6</a>.  <a href="#name-threat-non-trusted-public-k" class="xref">Threat: Non-Trusted Public Key</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.6.2.7">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.6.2.7">
                 <p id="section-toc.1-1.6.2.7.1"><a href="#section-6.7" class="xref">6.7</a>.  <a href="#name-threat-passive-leak-of-key-" class="xref">Threat: Passive Leak of Key Material</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.6.2.8">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.6.2.8">
                 <p id="section-toc.1-1.6.2.8.1"><a href="#section-6.8" class="xref">6.8</a>.  <a href="#name-threat-algorithm-vulnerabil" class="xref">Threat: Algorithm Vulnerabilities</a></p>
 </li>
             </ul>
 </li>
-          <li class="compact ulEmpty toc" id="section-toc.1-1.7">
+          <li class="compact toc ulEmpty" id="section-toc.1-1.7">
             <p id="section-toc.1-1.7.1"><a href="#section-7" class="xref">7</a>.  <a href="#name-iana-considerations" class="xref">IANA Considerations</a></p>
-<ul class="compact ulEmpty toc">
-<li class="compact ulEmpty toc" id="section-toc.1-1.7.2.1">
+<ul class="compact toc ulEmpty">
+<li class="compact toc ulEmpty" id="section-toc.1-1.7.2.1">
                 <p id="section-toc.1-1.7.2.1.1"><a href="#section-7.1" class="xref">7.1</a>.  <a href="#name-bpsec-security-contexts" class="xref">BPSec Security Contexts</a></p>
 </li>
             </ul>
 </li>
-          <li class="compact ulEmpty toc" id="section-toc.1-1.8">
+          <li class="compact toc ulEmpty" id="section-toc.1-1.8">
             <p id="section-toc.1-1.8.1"><a href="#section-8" class="xref">8</a>.  <a href="#name-acknowledgments" class="xref">Acknowledgments</a></p>
 </li>
-          <li class="compact ulEmpty toc" id="section-toc.1-1.9">
+          <li class="compact toc ulEmpty" id="section-toc.1-1.9">
             <p id="section-toc.1-1.9.1"><a href="#section-9" class="xref">9</a>.  <a href="#name-references" class="xref">References</a></p>
-<ul class="compact ulEmpty toc">
-<li class="compact ulEmpty toc" id="section-toc.1-1.9.2.1">
+<ul class="compact toc ulEmpty">
+<li class="compact toc ulEmpty" id="section-toc.1-1.9.2.1">
                 <p id="section-toc.1-1.9.2.1.1"><a href="#section-9.1" class="xref">9.1</a>.  <a href="#name-normative-references" class="xref">Normative References</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.9.2.2">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.9.2.2">
                 <p id="section-toc.1-1.9.2.2.1"><a href="#section-9.2" class="xref">9.2</a>.  <a href="#name-informative-references" class="xref">Informative References</a></p>
 </li>
             </ul>
 </li>
-          <li class="compact ulEmpty toc" id="section-toc.1-1.10">
+          <li class="compact toc ulEmpty" id="section-toc.1-1.10">
             <p id="section-toc.1-1.10.1"><a href="#section-appendix.a" class="xref">Appendix A</a>.  <a href="#name-examples" class="xref">Examples</a></p>
-<ul class="compact ulEmpty toc">
-<li class="compact ulEmpty toc" id="section-toc.1-1.10.2.1">
+<ul class="compact toc ulEmpty">
+<li class="compact toc ulEmpty" id="section-toc.1-1.10.2.1">
                 <p id="section-toc.1-1.10.2.1.1"><a href="#section-a.1" class="xref">A.1</a>.  <a href="#name-symmetric-key-cose_mac0" class="xref">Symmetric Key COSE_Mac0</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.10.2.2">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.10.2.2">
                 <p id="section-toc.1-1.10.2.2.1"><a href="#section-a.2" class="xref">A.2</a>.  <a href="#name-ec-keypair-cose_sign1" class="xref">EC Keypair COSE_Sign1</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.10.2.3">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.10.2.3">
                 <p id="section-toc.1-1.10.2.3.1"><a href="#section-a.3" class="xref">A.3</a>.  <a href="#name-rsa-keypair-cose_sign1" class="xref">RSA Keypair COSE_Sign1</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.10.2.4">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.10.2.4">
                 <p id="section-toc.1-1.10.2.4.1"><a href="#section-a.4" class="xref">A.4</a>.  <a href="#name-symmetric-kek-cose_encrypt" class="xref">Symmetric KEK COSE_Encrypt</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.10.2.5">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.10.2.5">
                 <p id="section-toc.1-1.10.2.5.1"><a href="#section-a.5" class="xref">A.5</a>.  <a href="#name-ec-keypair-cose_encrypt" class="xref">EC Keypair COSE_Encrypt</a></p>
 </li>
-              <li class="compact ulEmpty toc" id="section-toc.1-1.10.2.6">
+              <li class="compact toc ulEmpty" id="section-toc.1-1.10.2.6">
                 <p id="section-toc.1-1.10.2.6.1"><a href="#section-a.6" class="xref">A.6</a>.  <a href="#name-rsa-keypair-cose_encrypt" class="xref">RSA Keypair COSE_Encrypt</a></p>
 </li>
             </ul>
 </li>
-          <li class="compact ulEmpty toc" id="section-toc.1-1.11">
+          <li class="compact toc ulEmpty" id="section-toc.1-1.11">
             <p id="section-toc.1-1.11.1"><a href="#section-appendix.b" class="xref"></a><a href="#name-authors-address" class="xref">Author's Address</a></p>
 </li>
         </ul>
@@ -1633,10 +1633,7 @@ When a parameter is not present, the security acceptor SHALL use the Default Val
               <td class="text-left" rowspan="1" colspan="1">
                 <a href="#sec-ASB-param-additional" class="xref">Section 2.2.2</a> of this document</td>
               <td class="text-left" rowspan="1" colspan="1">
-                <div id="section-2.2-2.2.3.4.1">
-<pre class="sourcecode">''</pre><a href="#section-2.2-2.2.3.4.1" class="pilcrow">¶</a>
-</div>
-<p id="section-2.2-2.2.3.4.2">(empty bstr)<a href="#section-2.2-2.2.3.4.2" class="pilcrow">¶</a></p>
+                <p id="section-2.2-2.2.3.4.1"><code>''</code> (empty bstr)<a href="#section-2.2-2.2.3.4.1" class="pilcrow">¶</a></p>
 </td>
             </tr>
             <tr>
@@ -1645,10 +1642,7 @@ When a parameter is not present, the security acceptor SHALL use the Default Val
               <td class="text-left" rowspan="1" colspan="1">
                 <a href="#sec-ASB-param-additional" class="xref">Section 2.2.2</a> of this document</td>
               <td class="text-left" rowspan="1" colspan="1">
-                <div id="section-2.2-2.2.4.4.1">
-<pre class="sourcecode">{}</pre><a href="#section-2.2-2.2.4.4.1" class="pilcrow">¶</a>
-</div>
-<p id="section-2.2-2.2.4.4.2">(empty map)<a href="#section-2.2-2.2.4.4.2" class="pilcrow">¶</a></p>
+                <p id="section-2.2-2.2.4.4.1"><code>{}</code> (empty map)<a href="#section-2.2-2.2.4.4.1" class="pilcrow">¶</a></p>
 </td>
             </tr>
             <tr>
@@ -1657,10 +1651,7 @@ When a parameter is not present, the security acceptor SHALL use the Default Val
               <td class="text-left" rowspan="1" colspan="1">
                 <a href="#sec-ASB-param-AAD-scope" class="xref">Section 2.2.3</a> of this document</td>
               <td class="text-left" rowspan="1" colspan="1">
-                <div id="section-2.2-2.2.5.4.1">
-<pre class="sourcecode">0x7</pre><a href="#section-2.2-2.2.5.4.1" class="pilcrow">¶</a>
-</div>
-<p id="section-2.2-2.2.5.4.2">(all AAD contexts)<a href="#section-2.2-2.2.5.4.2" class="pilcrow">¶</a></p>
+                <p id="section-2.2-2.2.5.4.1"><code>0x7</code> (all AAD contexts)<a href="#section-2.2-2.2.5.4.1" class="pilcrow">¶</a></p>
 </td>
             </tr>
           </tbody>
@@ -1714,8 +1705,9 @@ There is no well-defined behavior for a security acceptor to handle multiple Add
 Security sources SHOULD NOT include an additional header parameter which represents an empty map.
 Security acceptors SHALL handle empty header map parameters, specifically the Additional Protected parameter because it is part of the external_aad.<a href="#section-2.2.2-4" class="pilcrow">¶</a></p>
 <p id="section-2.2.2-5">
-Security acceptors SHALL treat the aggregate of both additional header maps as being present in the "unprotected" header map of the COSE message of each result.
-If the same header label is present in a additional header map and a result message the item in the result message SHALL take precedence (i.e., the additional header items are added only if they are not already present in a result message).<a href="#section-2.2.2-5" class="pilcrow">¶</a></p>
+Security acceptors SHALL treat the aggregate of both additional header maps as being present in the <code>unprotected</code> header map of the highest-layers of the COSE message of each result.
+For single-layer messages (i.e., COSE_Encrypt0, COSE_MAC0, and COSE_Sign1) the additional headers apply to the message itself (layer 1) and for other messages the additional headers apply to the final recipients.
+If the same header label is present in a additional header map and a COSE layer's headers the item in the result header SHALL take precedence (i.e., the additional header items are added only if they are not already present in a layer's header).<a href="#section-2.2.2-5" class="pilcrow">¶</a></p>
 <p id="section-2.2.2-6">
 Additional header maps SHALL NOT contain any private key material.
 The security parameters are all stored in the bundle as plaintext and are visible to any bundle handlers.<a href="#section-2.2.2-6" class="pilcrow">¶</a></p>
@@ -1847,7 +1839,7 @@ $bpsec-cose-result /= [98, bstr .cbor COSE_Sign]
           </h4>
 <p id="section-2.3.1-1">
 When used within a Block Integrity Block, the COSE context SHALL allow only the Result IDs from <a href="#tab-BIB-results" class="xref">Table 3</a>.
-Each integrity result value SHALL consist of the COSE message indicated by <a href="#tab-BIB-results" class="xref">Table 3</a> in its untagged encoded form.<a href="#section-2.3.1-1" class="pilcrow">¶</a></p>
+Each integrity result value SHALL consist of the COSE message indicated by <a href="#tab-BIB-results" class="xref">Table 3</a> in its non-tagged encoded form.<a href="#section-2.3.1-1" class="pilcrow">¶</a></p>
 <span id="name-cose-integrity-results"></span><div id="tab-BIB-results">
 <table class="center" id="table-3">
             <caption>
@@ -1894,7 +1886,7 @@ Each integrity result value SHALL consist of the COSE message indicated by <a hr
           </table>
 </div>
 <p id="section-2.3.1-3">
-Each integrity result SHALL use the "detached" payload form with nil payload value.
+Each integrity result SHALL use the "detached" payload form with <code>null</code> payload value.
 The integrity result for COSE_Mac and COSE_Mac0 messages are computed by the procedure in <span><a href="https://rfc-editor.org/rfc/rfc8152#section-6.3" class="relref">Section 6.3</a> of [<a href="#RFC8152" class="xref">RFC8152</a>]</span>.
 The integrity result for COSE_Sign and COSE_Sign1 messages are computed by the procedure in <span><a href="https://rfc-editor.org/rfc/rfc8152#section-4.4" class="relref">Section 4.4</a> of [<a href="#RFC8152" class="xref">RFC8152</a>]</span>.<a href="#section-2.3.1-3" class="pilcrow">¶</a></p>
 <p id="section-2.3.1-4">
@@ -1909,7 +1901,7 @@ The COSE payload used for a signature or MAC result SHALL be either the block-ty
           </h4>
 <p id="section-2.3.2-1">
 When used within a Block Confidentiality Block, COSE context SHALL allow only the Result IDs from <a href="#tab-BCB-results" class="xref">Table 4</a>.
-Each confidentiality result value SHALL consist of the COSE message indicated by <a href="#tab-BCB-results" class="xref">Table 4</a> in its untagged encoded form.<a href="#section-2.3.2-1" class="pilcrow">¶</a></p>
+Each confidentiality result value SHALL consist of the COSE message indicated by <a href="#tab-BCB-results" class="xref">Table 4</a> in its non-tagged encoded form.<a href="#section-2.3.2-1" class="pilcrow">¶</a></p>
 <span id="name-cose-confidentiality-result"></span><div id="tab-BCB-results">
 <table class="center" id="table-4">
             <caption>
@@ -1946,7 +1938,7 @@ Only algorithms which support Authenticated Encryption with Authenticated Data (
 Because COSE encryption with AEAD appends the authentication tag with the ciphertext, the size of the block-type-specific-data will grow after an encryption operation.
 Security acceptors MUST NOT assume that the size of the plaintext is the same as the size of the ciphertext.<a href="#section-2.3.2-3" class="pilcrow">¶</a></p>
 <p id="section-2.3.2-4">
-Each confidentiality result SHALL use the "detached" payload form with nil payload value.
+Each confidentiality result SHALL use the "detached" payload form with <code>null</code> payload value.
 The confidentiality result for COSE_Encrypt and COSE_Encrypt0 messages are computed by the procedure in <span><a href="https://rfc-editor.org/rfc/rfc8152#section-5.3" class="relref">Section 5.3</a> of [<a href="#RFC8152" class="xref">RFC8152</a>]</span>.<a href="#section-2.3.2-4" class="pilcrow">¶</a></p>
 <p id="section-2.3.2-5">
 The COSE "protected attributes from the application" used for an encryption result SHALL be the encoded data defined in <a href="#sec-context-AAD" class="xref">Section 2.5.1</a>.
@@ -2037,7 +2029,7 @@ This also means that if the source byte string was encoded in a non-conforming w
 <p id="section-2.6-1">
 This section describes block-level requirements for handling COSE security data.<a href="#section-2.6-1" class="pilcrow">¶</a></p>
 <p id="section-2.6-2">
-Security results generated for BIB or BCB results SHALL conform to the COSE profile of <a href="#sec-COSE-profile" class="xref">Section 3</a>.<a href="#section-2.6-2" class="pilcrow">¶</a></p>
+All security results generated for BIB or BCB blocks SHALL conform to the COSE profile of <a href="#sec-COSE-profile" class="xref">Section 3</a> with header augmentation as defined in <a href="#sec-ASB-param-additional" class="xref">Section 2.2.2</a>.<a href="#section-2.6-2" class="pilcrow">¶</a></p>
 <div id="sec-context-auth">
 <section id="section-2.6.1">
           <h4 id="name-node-authentication">
@@ -2622,11 +2614,11 @@ The interoperability minimum algorithms and parameters are based on the draft <s
 <dd class="break"></dd>
 <dt id="I-D.ietf-dtn-bpsec">[I-D.ietf-dtn-bpsec]</dt>
         <dd>
-<span class="refAuthor">Birrane, E.</span> and <span class="refAuthor">K. McKeever</span>, <span class="refTitle">"Bundle Protocol Security Specification"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-dtn-bpsec-26</span>, <time datetime="2021-01-08" class="refDate">8 January 2021</time>, <span>&lt;<a href="https://tools.ietf.org/html/draft-ietf-dtn-bpsec-26">https://tools.ietf.org/html/draft-ietf-dtn-bpsec-26</a>&gt;</span>. </dd>
+<span class="refAuthor">III, E. J. B.</span> and <span class="refAuthor">K. McKeever</span>, <span class="refTitle">"Bundle Protocol Security Specification"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-dtn-bpsec-27</span>, <time datetime="2021-02-16" class="refDate">16 February 2021</time>, <span>&lt;<a href="https://tools.ietf.org/html/draft-ietf-dtn-bpsec-27">https://tools.ietf.org/html/draft-ietf-dtn-bpsec-27</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="I-D.ietf-dtn-tcpclv4">[I-D.ietf-dtn-tcpclv4]</dt>
         <dd>
-<span class="refAuthor">Sipos, B.</span>, <span class="refAuthor">Demmer, M.</span>, <span class="refAuthor">Ott, J.</span>, and <span class="refAuthor">S. Perreault</span>, <span class="refTitle">"Delay-Tolerant Networking TCP Convergence Layer Protocol Version 4"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-dtn-tcpclv4-24</span>, <time datetime="2020-12-07" class="refDate">7 December 2020</time>, <span>&lt;<a href="https://tools.ietf.org/html/draft-ietf-dtn-tcpclv4-24">https://tools.ietf.org/html/draft-ietf-dtn-tcpclv4-24</a>&gt;</span>. </dd>
+<span class="refAuthor">Sipos, B.</span>, <span class="refAuthor">Demmer, M.</span>, <span class="refAuthor">Ott, J.</span>, and <span class="refAuthor">S. Perreault</span>, <span class="refTitle">"Delay-Tolerant Networking TCP Convergence Layer Protocol Version 4"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-dtn-tcpclv4-26</span>, <time datetime="2021-02-15" class="refDate">15 February 2021</time>, <span>&lt;<a href="https://tools.ietf.org/html/draft-ietf-dtn-tcpclv4-26">https://tools.ietf.org/html/draft-ietf-dtn-tcpclv4-26</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="I-D.ietf-cose-x509">[I-D.ietf-cose-x509]</dt>
       <dd>
@@ -2653,11 +2645,11 @@ The interoperability minimum algorithms and parameters are based on the draft <s
 <dd class="break"></dd>
 <dt id="I-D.ietf-dtn-bpbis">[I-D.ietf-dtn-bpbis]</dt>
         <dd>
-<span class="refAuthor">Burleigh, S.</span>, <span class="refAuthor">Fall, K.</span>, and <span class="refAuthor">E. Birrane</span>, <span class="refTitle">"Bundle Protocol Version 7"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-dtn-bpbis-31</span>, <time datetime="2021-01-25" class="refDate">25 January 2021</time>, <span>&lt;<a href="https://tools.ietf.org/html/draft-ietf-dtn-bpbis-31">https://tools.ietf.org/html/draft-ietf-dtn-bpbis-31</a>&gt;</span>. </dd>
+<span class="refAuthor">Burleigh, S.</span>, <span class="refAuthor">Fall, K.</span>, and <span class="refAuthor">E. J. Birrane</span>, <span class="refTitle">"Bundle Protocol Version 7"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-dtn-bpbis-31</span>, <time datetime="2021-01-25" class="refDate">25 January 2021</time>, <span>&lt;<a href="https://tools.ietf.org/html/draft-ietf-dtn-bpbis-31">https://tools.ietf.org/html/draft-ietf-dtn-bpbis-31</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="I-D.ietf-dtn-bpsec-default-sc">[I-D.ietf-dtn-bpsec-default-sc]</dt>
         <dd>
-<span class="refAuthor">Birrane, E.</span>, <span class="refTitle">"BPSec Default Security Contexts"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-dtn-bpsec-default-sc-00</span>, <time datetime="2021-01-26" class="refDate">26 January 2021</time>, <span>&lt;<a href="https://tools.ietf.org/html/draft-ietf-dtn-bpsec-default-sc-00">https://tools.ietf.org/html/draft-ietf-dtn-bpsec-default-sc-00</a>&gt;</span>. </dd>
+<span class="refAuthor">III, E. J. B.</span>, <span class="refAuthor">White, A.</span>, and <span class="refAuthor">S. Heiner</span>, <span class="refTitle">"BPSec Default Security Contexts"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-dtn-bpsec-default-sc-05</span>, <time datetime="2021-04-26" class="refDate">26 April 2021</time>, <span>&lt;<a href="https://tools.ietf.org/html/draft-ietf-dtn-bpsec-default-sc-05">https://tools.ietf.org/html/draft-ietf-dtn-bpsec-default-sc-05</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="github-dtn-bpsec-cose">[github-dtn-bpsec-cose]</dt>
         <dd>
@@ -2706,11 +2698,11 @@ All example figures use the extended diagnostic notation <span>[<a href="#RFC861
         <div id="section-appendix.a-4.1">
 <pre class="sourcecode lang-cbor">
 [
-  7, / type code - bundle age /
-  2, / block num /
+  1, / type code: payload /
+  1, / block num /
   0, / flags /
   0, / CRC type /
-  &lt;&lt;300&gt;&gt; / type-specific-data: age /
+  &lt;&lt;"hello"&gt;&gt; / block-type-specific-data /
 ]
 </pre>
 </div>
@@ -2719,45 +2711,81 @@ All example figures use the extended diagnostic notation <span>[<a href="#RFC861
         </figcaption></figure>
 </div>
 <p id="section-appendix.a-5">
-All of the examples also operate within a security block containing the AAD Scope parameter with only "has-primary-ctx" and "has-target-ctx" flags set.
-This results in a consistent AAD-structure as shown in <a href="#fig-ex-AAD-structure" class="xref">Figure 9</a>, which is encoded as the byte string for COSE external_aad in all of the examples.<a href="#section-appendix.a-5" class="pilcrow">¶</a></p>
-<span id="name-example-scope-aad-structure"></span><div id="fig-ex-AAD-structure">
+All of the block integrity block examples operate within the context of the "frame" block of <a href="#fig-ex-bib-frame" class="xref">Figure 9</a>, and block confidentiality block examples within the frame block of <a href="#fig-ex-bcb-frame" class="xref">Figure 10</a>.<a href="#section-appendix.a-5" class="pilcrow">¶</a></p>
+<span id="name-block-integrity-block-frame"></span><div id="fig-ex-bib-frame">
 <figure id="figure-9">
         <div id="section-appendix.a-6.1">
 <pre class="sourcecode lang-cbor">
 [
+  11, / type code: BIB /
+  3, / block num /
+  0, / flags /
+  0, / CRC type /
+  b'' / block-type-specific-data to be replaced /
+]
+</pre>
+</div>
+<figcaption><a href="#figure-9" class="selfRef">Figure 9</a>:
+<a href="#name-block-integrity-block-frame" class="selfRef">Block integrity block frame CBOR diagnostic</a>
+        </figcaption></figure>
+</div>
+<span id="name-block-confidentiality-block"></span><div id="fig-ex-bcb-frame">
+<figure id="figure-10">
+        <div id="section-appendix.a-7.1">
+<pre class="sourcecode lang-cbor">
+[
+  12, / type code: BCB /
+  3, / block num /
+  0, / flags /
+  0, / CRC type /
+  b'' / block-type-specific-data to be replaced /
+]
+</pre>
+</div>
+<figcaption><a href="#figure-10" class="selfRef">Figure 10</a>:
+<a href="#name-block-confidentiality-block" class="selfRef">Block confidentiality block frame CBOR diagnostic</a>
+        </figcaption></figure>
+</div>
+<p id="section-appendix.a-8">
+All of the examples also operate within a security block containing the AAD Scope parameter with only "has-primary-ctx" and "has-target-ctx" flags set.
+This results in a consistent AAD-structure as shown in <a href="#fig-ex-AAD-structure" class="xref">Figure 11</a>, which is encoded as the byte string for COSE external_aad in all of the examples.<a href="#section-appendix.a-8" class="pilcrow">¶</a></p>
+<span id="name-example-scope-aad-structure"></span><div id="fig-ex-AAD-structure">
+<figure id="figure-11">
+        <div id="section-appendix.a-9.1">
+<pre class="sourcecode lang-cbor">
+[
   [ 7, 0, 0, [ 1, "//dst/svc" ], [ 1, "//src/" ], [ 1, "//src/" ],
     [ 0, 40 ], 1000000 ], / primary-ctx /
-  [ 7, 2, 0 ], / target-ctx /
+  [ 1, 1, 0 ], / target-ctx /
   null, / security-ctx /
   '' / additional-protected /
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-9" class="selfRef">Figure 9</a>:
+<figcaption><a href="#figure-11" class="selfRef">Figure 11</a>:
 <a href="#name-example-scope-aad-structure" class="selfRef">Example scope AAD-structure CBOR diagnostic</a>
         </figcaption></figure>
 </div>
-<p id="section-appendix.a-7">
+<p id="section-appendix.a-10">
 The only differences between these examples which use EC or RSA keypairs and a use of a PKIX public key certificate are: the parameters would have an x5chain parameter instead of a COSE_Key type, and the recipient would contain an "x5t" value instead of a "kid" value.
-Neither of these is a change to a protected header so, given the same private key, there would be no change to the signature or wrapped-key data.<a href="#section-appendix.a-7" class="pilcrow">¶</a></p>
-<p id="section-appendix.a-8">
+Neither of these is a change to a protected header so, given the same private key, there would be no change to the signature or wrapped-key data.<a href="#section-appendix.a-10" class="pilcrow">¶</a></p>
+<p id="section-appendix.a-11">
 Because each of the encryption examples use the same CEK within the same AAD, the target ciphertext is also identical.
-The target block after application of the encryption is shown in <a href="#fig-ex-encrypt-target-final" class="xref">Figure 10</a>.<a href="#section-appendix.a-8" class="pilcrow">¶</a></p>
+The target block after application of the encryption is shown in <a href="#fig-ex-encrypt-target-final" class="xref">Figure 12</a>.<a href="#section-appendix.a-11" class="pilcrow">¶</a></p>
 <span id="name-encrypted-target-block-cbor"></span><div id="fig-ex-encrypt-target-final">
-<figure id="figure-10">
-        <div id="section-appendix.a-9.1">
+<figure id="figure-12">
+        <div id="section-appendix.a-12.1">
 <pre class="sourcecode lang-cbor">
 [
-  7, / type code - bundle age /
-  2, / block num /
+  1, / type code: payload /
+  1, / block num /
   0, / flags /
   0, / CRC type /
-  h'63bb166949afd31b50841ee05153b9cfaf788d' / ciphertext /
+  h'1fd25f64a2eea12d4bb6c02d25bf33cec45f3e4f96b1' / ciphertext /
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-10" class="selfRef">Figure 10</a>:
+<figcaption><a href="#figure-12" class="selfRef">Figure 12</a>:
 <a href="#name-encrypted-target-block-cbor" class="selfRef">Encrypted Target block CBOR diagnostic</a>
         </figcaption></figure>
 </div>
@@ -2767,7 +2795,7 @@ The target block after application of the encryption is shown in <a href="#fig-e
         </h2>
 <p id="section-a.1-1">
 This is an example of a MAC with recipient having a 256-bit symmetric key identified by a "kid".<a href="#section-a.1-1" class="pilcrow">¶</a></p>
-<span id="name-symmetric-key"></span><figure id="figure-11">
+<span id="name-symmetric-key"></span><figure id="figure-13">
           <div id="section-a.1-2.1">
 <pre class="sourcecode lang-cbor">
 [
@@ -2780,67 +2808,77 @@ This is an example of a MAC with recipient having a 256-bit symmetric key identi
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-11" class="selfRef">Figure 11</a>:
+<figcaption><a href="#figure-13" class="selfRef">Figure 13</a>:
 <a href="#name-symmetric-key" class="selfRef">Symmetric Key</a>
           </figcaption></figure>
 <p id="section-a.1-3">
-The external_aad is the encoded data from <a href="#fig-ex-AAD-structure" class="xref">Figure 9</a>.
+The external_aad is the encoded data from <a href="#fig-ex-AAD-structure" class="xref">Figure 11</a>.
 The payload is the encoded target block-type-specific data from <a href="#fig-ex-target-block" class="xref">Figure 8</a>.<a href="#section-a.1-3" class="pilcrow">¶</a></p>
 <span id="name-mac_structure-cbor-diagnost"></span><div id="fig-ex-mac-struct">
-<figure id="figure-12">
+<figure id="figure-14">
           <div id="section-a.1-4.1">
 <pre class="sourcecode lang-cbor">
 [
   "MAC0", / context /
   h'a10105', / protected /
   h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
-  h'19012c' / payload /
+72632f820018281a000f424083010100f640', / external_aad /
+  h'6568656c6c6f' / payload /
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-12" class="selfRef">Figure 12</a>:
+<figcaption><a href="#figure-14" class="selfRef">Figure 14</a>:
 <a href="#name-mac_structure-cbor-diagnost" class="selfRef">MAC_structure CBOR diagnostic</a>
           </figcaption></figure>
 </div>
 <span id="name-abstract-security-block-cbo"></span><div id="fig-ex-mac-asb">
-<figure id="figure-13">
+<figure id="figure-15">
           <div id="section-a.1-5.1">
 <pre class="sourcecode lang-cbor">
-[
-  [2], / targets /
-  0, / security context TBD-COSE /
-  1, / flags: params-present /
-  [ / parameters /
-    [
-      5, / AAD-scope /
-      0x03 / has-primary-ctx | has-target-ctx /
-    ]
-  ],
+[1], / targets /
+0, / security context TBD-COSE /
+1, / flags: params-present /
+[1, "//src/"], / security source /
+[ / parameters /
   [
-    [ / target block #2 /
-      [ / result /
-        17, / COSE_Mac0 tag /
-        &lt;&lt;[
-          &lt;&lt;{ / protected /
-             / alg / 1:5 / HMAC 256//256 /
-          }&gt;&gt;,
-          { / unprotected /
-            / kid / 4:'ExampleMAC'
-          },
-          null, / payload detached /
-          h'fa8b08724db1f0f4097156b12e65a1e7d57cfcdd413ced62d9e20f2b
-a4efcea5' / tag /
-        ]&gt;&gt;
-      ]
+    5, / AAD-scope /
+    0x03 / has-primary-ctx | has-target-ctx /
+  ]
+],
+[
+  [ / target block #1 /
+    [ / result /
+      17, / COSE_Mac0 tag /
+      &lt;&lt;[
+        &lt;&lt;{ / protected /
+           / alg / 1:5 / HMAC 256//256 /
+        }&gt;&gt;,
+        { / unprotected /
+          / kid / 4:'ExampleMAC'
+        },
+        null, / payload detached /
+        h'cea75ab637d2c4499ceca970ec1acc9f789f382b06571a0bdba9cd5a0a
+b48f0e' / tag /
+      ]&gt;&gt;
     ]
   ]
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-13" class="selfRef">Figure 13</a>:
+<figcaption><a href="#figure-15" class="selfRef">Figure 15</a>:
 <a href="#name-abstract-security-block-cbo" class="selfRef">Abstract Security Block CBOR diagnostic</a>
           </figcaption></figure>
+</div>
+<p id="section-a.1-6">
+The final bundle is encoded as the byte string:<a href="#section-a.1-6" class="pilcrow">¶</a></p>
+<div id="section-a.1-7">
+<pre class="sourcecode lang-cbor">
+h'9f880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f7372
+632f820018281a000f4240850b030000584c810100018201662f2f7372632f818205
+038181821158358443a10105a1044a4578616d706c654b6579f65820cea75ab637d2
+c4499ceca970ec1acc9f789f382b06571a0bdba9cd5a0ab48f0e8501010000466568
+656c6c6fff'
+</pre><a href="#section-a.1-7" class="pilcrow">¶</a>
 </div>
 </section>
 <section id="section-a.2">
@@ -2850,7 +2888,7 @@ a4efcea5' / tag /
 <p id="section-a.2-1">
 This is an example of a signature with a recipient having a P-256 curve EC keypair identified by a "kid".
 The associated public key is included as a security parameter.<a href="#section-a.2-1" class="pilcrow">¶</a></p>
-<span id="name-example-keys"></span><figure id="figure-14">
+<span id="name-example-keys"></span><figure id="figure-16">
           <div id="section-a.2-2.1">
 <pre class="sourcecode lang-cbor">
 [
@@ -2868,68 +2906,79 @@ e4fe0a1787a8',
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-14" class="selfRef">Figure 14</a>:
+<figcaption><a href="#figure-16" class="selfRef">Figure 16</a>:
 <a href="#name-example-keys" class="selfRef">Example Keys</a>
           </figcaption></figure>
 <p id="section-a.2-3">
-The external_aad is the encoded data from <a href="#fig-ex-AAD-structure" class="xref">Figure 9</a>.
+The external_aad is the encoded data from <a href="#fig-ex-AAD-structure" class="xref">Figure 11</a>.
 The payload is the encoded target block-type-specific data from <a href="#fig-ex-target-block" class="xref">Figure 8</a>.<a href="#section-a.2-3" class="pilcrow">¶</a></p>
 <span id="name-sig_structure-cbor-diagnost"></span><div id="fig-ex-sign-ec2-struct">
-<figure id="figure-15">
+<figure id="figure-17">
           <div id="section-a.2-4.1">
 <pre class="sourcecode lang-cbor">
 [
   "Signature1", / context /
   h'a10126', / protected /
   h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
-  h'19012c' / payload /
+72632f820018281a000f424083010100f640', / external_aad /
+  h'6568656c6c6f' / payload /
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-15" class="selfRef">Figure 15</a>:
+<figcaption><a href="#figure-17" class="selfRef">Figure 17</a>:
 <a href="#name-sig_structure-cbor-diagnost" class="selfRef">Sig_structure CBOR diagnostic</a>
           </figcaption></figure>
 </div>
 <span id="name-abstract-security-block-cbor"></span><div id="fig-ex-sign-ec2-asb">
-<figure id="figure-16">
+<figure id="figure-18">
           <div id="section-a.2-5.1">
 <pre class="sourcecode lang-cbor">
-[
-  [2], / targets /
-  0, / security context TBD-COSE /
-  1, / flags: params-present /
-  [ / parameters /
-    [
-      5, / AAD-scope /
-      0x03 / has-primary-ctx | has-target-ctx /
-    ]
-  ],
+[1], / targets /
+0, / security context TBD-COSE /
+1, / flags: params-present /
+[1, "//src/"], / security source /
+[ / parameters /
   [
-    [ / target block #2 /
-      [ / result /
-        18, / COSE_Sign1 tag /
-        &lt;&lt;[
-          &lt;&lt;{ / protected /
-             / alg / 1:-7 / ES256 /
-          }&gt;&gt;,
-          { / unprotected /
-            / kid / 4:'ExampleEC2'
-          },
-          null, / payload detached /
-          h'66358aa1ee41276688e417d7686db3914f3a6d061a31145912fc18ac
-68c1b980e9bbae2d18887677f9f8fb1d0a6133e62d89a2616826fd1109620122cde6
-eb5c' / signature /
-        ]&gt;&gt;
-      ]
+    5, / AAD-scope /
+    0x03 / has-primary-ctx | has-target-ctx /
+  ]
+],
+[
+  [ / target block #1 /
+    [ / result /
+      18, / COSE_Sign1 tag /
+      &lt;&lt;[
+        &lt;&lt;{ / protected /
+           / alg / 1:-7 / ES256 /
+        }&gt;&gt;,
+        { / unprotected /
+          / kid / 4:'ExampleEC2'
+        },
+        null, / payload detached /
+        h'b9e130d0b26d35d02299ca27601aab5c36efabefe1608da0c065368ce9
+a78e76e90a26c20caf294d2735861a16ff53b0173a801ceb6993da62c76863a8261a
+ee' / signature /
+      ]&gt;&gt;
     ]
   ]
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-16" class="selfRef">Figure 16</a>:
+<figcaption><a href="#figure-18" class="selfRef">Figure 18</a>:
 <a href="#name-abstract-security-block-cbor" class="selfRef">Abstract Security Block CBOR diagnostic</a>
           </figcaption></figure>
+</div>
+<p id="section-a.2-6">
+The final bundle is encoded as the byte string:<a href="#section-a.2-6" class="pilcrow">¶</a></p>
+<div id="section-a.2-7">
+<pre class="sourcecode lang-cbor">
+h'9f880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f7372
+632f820018281a000f4240850b030000586c810100018201662f2f7372632f818205
+038181821258558443a10126a1044a4578616d706c65454332f65840b9e130d0b26d
+35d02299ca27601aab5c36efabefe1608da0c065368ce9a78e76e90a26c20caf294d
+2735861a16ff53b0173a801ceb6993da62c76863a8261aee8501010000466568656c
+6c6fff'
+</pre><a href="#section-a.2-7" class="pilcrow">¶</a>
 </div>
 </section>
 <section id="section-a.3">
@@ -2942,7 +2991,7 @@ The associated public key is included as a security parameter.<a href="#section-
 <p id="section-a.3-2">
 This key strength is not supposed to be a secure configuration, only intended to explain the procedure.
 This signature uses a random salt, so the full signature output is not deterministic.<a href="#section-a.3-2" class="pilcrow">¶</a></p>
-<span id="name-example-keys-2"></span><figure id="figure-17">
+<span id="name-example-keys-2"></span><figure id="figure-19">
           <div id="section-a.3-3.1">
 <pre class="sourcecode lang-cbor">
 [
@@ -2979,70 +3028,82 @@ f4f92865ca3'
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-17" class="selfRef">Figure 17</a>:
+<figcaption><a href="#figure-19" class="selfRef">Figure 19</a>:
 <a href="#name-example-keys-2" class="selfRef">Example Keys</a>
           </figcaption></figure>
 <p id="section-a.3-4">
-The external_aad is the encoded data from <a href="#fig-ex-AAD-structure" class="xref">Figure 9</a>.
+The external_aad is the encoded data from <a href="#fig-ex-AAD-structure" class="xref">Figure 11</a>.
 The payload is the encoded target block-type-specific data from <a href="#fig-ex-target-block" class="xref">Figure 8</a>.<a href="#section-a.3-4" class="pilcrow">¶</a></p>
 <span id="name-sig_structure-cbor-diagnosti"></span><div id="fig-ex-sign-rsa-struct">
-<figure id="figure-18">
+<figure id="figure-20">
           <div id="section-a.3-5.1">
 <pre class="sourcecode lang-cbor">
 [
   "Signature1", / context /
   h'a1013824', / protected /
   h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640', / external_aad /
-  h'19012c' / payload /
+72632f820018281a000f424083010100f640', / external_aad /
+  h'6568656c6c6f' / payload /
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-18" class="selfRef">Figure 18</a>:
+<figcaption><a href="#figure-20" class="selfRef">Figure 20</a>:
 <a href="#name-sig_structure-cbor-diagnosti" class="selfRef">Sig_structure CBOR diagnostic</a>
           </figcaption></figure>
 </div>
 <span id="name-abstract-security-block-cbor-"></span><div id="fig-ex-sign-rsa-asb">
-<figure id="figure-19">
+<figure id="figure-21">
           <div id="section-a.3-6.1">
 <pre class="sourcecode lang-cbor">
-[
-  [2], / targets /
-  0, / security context TBD-COSE /
-  1, / flags: params-present /
-  [ / parameters /
-    [
-      5, / AAD-scope /
-      0x03 / has-primary-ctx | has-target-ctx /
-    ]
-  ],
+[1], / targets /
+0, / security context TBD-COSE /
+1, / flags: params-present /
+[1, "//src/"], / security source /
+[ / parameters /
   [
-    [ / target block #2 /
-      [ / result /
-        18, / COSE_Sign1 tag /
-        &lt;&lt;[
-          &lt;&lt;{ / protected /
-             / alg / 1:-37 / PS256 /
-          }&gt;&gt;,
-          { / unprotected /
-            / kid / 4:'ExampleRSA'
-          },
-          null, / payload detached /
-          h'8e469941a292d3554c81d1a69330b88563b28b415cf777c694d83272
-550d232b57ed4046d03849c2ade086145339872f7712e36ab4c382c1c541185fb15c
-036f00fd2842dff3e9d4f4068716d853f7bfe13791521e28faf42db085ab259a009a
-dceeb2acb7852bec6ec5069fc0d237883da8656aa6773682c3e01bd9732028
-c6' / signature /
-        ]&gt;&gt;
-      ]
+    5, / AAD-scope /
+    0x03 / has-primary-ctx | has-target-ctx /
+  ]
+],
+[
+  [ / target block #1 /
+    [ / result /
+      18, / COSE_Sign1 tag /
+      &lt;&lt;[
+        &lt;&lt;{ / protected /
+           / alg / 1:-37 / PS256 /
+        }&gt;&gt;,
+        { / unprotected /
+          / kid / 4:'ExampleRSA'
+        },
+        null, / payload detached /
+        h'55dac638eb2b6e31386189e2e5afe0f2f6888c017013bf7ecbdb585c38
+2845dcb305ca1b43d727113c4616d4185bbbafcef83ca3cea8c583bddbddabc3c412
+590de368ccc695d887037f3afc97766edfddfaadd43c4d5a48725159d2fad2b9dee1
+30b0a4e990410d7d91a294747a9f53780f72987ed2a488d8b84e7590b418
+5a' / signature /
+      ]&gt;&gt;
     ]
   ]
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-19" class="selfRef">Figure 19</a>:
+<figcaption><a href="#figure-21" class="selfRef">Figure 21</a>:
 <a href="#name-abstract-security-block-cbor-" class="selfRef">Abstract Security Block CBOR diagnostic</a>
           </figcaption></figure>
+</div>
+<p id="section-a.3-7">
+The final bundle is encoded as the byte string:<a href="#section-a.3-7" class="pilcrow">¶</a></p>
+<div id="section-a.3-8">
+<pre class="sourcecode lang-cbor">
+h'9f880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f7372
+632f820018281a000f4240850b03000058ad810100018201662f2f7372632f818205
+038181821258968444a1013824a1044a4578616d706c65525341f6588055dac638eb
+2b6e31386189e2e5afe0f2f6888c017013bf7ecbdb585c382845dcb305ca1b43d727
+113c4616d4185bbbafcef83ca3cea8c583bddbddabc3c412590de368ccc695d88703
+7f3afc97766edfddfaadd43c4d5a48725159d2fad2b9dee130b0a4e990410d7d91a2
+94747a9f53780f72987ed2a488d8b84e7590b4185a8501010000466568656c6c6fff'
+</pre><a href="#section-a.3-8" class="pilcrow">¶</a>
 </div>
 </section>
 <section id="section-a.4">
@@ -3051,9 +3112,9 @@ c6' / signature /
         </h2>
 <p id="section-a.4-1">
 This is an example of an encryption with a random CEK and an explicit key-encryption key (KEK) identified by a "kid".
-The keys used are shown in <a href="#fig-ex-encrypt-symm-keys" class="xref">Figure 20</a>.<a href="#section-a.4-1" class="pilcrow">¶</a></p>
+The keys used are shown in <a href="#fig-ex-encrypt-symm-keys" class="xref">Figure 22</a>.<a href="#section-a.4-1" class="pilcrow">¶</a></p>
 <span id="name-example-keys-3"></span><div id="fig-ex-encrypt-symm-keys">
-<figure id="figure-20">
+<figure id="figure-22">
           <div id="section-a.4-2.1">
 <pre class="sourcecode lang-cbor">
 [
@@ -3072,77 +3133,88 @@ ae38ad7a972e'
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-20" class="selfRef">Figure 20</a>:
+<figcaption><a href="#figure-22" class="selfRef">Figure 22</a>:
 <a href="#name-example-keys-3" class="selfRef">Example Keys</a>
           </figcaption></figure>
 </div>
 <p id="section-a.4-3">
-The external_aad is the encoded data from <a href="#fig-ex-AAD-structure" class="xref">Figure 9</a>.<a href="#section-a.4-3" class="pilcrow">¶</a></p>
+The external_aad is the encoded data from <a href="#fig-ex-AAD-structure" class="xref">Figure 11</a>.<a href="#section-a.4-3" class="pilcrow">¶</a></p>
 <span id="name-enc_structure-cbor-diagnost"></span><div id="fig-ex-encrypt-symm-struct">
-<figure id="figure-21">
+<figure id="figure-23">
           <div id="section-a.4-4.1">
 <pre class="sourcecode lang-cbor">
 [
   "Encrypt", / context /
   h'a10103', / protected /
   h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640' / external_aad /
+72632f820018281a000f424083010100f640' / external_aad /
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-21" class="selfRef">Figure 21</a>:
+<figcaption><a href="#figure-23" class="selfRef">Figure 23</a>:
 <a href="#name-enc_structure-cbor-diagnost" class="selfRef">Enc_structure CBOR diagnostic</a>
           </figcaption></figure>
 </div>
 <p id="section-a.4-5">
-The ASB item for this encryption operation is shown in <a href="#fig-ex-encrypt-symm-asb" class="xref">Figure 22</a> and corresponds with the updated target block (containing the ciphertext) of <a href="#fig-ex-encrypt-target-final" class="xref">Figure 10</a>.<a href="#section-a.4-5" class="pilcrow">¶</a></p>
+The ASB item for this encryption operation is shown in <a href="#fig-ex-encrypt-symm-asb" class="xref">Figure 24</a> and corresponds with the updated target block (containing the ciphertext) of <a href="#fig-ex-encrypt-target-final" class="xref">Figure 12</a>.<a href="#section-a.4-5" class="pilcrow">¶</a></p>
 <span id="name-abstract-security-block-cbor-d"></span><div id="fig-ex-encrypt-symm-asb">
-<figure id="figure-22">
+<figure id="figure-24">
           <div id="section-a.4-6.1">
 <pre class="sourcecode lang-cbor">
-[
-  [2], / targets /
-  0, / security context TBD-COSE /
-  1, / flags: params-present /
-  [ / parameters /
-    [
-      5, / AAD-scope /
-      0x03 / has-primary-ctx | has-target-ctx /
-    ]
-  ],
+[1], / targets /
+0, / security context TBD-COSE /
+1, / flags: params-present /
+[1, "//src/"], / security source /
+[ / parameters /
   [
-    [ / target block #2 /
-      [ / result /
-        96, / COSE_Encrypt tag /
-        &lt;&lt;[
-          &lt;&lt;{ / protected /
-             / alg / 1:3 / A256GCM /
-          }&gt;&gt;,
-          { / unprotected /
-            / iv / 5: h'6f3093eba5d85143c3dc484a'
-          },
-          null, / payload detached /
-          [
-            [ / recipient /
-              h'', / protected /
-              { / unprotected /
-                / alg / 1:-5, / A256KW /
-                / kid / 4:'ExampleKEK'
-              },
-              h'917f2045e1169502756252bf119a94cdac6a9d8944245b5a9a26
-d403a6331159e3d691a708e9984d' / key-wrapped /
-            ]
+    5, / AAD-scope /
+    0x03 / has-primary-ctx | has-target-ctx /
+  ]
+],
+[
+  [ / target block #1 /
+    [ / result /
+      96, / COSE_Encrypt tag /
+      &lt;&lt;[
+        &lt;&lt;{ / protected /
+           / alg / 1:3 / A256GCM /
+        }&gt;&gt;,
+        { / unprotected /
+          / iv / 5: h'6f3093eba5d85143c3dc484a'
+        },
+        null, / payload detached /
+        [
+          [ / recipient /
+            h'', / protected /
+            { / unprotected /
+              / alg / 1:-5, / A256KW /
+              / kid / 4:'ExampleKEK'
+            },
+            h'917f2045e1169502756252bf119a94cdac6a9d8944245b5a9a26d4
+03a6331159e3d691a708e9984d' / key-wrapped /
           ]
-        ]&gt;&gt;
-      ]
+        ]
+      ]&gt;&gt;
     ]
   ]
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-22" class="selfRef">Figure 22</a>:
+<figcaption><a href="#figure-24" class="selfRef">Figure 24</a>:
 <a href="#name-abstract-security-block-cbor-d" class="selfRef">Abstract Security Block CBOR diagnostic</a>
           </figcaption></figure>
+</div>
+<p id="section-a.4-7">
+The final bundle is encoded as the byte string:<a href="#section-a.4-7" class="pilcrow">¶</a></p>
+<div id="section-a.4-8">
+<pre class="sourcecode lang-cbor">
+h'9f880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f7372
+632f820018281a000f4240850c0300005869810100018201662f2f7372632f818205
+03818182186058518443a10103a1054c6f3093eba5d85143c3dc484af6818340a201
+24044a4578616d706c654b454b5828917f2045e1169502756252bf119a94cdac6a9d
+8944245b5a9a26d403a6331159e3d691a708e9984d8501010000561fd25f64a2eea1
+2d4bb6c02d25bf33cec45f3e4f96b1ff'
+</pre><a href="#section-a.4-8" class="pilcrow">¶</a>
 </div>
 </section>
 <section id="section-a.5">
@@ -3151,9 +3223,9 @@ d403a6331159e3d691a708e9984d' / key-wrapped /
         </h2>
 <p id="section-a.5-1">
 This is an example of an encryption with an P-256 curve ephemeral sender keypair and a static recipient keypair identified by a "kid".
-The keys used are shown in <a href="#fig-ex-encrypt-ec2-keys" class="xref">Figure 23</a>.<a href="#section-a.5-1" class="pilcrow">¶</a></p>
+The keys used are shown in <a href="#fig-ex-encrypt-ec2-keys" class="xref">Figure 25</a>.<a href="#section-a.5-1" class="pilcrow">¶</a></p>
 <span id="name-example-keys-4"></span><div id="fig-ex-encrypt-ec2-keys">
-<figure id="figure-23">
+<figure id="figure-25">
           <div id="section-a.5-2.1">
 <pre class="sourcecode lang-cbor">
 [
@@ -3187,85 +3259,98 @@ e4fe0a1787a8',
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-23" class="selfRef">Figure 23</a>:
+<figcaption><a href="#figure-25" class="selfRef">Figure 25</a>:
 <a href="#name-example-keys-4" class="selfRef">Example Keys</a>
           </figcaption></figure>
 </div>
 <p id="section-a.5-3">
-The external_aad is the encoded data from <a href="#fig-ex-AAD-structure" class="xref">Figure 9</a>.<a href="#section-a.5-3" class="pilcrow">¶</a></p>
+The external_aad is the encoded data from <a href="#fig-ex-AAD-structure" class="xref">Figure 11</a>.<a href="#section-a.5-3" class="pilcrow">¶</a></p>
 <span id="name-enc_structure-cbor-diagnosti"></span><div id="fig-ex-encrypt-ec2-struct">
-<figure id="figure-24">
+<figure id="figure-26">
           <div id="section-a.5-4.1">
 <pre class="sourcecode lang-cbor">
 [
   "Encrypt", / context /
   h'a10103', / protected /
   h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640' / external_aad /
+72632f820018281a000f424083010100f640' / external_aad /
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-24" class="selfRef">Figure 24</a>:
+<figcaption><a href="#figure-26" class="selfRef">Figure 26</a>:
 <a href="#name-enc_structure-cbor-diagnosti" class="selfRef">Enc_structure CBOR diagnostic</a>
           </figcaption></figure>
 </div>
 <p id="section-a.5-5">
-The ASB item for this encryption operation is shown in <a href="#fig-ex-encrypt-ec2-asb" class="xref">Figure 25</a> and corresponds with the updated target block (containing the ciphertext) of <a href="#fig-ex-encrypt-target-final" class="xref">Figure 10</a>.<a href="#section-a.5-5" class="pilcrow">¶</a></p>
+The ASB item for this encryption operation is shown in <a href="#fig-ex-encrypt-ec2-asb" class="xref">Figure 27</a> and corresponds with the updated target block (containing the ciphertext) of <a href="#fig-ex-encrypt-target-final" class="xref">Figure 12</a>.<a href="#section-a.5-5" class="pilcrow">¶</a></p>
 <span id="name-abstract-security-block-cbor-di"></span><div id="fig-ex-encrypt-ec2-asb">
-<figure id="figure-25">
+<figure id="figure-27">
           <div id="section-a.5-6.1">
 <pre class="sourcecode lang-cbor">
-[
-  [2], / targets /
-  0, / security context TBD-COSE /
-  1, / flags: params-present /
-  [ / parameters /
-    [
-      5, / AAD-scope /
-      0x03 / has-primary-ctx | has-target-ctx /
-    ]
-  ],
+[1], / targets /
+0, / security context TBD-COSE /
+1, / flags: params-present /
+[1, "//src/"], / security source /
+[ / parameters /
   [
-    [ / target block #2 /
-      [ / result /
-        96, / COSE_Encrypt tag /
-        &lt;&lt;[
-          &lt;&lt;{ / protected /
-             / alg / 1:3 / A256GCM /
-          }&gt;&gt;,
-          { / unprotected /
-            / iv / 5: h'6f3093eba5d85143c3dc484a'
-          },
-          null, / payload detached /
-          [
-            [ / recipient /
-              h'', / protected /
-              { / unprotected /
-                / alg / 1:-31, / ECDH-ES + A256KW /
-                / kid / 4:'ExampleEC2',
-                / ephemeral key / -1:{
-                  1:2,
-                  -1:1,
-                  -2:h'fedaba748882050d1bef8ba992911898f554450952070
-aeb4788ca57d1df6bcc',
-                  -3:h'ceaa8e7ff4751a4f81c70e98f1713378b0bd82a1414a2
-f493c1c9c0670f28d62'
-                }
-              },
-              h'cb530b03f1e4b09ec1a0ca19afafbf280284106ab407aaf9bfed
-6e666c8f2f9ab5465cf11ef02756' / key-wrapped /
-            ]
+    5, / AAD-scope /
+    0x03 / has-primary-ctx | has-target-ctx /
+  ]
+],
+[
+  [ / target block #1 /
+    [ / result /
+      96, / COSE_Encrypt tag /
+      &lt;&lt;[
+        &lt;&lt;{ / protected /
+           / alg / 1:3 / A256GCM /
+        }&gt;&gt;,
+        { / unprotected /
+          / iv / 5: h'6f3093eba5d85143c3dc484a'
+        },
+        null, / payload detached /
+        [
+          [ / recipient /
+            h'', / protected /
+            { / unprotected /
+              / alg / 1:-31, / ECDH-ES + A256KW /
+              / kid / 4:'ExampleEC2',
+              / ephemeral key / -1:{
+                1:2,
+                -1:1,
+                -2:h'fedaba748882050d1bef8ba992911898f554450952070ae
+b4788ca57d1df6bcc',
+                -3:h'ceaa8e7ff4751a4f81c70e98f1713378b0bd82a1414a2f4
+93c1c9c0670f28d62'
+              }
+            },
+            h'cb530b03f1e4b09ec1a0ca19afafbf280284106ab407aaf9bfed6e
+666c8f2f9ab5465cf11ef02756' / key-wrapped /
           ]
-        ]&gt;&gt;
-      ]
+        ]
+      ]&gt;&gt;
     ]
   ]
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-25" class="selfRef">Figure 25</a>:
+<figcaption><a href="#figure-27" class="selfRef">Figure 27</a>:
 <a href="#name-abstract-security-block-cbor-di" class="selfRef">Abstract Security Block CBOR diagnostic</a>
           </figcaption></figure>
+</div>
+<p id="section-a.5-7">
+The final bundle is encoded as the byte string:<a href="#section-a.5-7" class="pilcrow">¶</a></p>
+<div id="section-a.5-8">
+<pre class="sourcecode lang-cbor">
+h'9f880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f7372
+632f820018281a000f4240850c03000058b6810100018201662f2f7372632f818205
+038181821860589e8443a10103a1054c6f3093eba5d85143c3dc484af6818340a301
+381e044a4578616d706c6545433220a401022001215820fedaba748882050d1bef8b
+a992911898f554450952070aeb4788ca57d1df6bcc225820ceaa8e7ff4751a4f81c7
+0e98f1713378b0bd82a1414a2f493c1c9c0670f28d625828cb530b03f1e4b09ec1a0
+ca19afafbf280284106ab407aaf9bfed6e666c8f2f9ab5465cf11ef0275685010100
+00561fd25f64a2eea12d4bb6c02d25bf33cec45f3e4f96b1ff'
+</pre><a href="#section-a.5-8" class="pilcrow">¶</a>
 </div>
 </section>
 <section id="section-a.6">
@@ -3279,7 +3364,7 @@ The associated public key is included as a security parameter.<a href="#section-
 This key strength is not supposed to be a secure configuration, only intended to explain the procedure.
 This padding scheme uses a random salt, so the full layer-2 ciphertext output is not deterministic.<a href="#section-a.6-2" class="pilcrow">¶</a></p>
 <span id="name-example-keys-5"></span><div id="fig-ex-encrypt-rsa-keys">
-<figure id="figure-26">
+<figure id="figure-28">
           <div id="section-a.6-3.1">
 <pre class="sourcecode lang-cbor">
 [
@@ -3322,80 +3407,94 @@ f4f92865ca3'
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-26" class="selfRef">Figure 26</a>:
+<figcaption><a href="#figure-28" class="selfRef">Figure 28</a>:
 <a href="#name-example-keys-5" class="selfRef">Example Keys</a>
           </figcaption></figure>
 </div>
 <p id="section-a.6-4">
-The external_aad is the encoded data from <a href="#fig-ex-AAD-structure" class="xref">Figure 9</a>.<a href="#section-a.6-4" class="pilcrow">¶</a></p>
+The external_aad is the encoded data from <a href="#fig-ex-AAD-structure" class="xref">Figure 11</a>.<a href="#section-a.6-4" class="pilcrow">¶</a></p>
 <span id="name-enc_structure-cbor-diagnostic"></span><div id="fig-ex-encrypt-rsa-struct">
-<figure id="figure-27">
+<figure id="figure-29">
           <div id="section-a.6-5.1">
 <pre class="sourcecode lang-cbor">
 [
   "Encrypt", / context /
   h'a10103', / protected /
   h'84880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f73
-72632f820018281a000f424083070200f640' / external_aad /
+72632f820018281a000f424083010100f640' / external_aad /
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-27" class="selfRef">Figure 27</a>:
+<figcaption><a href="#figure-29" class="selfRef">Figure 29</a>:
 <a href="#name-enc_structure-cbor-diagnostic" class="selfRef">Enc_structure CBOR diagnostic</a>
           </figcaption></figure>
 </div>
 <p id="section-a.6-6">
-The ASB item for this encryption operation is shown in <a href="#fig-ex-encrypt-rsa-asb" class="xref">Figure 28</a> and corresponds with the updated target block (containing the ciphertext) of <a href="#fig-ex-encrypt-target-final" class="xref">Figure 10</a>.<a href="#section-a.6-6" class="pilcrow">¶</a></p>
+The ASB item for this encryption operation is shown in <a href="#fig-ex-encrypt-rsa-asb" class="xref">Figure 30</a> and corresponds with the updated target block (containing the ciphertext) of <a href="#fig-ex-encrypt-target-final" class="xref">Figure 12</a>.<a href="#section-a.6-6" class="pilcrow">¶</a></p>
 <span id="name-abstract-security-block-cbor-dia"></span><div id="fig-ex-encrypt-rsa-asb">
-<figure id="figure-28">
+<figure id="figure-30">
           <div id="section-a.6-7.1">
 <pre class="sourcecode lang-cbor">
-[
-  [2], / targets /
-  0, / security context TBD-COSE /
-  1, / flags: params-present /
-  [ / parameters /
-    [
-      5, / AAD-scope /
-      0x03 / has-primary-ctx | has-target-ctx /
-    ]
-  ],
+[1], / targets /
+0, / security context TBD-COSE /
+1, / flags: params-present /
+[1, "//src/"], / security source /
+[ / parameters /
   [
-    [ / target block #2 /
-      [ / result /
-        96, / COSE_Encrypt tag /
-        &lt;&lt;[
-          &lt;&lt;{ / protected /
-             / alg / 1:3 / A256GCM /
-          }&gt;&gt;,
-          { / unprotected /
-            / iv / 5: h'6f3093eba5d85143c3dc484a'
-          },
-          null, / payload detached /
-          [
-            [ / recipient /
-              h'', / protected /
-              { / unprotected /
-                / alg / 1:-41, / RSAES-OAEP w SHA-256 /
-                / kid / 4:'ExampleRSA'
-              },
-              h'66e76f3e924674c02c98ddef1cfee0d79718549849d1bb008993
-28d4b66c8ac481de1ddd258f20514cfe040ead00afeb0709ef22e67607ef5ab62562
-4753cb247152b54240e51e96b5d7fdd37cf97af23e2292d6c6a0d2a8ab25a82b8a6c
-af1d4fa2f1bd7f1fd17d89506e75a1e2687374aa2a1cf21ce387916039d84ecc14
-03' / key-wrapped /
-            ]
+    5, / AAD-scope /
+    0x03 / has-primary-ctx | has-target-ctx /
+  ]
+],
+[
+  [ / target block #1 /
+    [ / result /
+      96, / COSE_Encrypt tag /
+      &lt;&lt;[
+        &lt;&lt;{ / protected /
+           / alg / 1:3 / A256GCM /
+        }&gt;&gt;,
+        { / unprotected /
+          / iv / 5: h'6f3093eba5d85143c3dc484a'
+        },
+        null, / payload detached /
+        [
+          [ / recipient /
+            h'', / protected /
+            { / unprotected /
+              / alg / 1:-41, / RSAES-OAEP w SHA-256 /
+              / kid / 4:'ExampleRSA'
+            },
+            h'89d4367b14e3c663bf0352f8fc4b206f197d78f3f05dda90b3a88c
+db2354bdd25eee0cab60f987b6f1441afea8301fc4be22607569a5571bef86900ff8
+00a1b52764557382220afa2d115ddbe06729f8c621c440b6341deae871426a9038d0
+281d348d6fdf7c130139f5d1bb84c07d93f6d1eed15af81305cc634088fc3f79
+32' / key-wrapped /
           ]
-        ]&gt;&gt;
-      ]
+        ]
+      ]&gt;&gt;
     ]
   ]
 ]
 </pre>
 </div>
-<figcaption><a href="#figure-28" class="selfRef">Figure 28</a>:
+<figcaption><a href="#figure-30" class="selfRef">Figure 30</a>:
 <a href="#name-abstract-security-block-cbor-dia" class="selfRef">Abstract Security Block CBOR diagnostic</a>
           </figcaption></figure>
+</div>
+<p id="section-a.6-8">
+The final bundle is encoded as the byte string:<a href="#section-a.6-8" class="pilcrow">¶</a></p>
+<div id="section-a.6-9">
+<pre class="sourcecode lang-cbor">
+h'9f880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f7372
+632f820018281a000f4240850c03000058c2810100018201662f2f7372632f818205
+03818182186058aa8443a10103a1054c6f3093eba5d85143c3dc484af6818340a201
+3828044a4578616d706c65525341588089d4367b14e3c663bf0352f8fc4b206f197d
+78f3f05dda90b3a88cdb2354bdd25eee0cab60f987b6f1441afea8301fc4be226075
+69a5571bef86900ff800a1b52764557382220afa2d115ddbe06729f8c621c440b634
+1deae871426a9038d0281d348d6fdf7c130139f5d1bb84c07d93f6d1eed15af81305
+cc634088fc3f79328501010000561fd25f64a2eea12d4bb6c02d25bf33cec45f3e4f
+96b1ff'
+</pre><a href="#section-a.6-9" class="pilcrow">¶</a>
 </div>
 </section>
 </section>

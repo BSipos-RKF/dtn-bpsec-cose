@@ -238,11 +238,12 @@ asb-id-value-pair = [
   value: any
 ]
 
-; Provide BPv7 extension block types
-; BIB
-$extension-block /= extension-block-use<192, embedded-cbor<ext-data-asb>>
-; BCB
-$extension-block /= extension-block-use<193, embedded-cbor<ext-data-asb>>
+; Provide BPv7 extension block types, they both really embed "ext-data-asb" as
+; a cbor sequence.
+; Block Integrity Block
+$extension-block /= extension-block-use<11, bstr .cborseq any>
+; Block Confidentiality Block
+$extension-block /= extension-block-use<12, bstr .cborseq any>
 
 ; Specialization of $ext-data-asb for a security context
 ; The ParamPair and ResultPair should be sockets for specializing those types.
