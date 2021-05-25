@@ -27,4 +27,4 @@
 *** Unused rule status-record-content
 *** Unused rule bundle-status-information
 *** Unused rule status-info-content
-[{1: -274, 2: h'746963', 4: ["tac", "toe"], 5: h'746963', 17: "tac", 2089: "toe"}, {1: "tic", 2: h'746163', 3: 824, 4: ["toe"], 3029: "tic", -356: "tac", 2389: "toe"}]
+[7, 2262172, 2, [1, 0], [2, [914, 1277]], [2, [2680, 2344]], [540, 4402], 3348, 3617, 3993, h'65ECFA48']
