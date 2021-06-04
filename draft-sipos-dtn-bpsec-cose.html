@@ -13,7 +13,7 @@ A profile of COSE and for PKIX certificates are also defined for BPSec interoper
        
     " name="description">
 <meta content="xml2rfc 3.8.0" name="generator">
-<meta content="draft-bsipos-dtn-bpsec-cose-05" name="ietf.draft">
+<meta content="draft-bsipos-dtn-bpsec-cose-06" name="ietf.draft">
 <!-- Generator version information:
   xml2rfc 3.8.0
     Python 3.8.5
@@ -1178,11 +1178,11 @@ li > p:last-of-type {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">DTN BPSec COSE</td>
-<td class="right">May 2021</td>
+<td class="right">June 2021</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Sipos</td>
-<td class="center">Expires 26 November 2021</td>
+<td class="center">Expires 6 December 2021</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1192,15 +1192,15 @@ li > p:last-of-type {
 <dt class="label-workgroup">Workgroup:</dt>
 <dd class="workgroup">Delay-Tolerant Networking</dd>
 <dt class="label-internet-draft">Internet-Draft:</dt>
-<dd class="internet-draft">draft-bsipos-dtn-bpsec-cose-05</dd>
+<dd class="internet-draft">draft-bsipos-dtn-bpsec-cose-06</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2021-05-25" class="published">25 May 2021</time>
+<time datetime="2021-06-04" class="published">4 June 2021</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2021-11-26">26 November 2021</time></dd>
+<dd class="expires"><time datetime="2021-12-06">6 December 2021</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -1236,7 +1236,7 @@ A profile of COSE and for PKIX certificates are also defined for BPSec interoper
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 26 November 2021.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 6 December 2021.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1292,7 +1292,7 @@ A profile of COSE and for PKIX certificates are also defined for BPSec interoper
                 <p id="section-toc.1-1.2.2.2.1"><a href="#section-2.2" class="xref">2.2</a>.  <a href="#name-parameters" class="xref">Parameters</a></p>
 <ul class="toc ulEmpty compact">
 <li class="toc ulEmpty compact" id="section-toc.1-1.2.2.2.2.1">
-                    <p id="section-toc.1-1.2.2.2.2.1.1"><a href="#section-2.2.1" class="xref">2.2.1</a>.  <a href="#name-key-containers" class="xref">Key Containers</a></p>
+                    <p id="section-toc.1-1.2.2.2.2.1.1"><a href="#section-2.2.1" class="xref">2.2.1</a>.  <a href="#name-raw-public-key-containers" class="xref">Raw Public Key Containers</a></p>
 </li>
                   <li class="toc ulEmpty compact" id="section-toc.1-1.2.2.2.2.2">
                     <p id="section-toc.1-1.2.2.2.2.2.1"><a href="#section-2.2.2" class="xref">2.2.2</a>.  <a href="#name-additional-header-maps" class="xref">Additional Header Maps</a></p>
@@ -1659,11 +1659,11 @@ When a parameter is not present, the security acceptor SHALL use the Default Val
 </div>
 <div id="sec-ASB-param-keys">
 <section id="section-2.2.1">
-          <h4 id="name-key-containers">
-<a href="#section-2.2.1" class="section-number selfRef">2.2.1. </a><a href="#name-key-containers" class="section-name selfRef">Key Containers</a>
+          <h4 id="name-raw-public-key-containers">
+<a href="#section-2.2.1" class="section-number selfRef">2.2.1. </a><a href="#name-raw-public-key-containers" class="section-name selfRef">Raw Public Key Containers</a>
           </h4>
 <p id="section-2.2.1-1">
-Implementations capable of handling asymmetric-keyed algorithms SHOULD support the public key handling COSE_Key and COSE_KeySet parameters.<a href="#section-2.2.1-1" class="pilcrow">¶</a></p>
+Implementations capable of handling asymmetric-keyed algorithms SHOULD support raw public key handling in COSE_Key and COSE_KeySet parameters.<a href="#section-2.2.1-1" class="pilcrow">¶</a></p>
 <p id="section-2.2.1-2">
 No more than one total COSE_Key or COSE_KeySet parameter SHALL be present in a single security block.
 Security acceptors are sill required to aggregate multiple parameters, if present, in <a href="#sec-asym-keys" class="xref">Section 3.3</a>.<a href="#section-2.2.1-2" class="pilcrow">¶</a></p>
@@ -2085,7 +2085,7 @@ If the NODE-ID validation result is Failure or if the result is Absent and secur
           </h4>
 <p id="section-2.6.2-1">
 A RECOMMENDED security policy is to enable the use of OCSP checking when internet connectivity is present.
-A RECOMMENDED security policy is that if an Extended Key Usage is present that it needs to contain "id-kp-bundleSecurity" to be usable as an end-entity certificate for COSE security results.
+A RECOMMENDED security policy is that if an Extended Key Usage is present that it needs to contain <code>id-kp-bundleSecurity</code> of <span>[<a href="#IANA-SMI" class="xref">IANA-SMI</a>]</span> to be usable as an end-entity certificate for COSE security results.
 A RECOMMENDED security policy is to require a validated Node ID (of <a href="#sec-context-auth-valid-nodeid" class="xref">Section 2.6.1.3</a>) and to ignore any other identifiers in the end-entity certificate.<a href="#section-2.6.2-1" class="pilcrow">¶</a></p>
 <p id="section-2.6.2-2">
 This policy relies on and informs the certificate requirements in <a href="#sec-asym-keys-policy-rec" class="xref">Section 3.3.1</a> and <a href="#sec-pkix-profile" class="xref">Section 4</a>.
@@ -2103,14 +2103,14 @@ A tailored policy on a more controlled network could relax the requirement on No
 <a href="#section-3" class="section-number selfRef">3. </a><a href="#name-cose-profile-for-bpsec" class="section-name selfRef">COSE Profile for BPSec</a>
       </h2>
 <p id="section-3-1">
-This section contains requirements which apply to the use of COSE within BPSec across any security context use.<a href="#section-3-1" class="pilcrow">¶</a></p>
+This section contains requirements which apply to the use of COSE within the BPSec security context defined in this document.<a href="#section-3-1" class="pilcrow">¶</a></p>
 <div id="sec-COSE-messages">
 <section id="section-3.1">
         <h3 id="name-cose-messages">
 <a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-cose-messages" class="section-name selfRef">COSE Messages</a>
         </h3>
 <p id="section-3.1-1">
-When generating a BPSec result, security sources SHALL use encode COSE labels with a uint value.
+When generating a BPSec result, security sources SHALL use only COSE labels with a uint value.
 When processing a BPSec result, security acceptors MAY handle COSE labels with with a tstr value.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
 <p id="section-3.1-2">
 When used in a BPSec result, each COSE message SHALL contain an explicit algorithm identifier in the lower (content) layers.
@@ -2275,8 +2275,8 @@ When a COSE_Encrypt is used with an RSA keypair, the recipient layer SHALL inclu
 <a href="#section-3.3" class="section-number selfRef">3.3. </a><a href="#name-asymmetric-key-types-and-id" class="section-name selfRef">Asymmetric Key Types and Identifiers</a>
         </h3>
 <p id="section-3.3-1">
-This section applies when a BIB uses a public key for verification, or when a BCB uses a public key for encryption.
-When using asymmetric keyed algorithms, the security source SHALL include a public key identifier as a recipient header.
+This section applies when a BIB uses a public key for verification or key-wrap, or when a BCB uses a public key for encryption or key-wrap.
+When using asymmetric keyed algorithms, the security source SHALL include a public key container or public key identifier as a recipient header.
 The public key identifier SHALL be either a "kid" of <span>[<a href="#RFC8152" class="xref">RFC8152</a>]</span>, an "x5t" or "x5chain" of <span>[<a href="#I-D.ietf-cose-x509" class="xref">I-D.ietf-cose-x509</a>]</span>, or an equivalent identifier.<a href="#section-3.3-1" class="pilcrow">¶</a></p>
 <p id="section-3.3-2">
 When a BIB result contains a "kid" identifier, the security source MAY include an appropriate COSE public key "COSE_Key" in a key container security parameter (see <a href="#sec-ASB-param-keys" class="xref">Section 2.2.1</a>).
@@ -2345,8 +2345,8 @@ A BPSec end-entity certificate SHALL contain a NODE-ID which authenticates the N
 The identifier type NODE-ID is defined in <span>[<a href="#I-D.ietf-dtn-tcpclv4" class="xref">I-D.ietf-dtn-tcpclv4</a>]</span>.<a href="#section-4-6" class="pilcrow">¶</a></p>
 <p id="section-4-7">
 When allowed by CA policy, a BPSec end-entity certificate SHOULD contain a PKIX Extended Key Usage extension in accordance with <span><a href="https://rfc-editor.org/rfc/rfc5280#section-4.2.1.12" class="relref">Section 4.2.1.12</a> of [<a href="#RFC5280" class="xref">RFC5280</a>]</span>.
-When the PKIX Extended Key Usage extension is present, it SHALL contain a key purpose "id-kp-bundleSecurity" of <span>[<a href="#IANA-SMI" class="xref">IANA-SMI</a>]</span>.
-The "id-kp-bundleSecurity" purpose MAY be combined with other purposes in the same certificate.<a href="#section-4-7" class="pilcrow">¶</a></p>
+When the PKIX Extended Key Usage extension is present, it SHALL contain a key purpose <code>id-kp-bundleSecurity</code> of <span>[<a href="#IANA-SMI" class="xref">IANA-SMI</a>]</span>.
+The <code>id-kp-bundleSecurity</code> purpose MAY be combined with other purposes in the same certificate.<a href="#section-4-7" class="pilcrow">¶</a></p>
 <p id="section-4-8">
 When allowed by CA policy, a BPSec end-entity certificate SHALL contain a PKIX Key Usage extension in accordance with <span><a href="https://rfc-editor.org/rfc/rfc5280#section-4.2.1.3" class="relref">Section 4.2.1.3</a> of [<a href="#RFC5280" class="xref">RFC5280</a>]</span>.
 The PKIX Key Usage bits which are consistent with COSE security are: digitalSignature, nonRepudiation, keyEncipherment, and keyAgreement.

@@ -4,12 +4,12 @@
 
 Delay-Tolerant Networking                                       B. Sipos
 Internet-Draft                                           RKF Engineering
-Intended status: Standards Track                             25 May 2021
-Expires: 26 November 2021
+Intended status: Standards Track                             4 June 2021
+Expires: 6 December 2021
 
 
            DTN Bundle Protocol Security COSE Security Context
-                     draft-bsipos-dtn-bpsec-cose-05
+                     draft-bsipos-dtn-bpsec-cose-06
 
 Abstract
 
@@ -34,7 +34,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 26 November 2021.
+   This Internet-Draft will expire on 6 December 2021.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Sipos                   Expires 26 November 2021                [Page 1]
+Sipos                    Expires 6 December 2021                [Page 1]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
 Table of Contents
@@ -68,7 +68,7 @@ Table of Contents
    2.  BPSec Security Context  . . . . . . . . . . . . . . . . . . .   4
      2.1.  Security Scope  . . . . . . . . . . . . . . . . . . . . .   5
      2.2.  Parameters  . . . . . . . . . . . . . . . . . . . . . . .   6
-       2.2.1.  Key Containers  . . . . . . . . . . . . . . . . . . .   6
+       2.2.1.  Raw Public Key Containers . . . . . . . . . . . . . .   6
        2.2.2.  Additional Header Maps  . . . . . . . . . . . . . . .   7
        2.2.3.  AAD Scope . . . . . . . . . . . . . . . . . . . . . .   8
      2.3.  Results . . . . . . . . . . . . . . . . . . . . . . . . .   9
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Sipos                   Expires 26 November 2021                [Page 2]
+Sipos                    Expires 6 December 2021                [Page 2]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
      A.2.  EC Keypair COSE_Sign1 . . . . . . . . . . . . . . . . . .  31
@@ -165,9 +165,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021                [Page 3]
+Sipos                    Expires 6 December 2021                [Page 3]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
 1.2.  PKIX Environments and CA Policy
@@ -221,9 +221,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021                [Page 4]
+Sipos                    Expires 6 December 2021                [Page 4]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    The COSE security context SHALL have the Security Context ID
@@ -277,9 +277,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021                [Page 5]
+Sipos                    Expires 6 December 2021                [Page 5]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
       result for which the AAD is assembled also has metadata
@@ -318,10 +318,10 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
                      Table 1: COSE Security Parameters
 
-2.2.1.  Key Containers
+2.2.1.  Raw Public Key Containers
 
    Implementations capable of handling asymmetric-keyed algorithms
-   SHOULD support the public key handling COSE_Key and COSE_KeySet
+   SHOULD support raw public key handling in COSE_Key and COSE_KeySet
    parameters.
 
    No more than one total COSE_Key or COSE_KeySet parameter SHALL be
@@ -333,9 +333,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021                [Page 6]
+Sipos                    Expires 6 December 2021                [Page 6]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    Key container parameters SHALL NOT contain any private key material.
@@ -389,9 +389,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021                [Page 7]
+Sipos                    Expires 6 December 2021                [Page 7]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    Security acceptors SHALL treat the aggregate of both additional
@@ -445,9 +445,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021                [Page 8]
+Sipos                    Expires 6 December 2021                [Page 8]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
        +==================+========+===============================+
@@ -501,9 +501,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021                [Page 9]
+Sipos                    Expires 6 December 2021                [Page 9]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    These generic requirements are formalized in the CDDL fragment of
@@ -557,9 +557,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 10]
+Sipos                    Expires 6 December 2021               [Page 10]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
 2.3.2.  Confidentiality Messages
@@ -613,9 +613,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 11]
+Sipos                    Expires 6 December 2021               [Page 11]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
 2.5.  Canonicalization Algorithms
@@ -669,9 +669,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 12]
+Sipos                    Expires 6 December 2021               [Page 12]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    AAD-structure = [
@@ -725,9 +725,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 13]
+Sipos                    Expires 6 December 2021               [Page 13]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    is configured to generate or receive results associated with valid
@@ -781,9 +781,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 14]
+Sipos                    Expires 6 December 2021               [Page 14]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
 2.6.1.3.  Node ID Authentication
@@ -802,10 +802,10 @@ Internet-Draft               DTN BPSec COSE                     May 2021
    A RECOMMENDED security policy is to enable the use of OCSP checking
    when internet connectivity is present.  A RECOMMENDED security policy
    is that if an Extended Key Usage is present that it needs to contain
-   "id-kp-bundleSecurity" to be usable as an end-entity certificate for
-   COSE security results.  A RECOMMENDED security policy is to require a
-   validated Node ID (of Section 2.6.1.3) and to ignore any other
-   identifiers in the end-entity certificate.
+   "id-kp-bundleSecurity" of [IANA-SMI] to be usable as an end-entity
+   certificate for COSE security results.  A RECOMMENDED security policy
+   is to require a validated Node ID (of Section 2.6.1.3) and to ignore
+   any other identifiers in the end-entity certificate.
 
    This policy relies on and informs the certificate requirements in
    Section 3.3.1 and Section 4.  This policy assumes that a DTN-aware CA
@@ -820,13 +820,13 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 3.  COSE Profile for BPSec
 
    This section contains requirements which apply to the use of COSE
-   within BPSec across any security context use.
+   within the BPSec security context defined in this document.
 
 3.1.  COSE Messages
 
-   When generating a BPSec result, security sources SHALL use encode
-   COSE labels with a uint value.  When processing a BPSec result,
-   security acceptors MAY handle COSE labels with with a tstr value.
+   When generating a BPSec result, security sources SHALL use only COSE
+   labels with a uint value.  When processing a BPSec result, security
+   acceptors MAY handle COSE labels with with a tstr value.
 
    When used in a BPSec result, each COSE message SHALL contain an
    explicit algorithm identifier in the lower (content) layers.  When
@@ -837,9 +837,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 15]
+Sipos                    Expires 6 December 2021               [Page 15]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    Security Source (if available) and the Bundle Source to imply which
@@ -893,9 +893,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 16]
+Sipos                    Expires 6 December 2021               [Page 16]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    +=================+============+============+======+================+
@@ -949,9 +949,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 17]
+Sipos                    Expires 6 December 2021               [Page 17]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
       keypair, implementations SHALL use a COSE_Sign1 using the private
@@ -993,21 +993,21 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 3.3.  Asymmetric Key Types and Identifiers
 
-   This section applies when a BIB uses a public key for verification,
-   or when a BCB uses a public key for encryption.  When using
-   asymmetric keyed algorithms, the security source SHALL include a
-   public key identifier as a recipient header.  The public key
-   identifier SHALL be either a "kid" of [RFC8152], an "x5t" or
-   "x5chain" of [I-D.ietf-cose-x509], or an equivalent identifier.
+   This section applies when a BIB uses a public key for verification or
+   key-wrap, or when a BCB uses a public key for encryption or key-wrap.
+   When using asymmetric keyed algorithms, the security source SHALL
+   include a public key container or public key identifier as a
+   recipient header.  The public key identifier SHALL be either a "kid"
+   of [RFC8152], an "x5t" or "x5chain" of [I-D.ietf-cose-x509], or an
+   equivalent identifier.
 
 
 
 
 
-
-Sipos                   Expires 26 November 2021               [Page 18]
+Sipos                    Expires 6 December 2021               [Page 18]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    When a BIB result contains a "kid" identifier, the security source
@@ -1061,9 +1061,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 19]
+Sipos                    Expires 6 December 2021               [Page 19]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    5.  The BIB Security Source is used to imply an associated end-entity
@@ -1117,9 +1117,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 20]
+Sipos                    Expires 6 December 2021               [Page 20]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    When allowed by CA policy, a BPSec end-entity certificate SHOULD
@@ -1173,9 +1173,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 21]
+Sipos                    Expires 6 December 2021               [Page 21]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    This section records the status of known implementations of the
@@ -1229,9 +1229,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 22]
+Sipos                    Expires 6 December 2021               [Page 22]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
 6.2.  Threat: Untrusted End-Entity Certificate
@@ -1285,9 +1285,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 23]
+Sipos                    Expires 6 December 2021               [Page 23]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    in BPSec Security Considerations, where a signature is verified to be
@@ -1341,9 +1341,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 24]
+Sipos                    Expires 6 December 2021               [Page 24]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
 7.1.  BPSec Security Contexts
@@ -1397,9 +1397,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 25]
+Sipos                    Expires 6 December 2021               [Page 25]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
               (PKIX) Certificates in the Context of Transport Layer
@@ -1453,9 +1453,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 26]
+Sipos                    Expires 6 December 2021               [Page 26]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
               4", Work in Progress, Internet-Draft, draft-ietf-dtn-
@@ -1509,9 +1509,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 27]
+Sipos                    Expires 6 December 2021               [Page 27]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    [github-dtn-demo-agent]
@@ -1565,9 +1565,9 @@ Appendix A.  Examples
 
 
 
-Sipos                   Expires 26 November 2021               [Page 28]
+Sipos                    Expires 6 December 2021               [Page 28]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    [
@@ -1621,9 +1621,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 29]
+Sipos                    Expires 6 December 2021               [Page 29]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    [
@@ -1677,9 +1677,9 @@ A.1.  Symmetric Key COSE_Mac0
 
 
 
-Sipos                   Expires 26 November 2021               [Page 30]
+Sipos                    Expires 6 December 2021               [Page 30]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    [1], / targets /
@@ -1733,9 +1733,9 @@ A.2.  EC Keypair COSE_Sign1
 
 
 
-Sipos                   Expires 26 November 2021               [Page 31]
+Sipos                    Expires 6 December 2021               [Page 31]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    [
@@ -1789,9 +1789,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 32]
+Sipos                    Expires 6 December 2021               [Page 32]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    [1], / targets /
@@ -1845,9 +1845,9 @@ A.3.  RSA Keypair COSE_Sign1
 
 
 
-Sipos                   Expires 26 November 2021               [Page 33]
+Sipos                    Expires 6 December 2021               [Page 33]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    This key strength is not supposed to be a secure configuration, only
@@ -1901,9 +1901,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 34]
+Sipos                    Expires 6 December 2021               [Page 34]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    [
@@ -1957,9 +1957,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 35]
+Sipos                    Expires 6 December 2021               [Page 35]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    h'9f880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f7372
@@ -2013,9 +2013,9 @@ A.4.  Symmetric KEK COSE_Encrypt
 
 
 
-Sipos                   Expires 26 November 2021               [Page 36]
+Sipos                    Expires 6 December 2021               [Page 36]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    [1], / targets /
@@ -2069,9 +2069,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 37]
+Sipos                    Expires 6 December 2021               [Page 37]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
 A.5.  EC Keypair COSE_Encrypt
@@ -2125,9 +2125,9 @@ A.5.  EC Keypair COSE_Encrypt
 
 
 
-Sipos                   Expires 26 November 2021               [Page 38]
+Sipos                    Expires 6 December 2021               [Page 38]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    The ASB item for this encryption operation is shown in Figure 27 and
@@ -2181,9 +2181,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 39]
+Sipos                    Expires 6 December 2021               [Page 39]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    [1], / targets /
@@ -2237,9 +2237,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 40]
+Sipos                    Expires 6 December 2021               [Page 40]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    The final bundle is encoded as the byte string:
@@ -2293,9 +2293,9 @@ A.6.  RSA Keypair COSE_Encrypt
 
 
 
-Sipos                   Expires 26 November 2021               [Page 41]
+Sipos                    Expires 6 December 2021               [Page 41]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    [
@@ -2349,9 +2349,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 42]
+Sipos                    Expires 6 December 2021               [Page 42]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    [
@@ -2405,9 +2405,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 43]
+Sipos                    Expires 6 December 2021               [Page 43]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    [1], / targets /
@@ -2461,9 +2461,9 @@ Internet-Draft               DTN BPSec COSE                     May 2021
 
 
 
-Sipos                   Expires 26 November 2021               [Page 44]
+Sipos                    Expires 6 December 2021               [Page 44]
 
-Internet-Draft               DTN BPSec COSE                     May 2021
+Internet-Draft               DTN BPSec COSE                    June 2021
 
 
    h'9f880700008201692f2f6473742f7376638201662f2f7372632f8201662f2f7372
@@ -2517,4 +2517,4 @@ Author's Address
 
 
 
-Sipos                   Expires 26 November 2021               [Page 45]
+Sipos                    Expires 6 December 2021               [Page 45]
